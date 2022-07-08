@@ -18,8 +18,7 @@
             list-style-type:none;
         }
         li{
-           
-            font-size:14px;
+        
             font-weight:bold;
             display: inline-block;
         }
@@ -28,9 +27,44 @@
             margin:20px;
             color:black;
         }
+        .header-anchor{
+            font-size:14px;
+        }
+        
         .text-align{
             text-align:center;
         }
+        .gird{
+            display:flex;
+        }
+        .new-Div{
+            padding:10px;
+            width:100%;
+            background-color: blue;
+        }
+        img{
+            width:50px;
+            margin-left:100px;
+        }
+        ul{
+            list-style-type:none;
+        }
+        li{
+            font-size:20px;
+            font-weight:bold;
+            display:inline-block;
+        }
+        .nav-anchor{
+            text-decoration:none;
+            margin-right:3px;
+            color:white;
+            font-size: 14px;
+        }
+        .text-align{
+            text-align:center;
+        }
+        
+        
     </style>
 </head>
 <body>
@@ -40,21 +74,21 @@
             <div class="parentDiv">
               <ul>
                 <li>
-                   <a href="#">
+                   <a href="#" class="header-anchor">
                       <i class="fa fa-envelope" aria-hidden="true"></i> 
 
                      bhargavanurshinghome01@gamil.com
                    </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" class="header-anchor">
                         <i class="fa fa-phone" aria-hidden="true"></i>
                     
                     738 943 9337
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" class="header-anchor">
                     940 611 3199
                     </a>
                 </li>
@@ -63,21 +97,66 @@
             <div class="parentDiv text-align">
                 <ul>
                   <li>
-                      <a href="#">
+                      <a href="#" class="header-anchor">
                         <i class="fa-brands fa-facebook-f"></i>
                       </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#" class="header-anchor">
                       <i class="fa-brands fa-whatsapp"></i>
                     </a>
                   </li>
-                  <a href="#">
+                  <a href="#" class="header-anchor">
                     <i class="fa-brands fa-instagram"></i>
                   </a>  
                 </ul>
               </div>
          </div>
     </header>
+
+    <nav>
+        <div class="grid">
+         <div class="new-Div">
+          <img src="http://www.bhargavaurologycentre.com/img/urology-logo.png" alt="bhargava urology logo" />
+         </div>
+         <div class="new-Div">
+            <ul>
+                <li>
+                    <a href="#" class="nav-anchor">
+                       HOME  
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-anchor">
+                     ABOUT
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-anchor">
+                      TREATMENT
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-anchor">
+                      GALLERY
+                    </a>
+                </li>
+                 <li>
+                    <a href="#" class="nav-anchor">
+                       APPOINTMENT
+                    </a>
+                 </li>
+                 <li>
+                    <a href="#" class="nav-anchor">
+                      CONTACT
+                    </a>
+                 </li>
+               </ul>
+           </div>
+
+
+       
+     </div>
+  </nav>
 </body>
 </html>
