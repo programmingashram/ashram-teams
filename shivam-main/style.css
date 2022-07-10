@@ -1,8 +1,12 @@
 .grid{
     display:flex;
     justify-content:space-between;
+    align-items: center;
 }
-
+ul{
+    list-style: none;
+    padding-left: 0;
+}
 li{
     display:inline-block;
     margin: 10px;
@@ -33,8 +37,6 @@ i{
 }
 .img-width{
     width: 25%;
-    margin: 20px;
-
 }
 
 nav{
@@ -46,10 +48,8 @@ nav{
     color:white;
 }
 .container{
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
+        width: 90%;
+        margin: 0 auto;
 }
 .width-center{
     width: 100%;
