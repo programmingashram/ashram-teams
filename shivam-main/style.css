@@ -44,6 +44,8 @@ nav{
      background-color: rgb(40 15 96);
      color: #fff;
      padding: 5px;
+     position:sticky;
+     top:0;
 }
 .t-color{
     color:white;
@@ -82,4 +84,19 @@ nav{
 }
 ul{
     margin-top: 30px;
+}
+article{
+    margin-top: 80px;
+}
+.text-center{
+    text-align: center;
+}
+.font{
+    font-size: 15px;
+}
+p{
+    display: block;
+}
+.img-height{
+    height: 500px!important;
 }
