@@ -39,6 +39,7 @@ i{
     width: 25%;
 }
 
+
 nav{
      background-color: rgb(40 15 96);
      color: #fff;
@@ -56,6 +57,29 @@ nav{
     margin-bottom: 5px;
 
 }
+.bg-img{
+    background-image: url(./images/Rainbow-hospital-gallery-2.jpeg);
+    background-attachment: fixed;
 
-
-  
+}
+.hero-content{
+    padding: 154px 0px;
+    text-align: center;
+    color: white;
+}
+.hero-content > h1{
+    font-size: 39px;
+    letter-spacing: 11px;
+}
+.layer{
+    background: #00000069;
+}
+.btn-color{
+    background-color: #337ab7;
+    padding: 10px 12px;
+    border-radius: 4px;
+    color: #fff;
+}
+ul{
+    margin-top: 30px;
+}
