@@ -1,11 +1,15 @@
 .grid{
     display:flex;
     justify-content:space-between;
+    align-items: center;
 }
-
+ul{
+    list-style: none;
+    padding-left: 0;
+}
 li{
     display:inline-block;
-    margin: 10px;
+    margin-right: 10px;
 }
 a{
     text-decoration: none;
@@ -33,9 +37,8 @@ i{
 }
 .img-width{
     width: 25%;
-    margin: 20px;
-
 }
+
 
 nav{
      background-color: rgb(40 15 96);
@@ -46,16 +49,37 @@ nav{
     color:white;
 }
 .container{
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
+        width: 90%;
+        margin: 0 auto;
 }
 .width-center{
     width: 100%;
     margin-bottom: 5px;
 
 }
+.bg-img{
+    background-image: url(./images/Rainbow-hospital-gallery-2.jpeg);
+    background-attachment: fixed;
 
-
-  
+}
+.hero-content{
+    padding: 154px 0px;
+    text-align: center;
+    color: white;
+}
+.hero-content > h1{
+    font-size: 39px;
+    letter-spacing: 11px;
+}
+.layer{
+    background: #00000069;
+}
+.btn-color{
+    background-color: #337ab7;
+    padding: 10px 12px;
+    border-radius: 4px;
+    color: #fff;
+}
+ul{
+    margin-top: 30px;
+}
