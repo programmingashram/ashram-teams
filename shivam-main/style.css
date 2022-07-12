@@ -94,13 +94,25 @@ article{
 .font{
     font-size: 15px;
 }
-p{
-    display: block;
-}
+
 .img-height{
     height: 500px!important;
 }
-. margin-t{
-    margin-top: 30px;
+.d-block{
+    display:block;
+    margin-top: 10px;
 }
-
+.treat-img{
+    height: 231px;
+    width: 100%;
+}
+.treatment{
+    padding: 20px;
+    margin: 10px;
+    background: rgb(7, 73, 133);
+    color:#fff;
+    
+}
+.align-top{
+    align-items:flex-start !important;
+}
