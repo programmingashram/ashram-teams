@@ -106,7 +106,7 @@ article{
     height: 231px;
     width: 100%;
     object-fit: cover;
-}
+}    
 .treatment{
     padding: 20px;
     margin: 10px;
@@ -116,4 +116,20 @@ article{
 }
 .align-top{
     align-items:flex-start !important;
+}
+.team-img{
+    width: 61%;
+    height: 231px;
+    object-fit: cover;
+    object-position: top;
+}
+.treatment-1{
+    background: rgb(7, 73, 133);
+
+}
+.bg-dr {
+    background: rgb(128 128 128 / 21%);
+}
+.pad-10{
+    padding: 60px;
 }
