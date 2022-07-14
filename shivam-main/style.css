@@ -133,3 +133,22 @@ article{
 .pad-10{
     padding: 60px;
 }
+label{
+    display: block;
+    font-size:20px;
+    margin-right:33%;
+
+}
+.bg-form{
+    background: rgb(7, 73, 133);
+    color: rgb(255 255 255);
+}
+
+input{
+    width:35%;
+    margin-top: 3px;
+    padding:10px;
+}
+.inp-pad{
+    padding:10px;
+}
