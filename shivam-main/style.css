@@ -1,7 +1,7 @@
 .grid{
     display:flex;
     justify-content:space-between;
-    align-items: center;
+   z align-items: center;
 }
 ul{
     list-style: none;
@@ -151,4 +151,11 @@ input{
 }
 .inp-pad{
     padding:10px;
+}
+.margin-t{
+    margin-top: 10px;
+}
+.footer-menu>li{
+    display: block;
+    margin-bottom: 10px;
 }
