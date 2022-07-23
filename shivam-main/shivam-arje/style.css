@@ -1,0 +1,43 @@
+.container{
+    width: 90%;
+    margin:0 auto;
+}
+.grid{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.width{
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    display: inline-block;
+    margin-right: 10px;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.t-center{
+    text-align:  center;
+}
+header{
+    background-color:#007bff;
+    color:white;
+    margin-bottom: 10px;
+    margin-top: 0 auto;
+}
+.color-black{
+    color:black;
+}
+.logo-width{
+    width: 90px;
+    margin-right: 60%;
+}
+.margin-right{
+        font-size: 20px;
+        margin-right: 20px;
+}
