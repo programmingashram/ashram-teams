@@ -12,6 +12,7 @@
 }
 ul{
     list-style-type: none;
+    padding-left: 0;
 }
 li{
     display: inline-block;
@@ -40,4 +41,38 @@ header{
 .margin-right{
         font-size: 20px;
         margin-right: 20px;
+}
+.sticky{
+    position:sticky;
+    top:0;
+    background-color: white;
+}
+.font-s{
+    font-size: 40px;
+}
+.text-danger{
+    color: #dc3545!important
+}
+.pad-20{
+    padding:86px 0px;
+}
+body{
+    margin: 0;
+}
+.btn-color{
+    background-color: #dc3545;
+    padding: 10px;
+    border-radius: 4px;
+}
+.btn-primary{
+    background-color: #0d6efd;
+    padding: 10px;
+    border-radius: 4px;
+}
+.btn-margin{
+    margin-top: 50px;
+}
+section{
+    background-color:#007bff;
+    color: white;
 }
