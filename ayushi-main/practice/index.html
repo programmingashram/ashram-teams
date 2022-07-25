@@ -5,53 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Practice</title>
-    <style>
-    
-        input{
-            padding: 10px 20px;
-            border-radius: 6px;
-            display:block;
-            background-color:blanchedalmond;
-        }
-        div{
-            margin-bottom: 10px;
-        }
-        form{
-            width: 50%;
-            margin: 0 auto;
-        }
-        .btn{
-           margin-top: 10px;
-         
-        }
-        .font-20{
-            font-size: 20px;
-        }
-        .text-align{
-            text-align: center;
-            
-        }
-        </style>
+       <style>
+         body{
+           margin:0px;
+           background-color: azure;
+         }
+         .from main{
+          width:50px;
+          margin:0 auto;
+          background-color: beige;
+          padding:20px;
+          margin-top:20px;
+         }
+        label{
+          display:inline-block;
+         }
+         input{
+          width:95PX;
+          padding:10px;
+         }
+         .btn{
+          padding:10px 60px;
+          margin-top:10px;
+          border:none;
+          width:100px;
+         }
+         .margin-top{
+           margin-top:10px;
+         }
+
+       </style>
 </head>
 <body>
-    <form action="#">
-        <div>
-            <label for="" class="font-20">Log in</label>
-            <input type="text" placeholder="sorry.That login is incorrect">
-        </div>
-        <div>
-            <label for="">Username</label>
-            <input type="text">
-        </div>
-       
-        <div>
-            <label for="">Password</label>
-            <input type="password">
-        </div>
-       
-        <div class="btn">
-            <button type="btn" role="button">Log in</button>
-        </div>
-    </form>
+     <div class="from-main">
+       <from action="#">
+         <h1>HTML FROM</h1>
+        <div class="margin-top">
+           <lable for="" > user name</lable>
+           <input type="text"/>
+       </div>
+       <div class="margin-top">
+          <lable for="">last name</lable> 
+          <input type="text"/>
+       </div>
+       <div class="margin-top">
+           <lable for="">Date of birth</lable>
+           <input type="number"/>
+       </div>
+       <div class="margin-top">
+         <lable for="">Email id </lable>
+           <input type="email"/>
+       </div>
+       <div class="margin-top">
+         <lable for="">Mobile number</lable>
+           <input type="number"/>
+       </div>
+       <div>
+            <button type="btn"> submit</button>
+            <button type="btn"> Reset</button>
+       </div>
+       </from>
+     </div>
 </body>
 </html>
