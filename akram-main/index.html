@@ -4,51 +4,76 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dr.Ravi dhamne</title>
-        <style>
-           .hg{
-                background-color:white; 
-            }
-            .w-10{
-                width:100%;
-            }
-            .w-2{
-                width:20px;
-            }
-            .g-2{
-                display:inline-block;
-            }
-            jh{
-                text-decoration:none;
-            }
-        </style>
+        <title>grid layout</title>
+       <style>
+    .gh{
+        width:100%
+    }
+    .orange{
+        background-color:orange; padding:10px; margin:5px;
+    }
+    .green{
+        background-color:green; padding:10px; margin:5px;
+    }
+    .red{
+        background-color:purple; padding:10px; margin:5px;
+    }
+    .grid{
+        display:flex;
+    }
+  
+    .orange,.red,.green{
+        color:white; text-align:center;
+    }
+
+    .voilet{
+        background-color:blueviolet; padding:10px; margin:5px;
+    }
+    .light{
+        background-color:lightgreen; padding:10px; margin:5px;
+    }
+    .blue{
+        background-color:blue; padding:10px; margin:5px;
+    }
+    .voilet,.light,.blue{
+        color:white; text-align:center;
+    }
+       </style>
     </head>
     <body>
-        <header class="hg">
-            <div class="grid"><!--grid-->
-               <div class="w-10">
-                    <img src="royaldigimedia.com/images/roayl-digital-media_logo.png" alt=" Royal Digital Media" class="w-2">
-                </div>
-                <div class="w-10">
-                    <ul class="g-2">
-                        <li class="g-2">
-                            <a href="#" class="jh">HOME</a>
-                        </li>
-                        <li  class="g-2">
-                            <a href="#" class="jh">ABOUT</a>
-                        </li>
-                        <li  class="g-2">
-                            <a href="#" class="jh">SERVICE</a>
-                        </li>
-                        <li  class="g-2">
-                            <a href="#" class="jh">Packages</a>
-                        </li>
-                        <li  class="g-2">
-                            <a href="#" class="jh">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
+    <div class="grid"><!--grid-->
+        <div class="gh">
+            <div class="orange">
+                <h1>B</h1>
             </div>
-        </header>
+        </div>
+        <div class="gh">
+            <div class="green">
+                <h1>C</h1>
+            </div>
+        </div>
+        <div class="gh">
+            <div class="red">
+                <h1>D</h1>
+            </div>
+        </div>
+    </div>
+    <div class="grid"><!--grid-->
+        <div class="gh">
+            <div class="voilet">
+                <h1>E</h1>
+            </div>
+        </div>
+        <div class="gh">
+            <div class="light">
+                <h1>A</h1>
+            </div>
+        </div>
+        <div class="gh">
+            <div class="blue">
+                <h1>F</h1>
+            </div>
+        </div>
+    </div>
     </body>
 </html>
