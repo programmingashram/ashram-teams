@@ -4,22 +4,76 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dr.Ravi dhamne</title>
-        <style>
-            .list-style{
-                list-style-type:none ;
-            }
-        </style>
+        <title>grid layout</title>
+       <style>
+    .gh{
+        width:100%
+    }
+    .orange{
+        background-color:orange; padding:10px; margin:5px;
+    }
+    .green{
+        background-color:green; padding:10px; margin:5px;
+    }
+    .red{
+        background-color:purple; padding:10px; margin:5px;
+    }
+    .grid{
+        display:flex;
+    }
+  
+    .orange,.red,.green{
+        color:white; text-align:center;
+    }
+
+    .voilet{
+        background-color:blueviolet; padding:10px; margin:5px;
+    }
+    .light{
+        background-color:lightgreen; padding:10px; margin:5px;
+    }
+    .blue{
+        background-color:blue; padding:10px; margin:5px;
+    }
+    .voilet,.light,.blue{
+        color:white; text-align:center;
+    }
+       </style>
     </head>
     <body>
-        <h1>Dr. Ravi dhamne</h1>
-        <p>BHMS and teacher in college of nmecdical line and working in ayuvedic and homopathic feild</p>
-        <ul class="list-style">
-            <li>provide treatment in homopathic </li>
-            <li>tinme 10am-8pm monday-sunday</li>
-            <li>
-                <a href="http://9179493181">Whatapp</a>
-            </li>
-        </ul>
+    <div class="grid"><!--grid-->
+        <div class="gh">
+            <div class="orange">
+                <h1>B</h1>
+            </div>
+        </div>
+        <div class="gh">
+            <div class="green">
+                <h1>C</h1>
+            </div>
+        </div>
+        <div class="gh">
+            <div class="red">
+                <h1>D</h1>
+            </div>
+        </div>
+    </div>
+    <div class="grid"><!--grid-->
+        <div class="gh">
+            <div class="voilet">
+                <h1>E</h1>
+            </div>
+        </div>
+        <div class="gh">
+            <div class="light">
+                <h1>A</h1>
+            </div>
+        </div>
+        <div class="gh">
+            <div class="blue">
+                <h1>F</h1>
+            </div>
+        </div>
+    </div>
     </body>
 </html>

@@ -73,6 +73,30 @@ body{
     margin-top: 50px;
 }
 section{
-    background-color:#007bff;
+   background-image: url(img/m.jpg);
+   background-repeat: no-repeat;
     color: white;
+    background-size: cover;
+}
+.btn-black{
+    background-color: black;
+    padding:10px;
+    border-radius: 4px;
+    
+}
+.h-center{
+    text-align: center;
+    font-size: 32px;
+    margin-right: 23px;
+}
+.bg-primary{
+    background-color:#0d6efd;
+}
+
+
+.justify-center{
+    justify-content: center !important;
+}
+.margin-top{
+    margin-top: 48px;
 }
