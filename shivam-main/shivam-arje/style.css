@@ -100,3 +100,7 @@ section{
 .margin-top{
     margin-top: 48px;
 }
+.bg-dark{
+    background-color: #212529!important;
+    color: white;
+}
