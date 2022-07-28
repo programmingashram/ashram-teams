@@ -104,3 +104,23 @@ section{
     background-color: #212529!important;
     color: white;
 }
+.f-size{
+    font-size: 32px;
+}
+.text-muted{
+    color: #6c757d!important;
+    
+}
+.text-warning{
+    color: #ffc107!important;
+}
+.text-primary{
+    color:blue;
+}
+.margin-5{
+    margin: 10px;
+    padding:16px;
+}
+.text-success {
+    color: #198754!important;
+}
