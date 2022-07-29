@@ -120,7 +120,35 @@ section{
 .margin-5{
     margin: 10px;
     padding:16px;
+    border-radius: 5px;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
 }
 .text-success {
     color: #198754!important;
+}
+
+.tile:hover{
+    border: 1px solid red;
+    padding: 18px;
+    transition: 0.4s;
+}
+.font-27{
+    font-size: 27px;
+}
+.img-width{
+    width:90%;
+}
+
+.btn-blue{
+    background-color: blue;
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 3px;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-wrap li{
+    margin-bottom: 40px;
 }
