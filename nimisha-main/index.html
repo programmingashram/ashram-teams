@@ -4,11 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document</title>    
+    <style>
+        .grid{
+            display: flex;
+           
+        }
+        .w-100{
+            width: 100%;
+            text-align: center;
+            padding: 30px 0px;
+        }
+        .bg-orange{
+            background-color: orange;
+            color:white;
+        }
+        .bg-pink{
+            background-color: pink;
+            color:white;
+        }
+        .bg-blue{
+            background-color: blue;
+            color:white;
+        }
+        @media(max-width:767px){
+            .grid{
+                 display: flex;
+                 flex-wrap:wrap ;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>
-        Hii I am Nimisha!!
-    </h1>
+    <div style="display:flex;">
+        <div style="background-color:orange;
+        width: 30%;
+        float: left;
+        padding-top: 3%;
+        padding-bottom: 2%;
+        padding-left: 2%;
+        padding-right: 2%;">
+        <p style="text-align: center;">B</p>
+        </div>
+        <div style="background-color: greenyellow;
+        width: 30%;
+        float: left;
+        padding-top: 3%;
+        padding-bottom: 2%;
+        padding-left: 2%;
+        padding-right: 2%;"
+        >
+        <p style="text-align: center;">C</p>
+    </div>
+        <div style="background-color: purple;
+        width: 30%;
+        float: left;
+        padding-top: 3%;
+        padding-bottom: 2%;
+        padding-left: 2%;
+        padding-right: 2%;">
+        <p style="text-align: center;">D</p>
+    </div>
+    </div>
+    <div style="display:flex;">
+        <div style="background-color:pink;
+        width: 30%;
+        float: left;
+        padding-top: 3%;
+        padding-bottom: 2%;
+        padding-left: 2%;
+        padding-right: 2%;">
+        <p style="text-align: center;">E</p>
+        </div>
+        <div style="background-color:green;
+        width: 30%;
+        float: left;
+        padding-top: 3%;
+        padding-bottom: 2%;
+        padding-left: 2%;
+        padding-right: 2%;">
+        <p style="text-align: center;">F</p>
+    </div>
+        <div style="background-color:blue;
+        width: 30%;
+        float: left;
+        padding-top: 3%;
+        padding-bottom: 2%;
+        padding-left: 2%;
+        padding-right: 2%;">
+        <p style="text-align: center;">A</p>
+    </div>
+    </div>
+
+    <div class="grid">
+        <div class="w-100 bg-blue">
+            <p>
+                A
+            </p>
+        </div>
+        <div class="w-100 bg-orange">
+            <p>
+                B
+            </p>
+        </div>
+        <div class="w-100 bg-pink">
+            <p>
+                C
+            </p>
+        </div>
+    </div>
 </body>
 </html>
