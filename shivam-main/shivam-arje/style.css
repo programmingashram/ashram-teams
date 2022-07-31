@@ -196,4 +196,9 @@ section{
     }
    
   }
+  .shadow-box{
+    border-top: 1px solid gray;
+    border-bottom:1px solid gray;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+  }
   
