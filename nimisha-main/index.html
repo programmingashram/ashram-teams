@@ -1,116 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>task 2</title>
     <style>
-        .grid{
+        .flex{
             display: flex;
-           
+            padding-top: 5%;
+            padding-left: 10%;
+            padding-right: 20%;
         }
-        .w-100{
+        .coman{
             width: 100%;
+            padding-right: 4%;
+        }
+        .hp{
             text-align: center;
-            padding: 30px 0px;
+            background-color: #a8b6bd;
+            margin-top: -23px;
+            padding-bottom: 15px;
         }
-        .bg-orange{
-            background-color: orange;
-            color:white;
+        P{
+            font-family:'Montserrat', sans-serif;
         }
-        .bg-pink{
-            background-color: pink;
-            color:white;
+        h3{
+            font-family: 'Montserrat', sans-serif;
+            padding-top: 35px;
         }
-        .bg-blue{
-            background-color: blue;
-            color:white;
-        }
-        @media(max-width:767px){
-            .grid{
-                 display: flex;
-                 flex-wrap:wrap ;
-            }
+        a{
+            font-family: 'Montserrat', sans-serif;
+            color: red;
+            
         }
     </style>
 </head>
 <body>
-    <div style="display:flex;">
-        <div style="background-color:orange;
-        width: 30%;
-        float: left;
-        padding-top: 3%;
-        padding-bottom: 2%;
-        padding-left: 2%;
-        padding-right: 2%;">
-        <p style="text-align: center;">B</p>
+    <div class="flex">
+        <div class="sec1 coman">
+            <div class="imag" >
+                <img src="imag1.jpg" alt="Dental Filling" width="240px" height="155px">
+            </div>
+            <div class="hp" >
+                <h3>Dental Filling</h3>
+                   <p>A smile makeover is the ultimate cosmetic
+                    dental treatment and can literally transform
+                    your teeth into a dazzling...</p>
+                  <a href="http://google.com">Read More</a>
+                
+            </div>
         </div>
-        <div style="background-color: greenyellow;
-        width: 30%;
-        float: left;
-        padding-top: 3%;
-        padding-bottom: 2%;
-        padding-left: 2%;
-        padding-right: 2%;"
-        >
-        <p style="text-align: center;">C</p>
-    </div>
-        <div style="background-color: purple;
-        width: 30%;
-        float: left;
-        padding-top: 3%;
-        padding-bottom: 2%;
-        padding-left: 2%;
-        padding-right: 2%;">
-        <p style="text-align: center;">D</p>
-    </div>
-    </div>
-    <div style="display:flex;">
-        <div style="background-color:pink;
-        width: 30%;
-        float: left;
-        padding-top: 3%;
-        padding-bottom: 2%;
-        padding-left: 2%;
-        padding-right: 2%;">
-        <p style="text-align: center;">E</p>
+        <div class="sec2 coman">
+            <div class="imag">
+               <img src="imag2.jpg" alt="Root Canal Treatment" width="240px" height="155px">
+            </div>
+            <div class="hp">
+               <h3>Root Canal Treatment</h3>
+                <p>A smile makeover is the ultimate cosmetic
+                 dental treatment and can literally transform
+                  your teeth into a dazzling...</p>
+                  <a href="http://google.com"> Read More</a>
+            </div>
         </div>
-        <div style="background-color:green;
-        width: 30%;
-        float: left;
-        padding-top: 3%;
-        padding-bottom: 2%;
-        padding-left: 2%;
-        padding-right: 2%;">
-        <p style="text-align: center;">F</p>
-    </div>
-        <div style="background-color:blue;
-        width: 30%;
-        float: left;
-        padding-top: 3%;
-        padding-bottom: 2%;
-        padding-left: 2%;
-        padding-right: 2%;">
-        <p style="text-align: center;">A</p>
-    </div>
-    </div>
-
-    <div class="grid">
-        <div class="w-100 bg-blue">
-            <p>
-                A
-            </p>
+        <div class="sec3 coman">
+            <div class="imag">
+                <img src="imag3.jpg" alt="Braces & Aligners" width="240px" height="155px">
+            </div>
+            <div class="hp">
+                <h3>Braces & Aligners</h3>
+                 <p>A smile makeover is the ultimate cosmetic
+                 dental treatment and can literally transform
+                  your teeth into a dazzling...</p>
+                  <a href="http://google.com">Read More</a>
+            </div>
         </div>
-        <div class="w-100 bg-orange">
-            <p>
-                B
-            </p>
-        </div>
-        <div class="w-100 bg-pink">
-            <p>
-                C
-            </p>
+        <div class="sec4 coman">
+            <div class="imag">
+                <img src="imag4.jpeg" alt="Dental Implant" width="240px" height="155px">
+            </div>
+            <div class="hp">
+                 <h3>Dental Implant</h3>
+                 <p>A smile makeover is the ultimate cosmetic
+                 dental treatment and can literally transform
+                  your teeth into a dazzling...</p>
+                  <a href="http://google.com">Read More</a>
+            </div>
         </div>
     </div>
 </body>
