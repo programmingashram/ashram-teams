@@ -151,4 +151,54 @@ section{
 }
 .flex-wrap li{
     margin-bottom: 40px;
+    display: block;
+    width: 100%;
 }
+.desigm li{
+    display: inline-block !important;
+    width: auto;
+}
+.font-20{
+    font-size: 20px;
+}
+
+
+@media (max-width: 767px) {
+    .grid{
+        display: flex;
+        flex-wrap: wrap !important;
+    }
+    img{
+        width: 100%;
+    }
+    .img-70{
+        width:70px;
+    }
+    #menu{
+        display: none;
+    }
+    .mobile-menu li{
+        display: block;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .mobile-menu{
+        display: none;
+    }                                                                                                                   
+    #menu:checked~nav .mobile-menu{
+        display: block;
+    }
+    label{
+        position: absolute;
+        right: 26px;
+        top: 11px;
+        font-size: 30px;
+    }
+   
+  }
+  .shadow-box{
+    border-top: 1px solid gray;
+    border-bottom:1px solid gray;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+  }
+  
