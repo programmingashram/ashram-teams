@@ -14,7 +14,7 @@ ul{
     list-style-type: none;
     padding-left: 0;
 }
-li{
+li, .footer-li{
     display: inline-block;
     margin-right: 10px;
 }
@@ -161,7 +161,9 @@ section{
 .font-20{
     font-size: 20px;
 }
-
+.bg-transparent{
+    background-color: white;
+}
 
 @media (max-width: 767px) {
     .grid{
@@ -194,6 +196,9 @@ section{
         top: 11px;
         font-size: 30px;
     }
+    .d-none{
+        display: block !important;
+    }
    
   }
   .shadow-box{
@@ -201,4 +206,28 @@ section{
     border-bottom:1px solid gray;
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
   }
+  .rounded-circle {
+    border-radius: 50%!important;
+}
+.icon-blue{
+    color: #0d6efd!important;
+}
+.bg-light {
+    background-color: #f8f9fa!important;
+    padding: 5px 8px;
   
+  border-radius: 100%;
+}
+.nav-link{
+    display:block;
+   
+}
+.aign-item{
+    align-items:flex-start ;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.d-none{
+    display: none;
+}
