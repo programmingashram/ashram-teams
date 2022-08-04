@@ -1,14 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .main{
+            background-color: darkslategray;
+            color: white;
+            padding-bottom: 10%;
+        }
+        .header{
+            display: flex;
+            padding-top: 2%;
+            padding-bottom: 5%
+        }
+        .list{
+            
+             list-style: none;
+             display: flex;
+             width: 100%;
+             font-family: 'Montserrat', sans-serif;
+        }
+        .logo{
+            width: 100%;
+            padding-left: 5%;
+            font-size: 30px;
+
+        }
+        .center{
+            text-align: center;
+            font-size: 25px;
+        }
+        .description{
+            padding-left: 15%;
+            padding-right: 15%;
+            padding-bottom: 5%;
+        }
+        p{
+            padding-right: 10%;
+        }
+        .btn{
+            color: white;
+            border: 2px solid black;
+            text-decoration: none;
+            padding: 15px;
+            background-color: black;
+            border-radius: 35px;
+        }
+    </style>
 </head>
 <body>
-    <h1>
-        Hii I am Nimisha!!
-    </h1>
+    <div class="main">
+        <div class="header">
+                <h2 class="logo">John Doe</h2>
+           
+                <div class="list">
+                    <p>Home</p>
+                    <p>About</p>
+                    <p>Portfolio</p>
+                    <p>Service</p>
+                    <p>Contact</p>
+                </div>
+            
+        </div>
+        <div class="center">
+            <h1>John Doe</h1>
+            <h3> WEB DESIGNER</h3>
+            <p class="description">We are a team of experienced Website Designers
+                 & Developers based out of Vizag & Hyderabad.
+                We serve across India and beyond. We design 
+                and develop websites for national, regional
+                & local companies.  Our website designing 
+                company experts dive deep to understand the 
+                current market trends and implement them in
+                website Development. At our web design agency,
+                we understand and analyze your needs & goals
+                to design a great website that helps you grow digitally.
+            </P>
+            <a href="#" class="btn">Contact Me</a>
+        </div>
+    </div>
 </body>
 </html>
