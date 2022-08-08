@@ -4,154 +4,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Account</title>
+    <title>Survey form</title>
     <style>
-        body{
+        form{
+            border: 5px solid blue;
+            padding-left: 30px;
+        }
+        .row{
             display: flex;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(135deg, #71b7e6, #9b59b6);
-            padding: 10px;
+            margin-bottom: 5px;
         }
-        .container{
-            max-width: 500px;
-            width: 100%;
-            padding: 25px 30px;
-            background-color: white;
-            border-radius: 5px;
+        label{
+            width: 10%;
+            color: blue;
         }
-        .container .title{
-            font-size: 25px;
-            font-weight: 500;
-            position: relative;
-            text-align: center;
-            padding: 10px;
+        .input-box{
+            width: 20%;
         }
-        .container form .user-details{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            
+        h3{
+            color: blue;
+            font-size: 20px;
         }
-        form .user-details .input-box{
-            width: calc(100% / 2 - 45px);
-            padding-bottom: 5px;
+        .botton{
+            padding-left: 115px;
+            padding-bottom: 10px;
         }
-        .user-details .input-box input{
-         height: 30px;       
-        }
-        .detailss{
-            display: flex;
-            padding-bottom: 5px;
-        }
-        .detailss .gender-details{
-            padding-right: 155px;
-        }
-        .income{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            padding-bottom: 5px;
-        }
-        .profile{
-            display: flex;
-            padding-bottom: 5px;
-            padding-top: 5px;
-        }
-        #email{
-            width: 100%;
-        }
-        .btn{
-            text-align: right;
+        .sub-btn{
+            margin-right: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="title">Create Account</div>
-        <form action="#">
-            <div class="user-details">
-                <div class="input-box">
-                    <span class="details">First Name</span>
-                    <input type="text" name="first name" placeholder="Enter your first Name" required>
-                </div>
-                <div class="input-box">
-                    <span class="details">Last Name</span>
-                    <input type="text" name="last name" placeholder="Enter your last Name" required>
-                </div>
-                <div class="input-box" id="email">
-                    <span class="details">Email</span>
-                    <input type="email" name="email" placeholder="Enter your Email" required>
-                </div>
-                <div class="input-box">
-                    <span class="details">Password</span>
-                    <input type="password" name="password" placeholder="Enter your password" required>
-                </div>
-                <div class="input-box">
-                    <span class="details">conform your password</span>
-                    <input type="password" name="conform password" placeholder="Enter your password agen" required>
-                </div>
+    <section>
+    <form>
+        <div class="contain">
+            <h3>Please complete our Survey</h3>
+        <div class="section">
+             <h4>Contact information</h4>
+             <div class="row">
+              <label for="email">Email Address:</label>
+             <input type="email" name="email" placeholder="enter your email" required class="input-box">
             </div>
-            <div class="detailss">
-                <div class="gender-details">
-                  <span class="gender-title">Gender</span>
-                <div class="category">
-                    <label for="male">
-                        <span class="dot-one"><input type="radio" name="male" id="male"></span>
-                        <span class="gender">Male</span>
-                    </label>
-                    <label for="female">
-                        <span class="dot-one"><input type="radio" name="female" id="female"></span>
-                        <span class="gender">Female</span>
-                    </label>
-                </div>
-              </div>
-              <div class="hobbies-details">
-                <span class="hobbies-title">Hobbies</span>
-                <div class="category">
-                    <label for="Music">
-                        <span class="dot-one"><input type="radio" name="Music" id="Music"></span>
-                        <span class="gender">Music</span>
-                    </label>
-                    <label for="Sports">
-                        <span class="dot-one"><input type="radio" name="Sports" id="Sports"></span>
-                        <span class="gender">Sports</span>
-                    </label>
-                    <label for="Travel">
-                        <span class="dot-one"><input type="radio" name="Travel" id="Travel"></span>
-                        <span class="gender">Travel</span>
-                    </label>
-                </div>
-              </div>
+            <div class="row">
+             <label for="First name">First Name:</label>
+               <input type="text" name="First name" placeholder="enter your First name" required class="input-box">
             </div>
-            <div class="income">
-                <div class="income-source">
-                    <label for="">Source of income</label>
-                    <input type="text" name="income source" placeholder="" required>
-                </div>
-                <div class="income-range">
-                    <label for="">Income</label>
-                    <input type="range" name="income range" placeholder="" required>
-                </div>
-                <div class="profile">
-                    <div class="profile-file">
-                        <label for="file">Upload profile picture</label>
-                        <input type="file" name="file" placeholder="choose file" required>
-                    </div>
-                    <div class="age">
-                        <label for="age">Age</label>
-                        <input type="number" name="age" placeholder="" required>
-                    </div>
-                </div>
+            <div class="row">
+            <label for="Last name">Last Name:</label>
+              <input type="text" name="Last name" placeholder="enter your Last name" required class="input-box">
             </div>
-              <div class="input-box">
-                <span class="submit">Bio</span>
-                <textarea name="bio" id="bio"></textarea>
-            </div>
-            <div class="btn">
-                <input type="submit" />
-            </div>
-        </form>
-    </div>
+        </div>
+        <div class="section">
+           <h4>Geographic information</h4>
+           <div class="row">
+           <label for="State">State:</label>
+           <input type="text" name="State" placeholder="Two characters" required class="input-box">
+        </div>
+        <div class="row">
+           <label for="Zip code">Zip code:</label>
+           <input type="text" name="Zip code" placeholder="Five digits" required class="input-box">
+        </div>
+        </div>
+        <div class="section">
+           <h4>How did you hear about us?</h4>
+           <div class="row">
+          <label for="web search">Web search:</label>
+          <input type="checkbox" name="web search" placeholder="">
+        </div>
+        <div class="row">
+          <label for="Facebook">Facebook:</label>
+          <input type="checkbox" name="Facebook" placeholder="">
+        </div>
+        <div class="row">
+          <label for="Twitter">Twitter:</label>
+          <input type="checkbox" name="Twitter" placeholder="">
+        </div>
+        <div class="row">
+           <label for="Email message">Email message:</label>
+          <input type="checkbox" name="Email message" placeholder="">
+        </div>
+        </div>
+        <div class="btn">
+           <h4>Thank you for taking our survey!</h4>
+           <div class="botton">
+           <input type="submit" name="submit" class="sub-btn">
+           <input type="reset" name="reset">
+        </div>
+        </div>
+      </div>
+    </form>
+</section>
 </body>
 </html>
