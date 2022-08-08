@@ -4,95 +4,173 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey form</title>
+    <title>Login</title>
     <style>
-        form{
-            border: 5px solid blue;
-            padding-left: 30px;
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
-        .row{
+        section{
             display: flex;
-            margin-bottom: 5px;
+            margin-left: 5%;
+            margin-right: 5%;
         }
-        label{
-            width: 10%;
-            color: blue;
+        nav{
+            width: 50%;
+            background-image: url(log.jpeg);
+            background-repeat: no-repeat;
         }
-        .input-box{
-            width: 20%;
+        .left-side{
+            background-color: rgba(46, 75, 133, 0.5);
+            padding-top: 1px;
+            padding-left: 20px;
         }
-        h3{
-            color: blue;
+        h1{
+            font-size: 130px;
+            color: white;
+            margin-bottom: 35px;
+            margin-top: 20px;
+        }
+        .detail{
+            color: white;
+        }
+        h4{
+            color: white;
+        }
+        .button{
+            border-radius: 20px;
+            font-size: 15px;
+            color: white;
+            font-weight: 500;
+            outline: none;
+        }
+        .facebook-btn {
+            background: #093961;
+            padding: 10px 40px;
+            margin-right: 20px;
+        }
+        .fa-facebook-f{
             font-size: 20px;
         }
-        .botton{
-            padding-left: 115px;
-            padding-bottom: 10px;
+        .i-btn{
+            padding: 9px 10px 100px 0px;
         }
-        .sub-btn{
-            margin-right: 20px;
+        .twitter-btn{
+            background: #58a5e4;
+            padding: 10px 40px;
+            text-decoration: none;
+        }
+        .fa-twitter{
+            font-size: 20px;
+            padding-right: 5px;
+        }
+        form{
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+        h2{
+            border-bottom: 1px solid silver;
+            font-size: 40px;
+        }
+        .signup-link{
+            font-size: 20px;
+        }
+        .head{
+            padding-left: 10PX;
+        }
+        .create{
+            text-decoration: none;
+        }
+        .txt-field{
+            position: relative;
+            border-bottom: 2px solid #adadad;
+            margin: 30px 0;
+        }
+        .txt-field input{
+            width: 100%;
+            padding: 0 5px;
+            height: 40px;
+            font-size: 16px;
+            border: none;
+            background: none;
+            outline: none;
+        }
+        .remember{
+            width: 70%;
+        }
+        .pass{
+            color: #a6a6a6;
+        }
+        .pass:hover{
+            text-decoration: underline;
+        }
+        .last{
+            display: flex;
+            padding: 25px 0;
+        }
+        .btn{
+            background: #72f00a;
+            border-radius: 40px;
+            font-size: 23px;
+            color: white;
+            font-weight: 500;
+            outline: none;
+            padding: 10px 30px 10px 30px;
+            text-decoration: none;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+        }
+        .btn-div{
+            margin-left: 340px;
+            padding-top: 10px;
         }
     </style>
 </head>
 <body>
     <section>
-    <form>
-        <div class="contain">
-            <h3>Please complete our Survey</h3>
-        <div class="section">
-             <h4>Contact information</h4>
-             <div class="row">
-              <label for="email">Email Address:</label>
-             <input type="email" name="email" placeholder="enter your email" required class="input-box">
-            </div>
-            <div class="row">
-             <label for="First name">First Name:</label>
-               <input type="text" name="First name" placeholder="enter your First name" required class="input-box">
-            </div>
-            <div class="row">
-            <label for="Last name">Last Name:</label>
-              <input type="text" name="Last name" placeholder="enter your Last name" required class="input-box">
+        <nav>
+            <div class="left-side">
+            <h1>Hello World.</h1>
+            <p class="detail">
+                Web developers create and maintain websites. They are 
+                also responsible for the site's technical aspects, 
+                such as its performance and capacity, 
+                 
+            </p>
+            <h4><strong>Login with social media</strong></h4>
+            <div class="i-btn">
+               <a href="#" class="button facebook-btn"><i class="fa-brands fa-facebook-f"></i></a>
+               <a href="#" class="button twitter-btn"><i class="fa-brands fa-twitter"></i>Login with Twitter</a>
             </div>
         </div>
-        <div class="section">
-           <h4>Geographic information</h4>
-           <div class="row">
-           <label for="State">State:</label>
-           <input type="text" name="State" placeholder="Two characters" required class="input-box">
-        </div>
-        <div class="row">
-           <label for="Zip code">Zip code:</label>
-           <input type="text" name="Zip code" placeholder="Five digits" required class="input-box">
-        </div>
-        </div>
-        <div class="section">
-           <h4>How did you hear about us?</h4>
-           <div class="row">
-          <label for="web search">Web search:</label>
-          <input type="checkbox" name="web search" placeholder="">
-        </div>
-        <div class="row">
-          <label for="Facebook">Facebook:</label>
-          <input type="checkbox" name="Facebook" placeholder="">
-        </div>
-        <div class="row">
-          <label for="Twitter">Twitter:</label>
-          <input type="checkbox" name="Twitter" placeholder="">
-        </div>
-        <div class="row">
-           <label for="Email message">Email message:</label>
-          <input type="checkbox" name="Email message" placeholder="">
-        </div>
-        </div>
-        <div class="btn">
-           <h4>Thank you for taking our survey!</h4>
-           <div class="botton">
-           <input type="submit" name="submit" class="sub-btn">
-           <input type="reset" name="reset">
-        </div>
-        </div>
-      </div>
-    </form>
-</section>
+        </nav>
+        <aside>
+            <div class="head">
+            <h2>Login</h2>
+               <p class="signup-link">Don't have an account? <a href="#" class="create">Create your account,</a>
+                it takes less than a minute</p>
+            </div>
+            <form>
+                <div class="txt-field">
+                   <input type="text" class="name" placeholder="Use name" required>
+                </div>
+                <div class="txt-field">
+                   <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <div class="last">
+                    <div class="remember">
+                     <input type="checkbox" name="checkbox">
+                     <label for="remember" class="pass">Remember Me</label>
+                   </div>
+                   <label class="pass">Forgot Password?</label>
+               </div>
+               <div class="btn-div">
+                <a href="#" class="btn">Login</a>
+            </div>
+            </form>
+        </aside>
+    </section>
+    <script src="https://kit.fontawesome.com/cac2d0a2ae.js" crossorigin="anonymous"></script>
 </body>
 </html>
