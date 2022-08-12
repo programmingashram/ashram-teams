@@ -8,69 +8,75 @@
        <style>
          body{
            margin:0px;
-            background-color: blue;
+            background-color:pink;
+         }
+         .col{
+          width: 100%;
          }
          .form-main{
-          width: 40%;
+          width: 50%;
           margin:0 auto;
           background-color:white;
-          padding:20px;
-          margin-top:20px;
-         }
-        label{
-          display:block;
+          padding:50px;
+          margin-top:50px;
+          margin-right: 50px;
          }
          input{
           width:95%;
           padding:10px;
+          border-radius: 50px;
          }
          .btn{
-          padding:10px ;
+          padding:10px;
           border:none;
-          width:100%;
+          width:95%;
           margin-top:10px;
+          color:black;
+          background-color:blueviolet;
          }
          .margin-top{
            margin-top:10px;
          }
+         .grid{
+          display: flex;
+         }
+         img{
+          width:75%;
+          margin-top: 50px;
+          margin-left: 50px;
+         }
+         textarea{
+          width: 95%;
+          border-radius: 20px;
+         }
        </style>
 </head>
 <body>
-     <div class="form-main">
-       <from action="#">
-         <h1> APPOINTMENT</h1>
-        <div class="margin-top">
-           <lable for="" > NAME</lable><br>
-           <input type="" placeholder="Type Your Name"/><br>
-       </div>
-       <div class="margin-top">
-          <lable for="">Email</lable><br>
-           <input type="" placeholder="Type Your Email"/><br>
-       </div>
-       <div class="margin-top">
-           <lable for="">Date of birth</lable><br>
-             <input type="" placeholder="Type Your Birth "/><br>
-       </div>
-       <div class="margin-top">
-         <lable for=""> phone </lable><br>
-           <input type="" placeholder="Type Your Number"/><br>
-       </div>
-       <div class="margin-top">
-         <lable for="">Doctor</lable><br>
-           <input type="" placeholder="Dr.Name"/><br>
-       </div>
-       <div class="margin-top">
-         <lable>Date</lable><br>
-          <input type="number"/><br>
-       </div>
-       <div class="margin-top">
-        <lable> Time</lable><br>
-          <input type="number"><br>
-       </div>
-       <div>
-            <button type="btn"> submit</button><br>
-       </div>
-       </form>
+    <div class="grid">
+        <div class="col">
+            <div class="img">
+             <img src="./image/images.png" alt="">
+            </div>
+        </div>
+        <div class="col">
+          <div class="form">
+            <from action="#">
+                <h1>Get in touch </h1>
+                 <div class="margin-top">
+                   <input type="" placeholder="Name"/><br>
+                 </div>
+                  <div class="margin-top">
+                   <input type="" placeholder="email"/><br>
+                  </div>
+                  <div class="margin-top">
+                   <textarea name="" id="" cols="30" rows="10" placeholder=" massage..." height="70"></textarea>
+                  </div>
+                   <div>
+                     <button type="btn" class="btn">send</button>
+                   </div>
+              </from>
+          </div>
+        </div>
      </div>
 </body>
 </html>

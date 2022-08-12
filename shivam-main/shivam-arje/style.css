@@ -144,6 +144,7 @@ section{
     padding: 10px;
     font-size: 17px;
     border-radius: 3px;
+    box-shadow: 5px 4px 11px 0px #808080ab;
 }
 
 .flex-wrap{
@@ -187,7 +188,7 @@ section{
     .mobile-menu{
         display: none;
     }                                                                                                                   
-    #menu:checked~nav .mobile-menu{
+    #menu:checked ~ nav .mobile-menu{
         display: block;
     }
     label{
@@ -219,7 +220,7 @@ section{
   border-radius: 100%;
 }
 .nav-link{
-    display:block;
+    display:block !important;
    
 }
 .aign-item{
@@ -230,4 +231,31 @@ section{
 }
 .d-none{
     display: none;
+}
+.color-black{
+    color: black;
+} 
+label{
+    display:block;
+  
+}
+input{
+    padding: 10px 20px;
+} 
+.t-left{
+    text-align: left;
+}
+.inpu-labl{
+    display: inline-block;
+}
+.padd-64{
+    padding: 64px;
+}
+.btn{
+    background-color: #212529;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+    margin-top: 20px;
 }
