@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+}
+.container{
+    width: 80%;
+    margin:0 auto;
+}
+
+.font-s{
+    font-size: 120px;
+}
+.grid{
+    display:flex;
+    align-items: center;
+}
+
+.col{
+    width: 100%;
+}
+.bg-img{
+    background-image: url(bg-img/HD-wallpaper-girl-taking-a-in-nature-8k-graphy-nature-girls-camera.jpg);
+    background-repeat:no-repeat ;
+    color:white;
+    background-size: cover;
+}
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+li{
+    display:inline-block
+}
+a{
+    text-decoration:none;
+    margin-right: 15px;
+}
+.bg-blue{
+    background-color: hsl(221deg 45% 49%);
+    padding: 10px 45px;
+    border-radius: 50px;
+    color: white
+}
+.bg-primary{
+    background-color: hsl(196deg 82% 60%);
+    padding: 10px 45px;
+    border-radius: 50px;
+    color:white;
+}
+/* .para{
+    line-height: 40px;
+} */
+
+.layer{
+    background: #0000ff6b;
+    padding: 20px;
+}
+.tile-2{
+    padding: 30px;
+}
+.font-size{
+    font-size:60px;
+}
+input{
+    border: none;
+    border-bottom: 1px solid black;
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+}
+.color-black{
+    color: black;
+}
+
+.dinline{
+    display: inline-block !important;
+    width: auto;
+}
+.bg-green{
+    background-color: greenyellow;
+    padding: 10px 50px;
+    border-radius: 50px;
+}
+.t-right{
+    text-align: right;
+    margin-top: 60px;
+}
+.mrgin-t{
+    margin-top: 30px;
+}
+
+.btn{
+    box-shadow: 3px 7px 11px 4px hsl(85deg 58% 70%);
+    color: white;
+}
+section{
+    margin-top: 50px;
+}
