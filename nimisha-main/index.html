@@ -4,175 +4,319 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <script src="https://kit.fontawesome.com/cac2d0a2ae.js" crossorigin="anonymous"></script>
+    <title>Table formate</title>
     <style>
         body{
-            margin: 0;
-            padding: 0;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 35px 70px;
         }
-        section{
-            display: flex;
-            margin-left: 5%;
-            margin-right: 5%;
-        }
-        nav{
-            width: 50%;
-            background-image: url(log.jpeg);
-            background-repeat: no-repeat;
-        }
-        .left-side{
-            background-color: rgba(46, 75, 133, 0.5);
-            padding-top: 1px;
-            padding-left: 20px;
-        }
-        h1{
-            font-size: 130px;
-            color: white;
-            margin-bottom: 35px;
-            margin-top: 20px;
-        }
-        .detail{
-            color: white;
-        }
-        h4{
-            color: white;
-        }
-        .button{
-            border-radius: 20px;
-            font-size: 15px;
-            color: white;
-            font-weight: 500;
-            outline: none;
-            cursor: pointer;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-        }
-        .facebook-btn {
-            background: #093961;
-            padding: 10px 40px;
-            margin-right: 20px;
-        }
-        .fa-facebook-f{
-            font-size: 20px;
-        }
-        .i-btn{
-            padding: 9px 10px 100px 0px;
-        }
-        .twitter-btn{
-            background: #58a5e4;
-            padding: 10px 40px;
-            text-decoration: none;
-        }
-        .fa-twitter{
-            font-size: 20px;
-            padding-right: 5px;
-        }
-        form{
-            padding: 0 20px;
-            box-sizing: border-box;
-        }
-        h2{
-            border-bottom: 1px solid silver;
-            font-size: 40px;
-        }
-        .signup-link{
-            font-size: 20px;
-        }
-        .head{
-            padding-left: 10PX;
-        }
-        .create{
-            text-decoration: none;
-        }
-        .txt-field{
-            position: relative;
-            border-bottom: 2px solid #adadad;
-            margin: 30px 0;
-        }
-        .txt-field input{
+        table{
             width: 100%;
-            padding: 0 5px;
-            height: 40px;
-            font-size: 16px;
-            border: none;
-            background: none;
-            outline: none;
+            border-collapse: collapse;
         }
-        .remember{
-            width: 70%;
+        tbody{
+            text-align: center;
         }
-        .pass{
-            color: #a6a6a6;
+        th{
+            padding-bottom: 15px;
         }
-        .pass:hover{
-            text-decoration: underline;
+        td{
+            background-color: antiquewhite;
+            padding: 10px 5px 10px 10px;
         }
-        .last{
+        .patient-detail{
             display: flex;
-            padding: 25px 0;
+            align-items: center;
         }
-        .btn{
-            background: #72f00a;
-            border-radius: 40px;
-            font-size: 23px;
+        .patient-img{
+            width: 50px;
+            border-radius: 100px;
+        }
+        .name{
+            line-height: 0px;
+            padding-left: 10px;
+        }
+        .age{
+            color: grey;
+            font-size: 14px;
+        }
+        .consult{
+            background-color: limegreen;
+            padding: 5px;
+            border-radius: 10px;
             color: white;
-            font-weight: 500;
-            outline: none;
-            padding: 10px 30px 10px 30px;
-            text-decoration: none;
-            cursor: pointer;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
         }
-        .btn-div{
-            margin-left: 340px;
-            padding-top: 10px;
+        .revisit{
+            color: white;
+            background-color: blue;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        .line{
+            line-height: 0px;
+        }
+        .date{
+            font-size: 14px;
+            color: grey;
+        }
+        .contact{
+            color: rgb(55, 55, 247);
+            font-size: 12px;
+        }
+        .fa-solid{
+            color: deepskyblue;
         }
     </style>
 </head>
 <body>
-    <section>
-        <nav>
-            <div class="left-side">
-            <h1>Hello World.</h1>
-            <p class="detail">
-                Web developers create and maintain websites. They are 
-                also responsible for the site's technical aspects, 
-                such as its performance and capacity, 
-                 
-            </p>
-            <h4><strong>Login with social media</strong></h4>
-            <div class="i-btn">
-               <a href="#" class="button facebook-btn"><i class="fa-brands fa-facebook-f"></i></a>
-               <a href="#" class="button twitter-btn"><i class="fa-brands fa-twitter"></i>Login with Twitter</a>
-            </div>
-        </div>
-        </nav>
-        <aside>
-            <div class="head">
-            <h2>Login</h2>
-               <p class="signup-link">Don't have an account? <a href="#" class="create">Create your account,</a>
-                it takes less than a minute</p>
-            </div>
-            <form>
-                <div class="txt-field">
-                   <input type="text" class="name" placeholder="Use name" required>
-                </div>
-                <div class="txt-field">
-                   <input type="password" name="password" placeholder="Password" required>
-                </div>
-                <div class="last">
-                    <div class="remember">
-                     <input type="checkbox" name="checkbox">
-                     <label for="remember" class="pass">Remember Me</label>
-                   </div>
-                   <label class="pass">Forgot Password?</label>
-               </div>
-               <div class="btn-div">
-                <a href="#" class="btn">Login</a>
-            </div>
-            </form>
-        </aside>
-    </section>
-    <script src="https://kit.fontawesome.com/cac2d0a2ae.js" crossorigin="anonymous"></script>
+    <h2>Appointments</h2>
+    <table>
+        <thead>
+            <th>
+                Patient
+            </th>
+            <th>
+                Status
+            </th>
+            <th>
+                Appointment
+            </th>
+            <th>
+                Phone
+            </th>
+            <th>
+                Doctor
+            </th>
+            <th>
+                Actions
+            </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="patient-detail">
+                        <div>
+                            <img src="img.jpg" alt="kiran acharya" class="patient-img">
+                        </div>
+                        <div class="name">
+                            <h4>kiran acharya</h4>
+                            <p class="age">25 yrs, Male</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <span class="revisit">Revisit</span>
+                </td>
+                <td class="line">
+                    <h5>07:00 PM</h5>
+                    <P class="date">16 Aug 2022</P>
+                </td>
+                <td class="line">
+                    <h5>+91 1234567890</h5>
+                    <p class="contact">Contact</p>
+                </td>
+                <td>
+                    <h5>Dr. Ananth</h5>
+                </td>
+                <td>
+                    <div class="icon">
+                        <i class="fa-solid fa-asterisk"></i>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="patient-detail">
+                        <div>
+                            <img src="img1.jpg" alt="Sandeep Hengde" class="patient-img">
+                        </div>
+                        <div class="name">
+                            <h4>Sandeep Hengde</h4>
+                            <p class="age">26 yrs, Male</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <span class="consult">Consult</span>
+                </td>
+                <td class="line">
+                    <h5>07:30 PM</h5>
+                    <P class="date">16 Aug 2022</P>
+                </td>
+                <td class="line">
+                    <h5>+91 1234567890</h5>
+                    <p class="contact">Contact</p>
+                </td>
+                <td>
+                    <h5>Dr. Ananth</h5>
+                </td>
+                <td>
+                    <div class="icon">
+                        <i class="fa-solid fa-asterisk"></i>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="patient-detail">
+                        <div>
+                            <img src="img4.jpg" alt="John Deo" class="patient-img">
+                        </div>
+                        <div class="name">
+                            <h4>John Deo</h4>
+                            <p class="age">24 yrs, Male</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <span class="consult">Consult</span>
+                </td>
+                <td class="line">
+                    <h5>08:00 PM</h5>
+                    <P class="date">16 Aug 2022</P>
+                </td>
+                <td class="line">
+                    <h5>+91 1234567890</h5>
+                    <p class="contact">Contact</p>
+                </td>
+                <td>
+                    <h5>Dr. Ananth</h5>
+                </td>
+                <td>
+                    <div class="icon">
+                        <i class="fa-solid fa-asterisk"></i>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="patient-detail">
+                        <div>
+                            <img src="img3.jpg" alt="Vishwanath" class="patient-img">
+                        </div>
+                        <div class="name">
+                            <h4>Vishwanath</h4>
+                            <p class="age">25 yrs, Male</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <span class="consult">Consult</span>
+                </td>
+                <td class="line">
+                    <h5>08:15 PM</h5>
+                    <P class="date">16 Aug 2022</P>
+                </td>
+                <td class="line">
+                    <h5>+91 1234567890</h5>
+                    <p class="contact">Contact</p>
+                </td>
+                <td>
+                    <h5>Dr. Ananth</h5>
+                </td>
+                <td>
+                    <div class="icon">
+                        <i class="fa-solid fa-asterisk"></i>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="patient-detail">
+                        <div>
+                            <img src="img4.jpg" alt="kiran acharya" class="patient-img">
+                        </div>
+                        <div class="name">
+                            <h4>kiran acharya</h4>
+                            <p class="age">25 yrs, Male</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <span class="revisit">Revisit</span>
+                </td>
+                <td class="line">
+                    <h5>07:00 PM</h5>
+                    <P class="date">16 Aug 2022</P>
+                </td>
+                <td class="line">
+                    <h5>+91 1234567890</h5>
+                    <p class="contact">Contact</p>
+                </td>
+                <td>
+                    <h5>Dr. Ananth</h5>
+                </td>
+                <td>
+                    <div class="icon">
+                        <i class="fa-solid fa-asterisk"></i>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="patient-detail">
+                        <div>
+                            <img src="img.jpg" alt="Sandeep Hengde" class="patient-img">
+                        </div>
+                        <div class="name">
+                            <h4>Sandeep Hengde</h4>
+                            <p class="age">26 yrs, Male</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <span class="consult">Consult</span>
+                </td>
+                <td class="line">
+                    <h5>08:30 PM</h5>
+                    <P class="date">16 Aug 2022</P>
+                </td>
+                <td class="line">
+                    <h5>+91 1234567890</h5>
+                    <p class="contact">Contact</p>
+                </td>
+                <td>
+                    <h5>Dr. Ananth</h5>
+                </td>
+                <td>
+                    <div class="icon">
+                        <i class="fa-solid fa-asterisk"></i>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="patient-detail">
+                        <div>
+                            <img src="img3.jpg" alt="John Deo" class="patient-img">
+                        </div>
+                        <div class="name">
+                            <h4>John Deo</h4>
+                            <p class="age">24 yrs, Male</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <span class="consult">Consult</span>
+                </td>
+                <td class="line">
+                    <h5>08:45 PM</h5>
+                    <P class="date">16 Aug 2022</P>
+                </td>
+                <td class="line">
+                    <h5>+91 1234567890</h5>
+                    <p class="contact">Contact</p>
+                </td>
+                <td>
+                    <h5>Dr. Ananth</h5>
+                </td>
+                <td>
+                    <div class="icon">
+                        <i class="fa-solid fa-asterisk"></i>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
