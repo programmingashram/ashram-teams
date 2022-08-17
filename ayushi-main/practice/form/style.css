@@ -1,0 +1,34 @@
+body{
+    margin:0px;
+}
+table{
+    width:100%;
+    text-align: left;
+    border-collapse: collapse;
+    margin-left:10px;
+}
+table,th,td{
+  border:1px solid black;
+}
+
+.icon{
+    width: 50px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+.grid{
+    display: flex;
+    align-items: center;
+}
+.details{
+    line-height: 0;
+}
+
+.badge{
+    padding: 5px 8px;
+    border-radius: 50px;
+}
+.badge-blue{
+    background-color: blue;
+    color: white;
+}
