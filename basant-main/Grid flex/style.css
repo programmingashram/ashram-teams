@@ -1,0 +1,56 @@
+.container{
+    width:80%;
+    margin:0 auto;
+}
+body{
+    margin:0;
+}
+.grid{
+    display:flex;
+    align-items: center;
+}
+.colm{
+    width:100%;
+    padding:10px;
+    border:1px solid gray;
+    border-radius: 3px;
+    margin:10px;
+    box-shadow: 0px 1px 2px 2px #c0aaaa;
+}
+p{
+    font-size:20px;
+}
+.col-1{
+    background-color: aliceblue;
+}
+.col-2{
+    background-color: rgb(200, 201, 202);
+}
+.col-3{
+    background-color: rgb(238, 240, 241);
+}
+.col-4{
+    background-color: rgb(240, 253, 255);
+}
+.col-5{
+    background-color: rgb(255, 249, 240);
+}
+.col-6{
+    background-color: rgb(193, 198, 202);
+}
+.col-7{
+    background-color: rgb(249, 240, 255);
+}
+.col-8{
+    background-color: rgb(241, 187, 199);
+}
+.col-9{
+    background-color: rgb(217, 241, 212);
+}
+button{
+    padding: 5px;
+    margin: :10px;
+}
+a{
+    text-decoration: none;
+}
