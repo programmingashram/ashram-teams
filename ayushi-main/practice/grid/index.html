@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+</head>
+<style>
+body{
+  margin:0px;
+}
+.grid{
+  display:flex;
+}
+.col{
+  width:100%;
+  margin: 20px;
+  
+}
+input{
+  width:100%;
+  padding:10px 5px;
+  margin-bottom: 20px;
+  border:none;
+  border-bottom: 2px solid black;
+}
+label{
+  display:block;
+}
+.from{
+  margin:0 auto;
+  width:30px;
+  padding:20px;
+}
+.btn{
+  border-radius: 50px;
+  font-size: 10px;
+  background-color: blue;
+  color:white;
+  padding:10px 30px;
+  margin:10px;
+}
+.continer{
+  width:80%;
+  margin:0 auto;
+}
+.bg-image{
+  background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYkWUSSBG0cSo-YZjdsB5TOhjNWQeBaEAj4g&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.layer{
+  background-color: #0000ff8c;
+  color:white;
+}
+.content{
+  padding: 15px;
+}
+.c-w{
+  color:blueviolet;
+}
+.w-auto{
+  width: auto;
+}
+.text-right{
+  text-align: right;
+}
+</style>
+<body>
+<div class="continer">
+  <div class="grid">
+    <div class="col">
+        <div class="bg-image">
+          <div class="layer">
+            <div class="content">
+              <h1>Hello</h1>
+            <h1>world.</h1>
+            <P>Epsum factorial non deposite quid pro quo hie escoral.olypion quarrel et gorilla congolium</P>
+
+            <p>Login with social media</p>
+              <lable for="#">
+                  <button type="btn" class="btn">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </button>
+              </lable>
+              <lable for="#">
+                  <button type="btn" class="btn">
+                    <i class="fa-brands fa-twitter"></i>
+                    login with twitter
+                  </button>
+              </lable>
+            </div>
+          </div>
+        </div>
+    </div> 
+    <div class="col">
+      <h1>Login</h1>
+        <p>Dont have an accout?<a href="#" class="c-w">create your account,</a>it takes less than a minute</p>
+        <form action="">
+          <input type="" placeholder="User name"/><br>
+        <input type="" placeholder="password"/><br>
+        <div class="grid">
+          <div class="col">
+            <input type="checkbox" class="w-auto" />
+            <lable>Remeber Me</lable>
+          </div>
+          <div class="col">
+            <a href="">Forget password</a>
+          </div>
+        </div>
+        <div class="text-right">
+          <button type="btn"  class="btn">Login</button>
+        </div>
+        </form>
+      </div>
+  </div>
+</div>
+ </body>
+</html>
