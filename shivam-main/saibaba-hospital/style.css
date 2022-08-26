@@ -1,6 +1,9 @@
 *{
     margin: 0;
 }
+body{
+    font-family: 'Raleway', sans-serif;
+}
 .container{
     width: 80%;
     margin:0 auto;
@@ -37,7 +40,7 @@ nav{
 }
 .navmenu > ul a{
     color:black;
-    font-size: 18px;
+    font-size: 15px;
 }
 .position{
     position:sticky;
@@ -99,4 +102,44 @@ h3 {
 }
 .text-end{
     text-align: end;
+}
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.btn-yellow{
+    background-color: rgb(242 205 0);
+}
+.color-blue{
+    color: blue;
+}
+.doctors{
+    border: 1px dashed;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+.footer-menu li{
+    display: block;
+}
+img ~ h1{
+    color: white;
+}
+
+footer{
+    background-color: black;
+    margin-top: 60px;
+
+}
+.color-yellow{
+    color: rgb(242 205 0);
+}
+ul{
+    padding-left: 0;
+}
+a > i{
+    color: rgb(242 205 0);
+}
+h4 > i{
+    color: rgb(43 22 119);
 }
