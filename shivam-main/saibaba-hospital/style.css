@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+.container{
+    width: 80%;
+    margin:0 auto;
+}
+.grid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.font-s{
+    font-size: 18px;
+    margin: 0px;
+}
+.col{
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    display: inline-block;
+    margin: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    background-color:rgb(242 205 0);
+    color: white;
+}
+nav{
+    background-color: white;
+}
+.navmenu > ul a{
+    color:black;
+    font-size: 15px;
+}
+.position{
+    position:sticky;
+    top: 0;
+}
+.width{
+    width:100%;
+}
+article{
+    margin-top:60px
+}
+h2{
+    font-size: 30px;
+}
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.margin-top{
+    margin-top: 20px;
+}
+.btn{
+    background-color: rgb(43 22 119);
+    color: white;
+    padding: 14px 40px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-top: 15px;
+}
+.hover-me:hover{
+    background-color: brown;
+    transition: 0.4s;
+}
+.img-pad{
+    padding: 20px;
+}
+.text-center{
+    text-align: center;
+}
+.img-border{
+    border: 1px solid white;
+}
+.bg-img{
+   border: 4px solid white;
+   width: 96%;
+   height: 150px;
+   object-fit: cover;
+}
+
+.block-content{
+    margin: 10px;
+    padding: 15px;
+    background: blue;
+    border: 1px dashed white;
+}
+.s-list{
+    line-height: 30px;
+}
+.text-end{
+    text-align: end;
+}
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.btn-yellow{
+    background-color: rgb(242 205 0);
+}
+.color-blue{
+    color: blue;
+}
+.doctors{
+    border: 1px dashed;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+.footer-menu li{
+    display: block;
+}
+img ~ h1{
+    color: white;
+}
+
+footer{
+    background-color: black;
+    margin-top: 60px;
+
+}
+.color-yellow{
+    color: rgb(242 205 0);
+}
+ul{
+    padding-left: 0;
+}
+a > i{
+    color: rgb(242 205 0);
+}
+h4 > i{
+    color: rgb(43 22 119);
+}
+.font-size{
+    font-size: 36px;
+}
+.about-items{
+    background-color: rgb(255 165 0);
+    padding: 15px;
+}
+.about-items p{
+    background-color: rgb(242 205 0);
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px dashed black;
+
+}
