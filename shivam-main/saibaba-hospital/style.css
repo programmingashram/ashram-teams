@@ -143,3 +143,18 @@ a > i{
 h4 > i{
     color: rgb(43 22 119);
 }
+.font-size{
+    font-size: 36px;
+}
+.about-items{
+    background-color: rgb(255 165 0);
+    padding: 15px;
+}
+.about-items p{
+    background-color: rgb(242 205 0);
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px dashed black;
+
+}
