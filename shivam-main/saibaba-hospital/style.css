@@ -156,5 +156,35 @@ h4 > i{
     margin-top: 10px;
     margin-bottom: 10px;
     border: 1px dashed black;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+button{
+    padding: 10px 25px;
+    background-color:  rgb(255 165 0);
+    border: none;
+}
 
+.header-ul a i{
+    color: white;
+}
+
+.contact-info ul li{
+    display: block;
+}
+.contact-info ul li a{
+    color: black;
+}
+.contact-info {
+    margin-left: 30px;
 }
