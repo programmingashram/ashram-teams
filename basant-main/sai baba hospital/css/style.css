@@ -1,0 +1,201 @@
+*{
+	padding:0px;
+	margin:0px;
+	box-sizing:border-box;
+}
+.container{
+	margin: 0 auto;
+	width:90%;
+}
+.text-center{
+	text-align:center;
+}	
+.text-right{
+	text-align:right;
+}
+.text-left{
+	text-align:left;
+}
+.text-justify{
+	text-align:justify;
+}
+.line-height{
+	line-height:30px;
+}
+.line-hight{
+	line-height:3 0px;
+}
+.font-style{
+	font-style:itelic;
+}
+.font-weight{
+	font-weight:bold;
+}
+.bg-color{
+	background-color:gray;
+	padding: 8px;
+    border-radius: 4px;
+}
+.color-white{
+	
+	color:white;
+}
+.margin-top1{
+	margin-top: 60px;
+}
+
+.margin-top{
+	margin-top: 26px;
+}
+.margin-lf{
+	margin-left:5px;
+	padding:15px;
+	
+}
+.margin-lf01{
+	margin-left:33%;
+	padding:15px;
+	
+}
+
+.margin-bt{
+	margin-botom:20px 10px;
+}
+
+.font-size{
+	font-size:21px;
+	
+}
+.font-family{
+	
+    font-family: sans-serif;
+	    list-style-type: none;
+}
+
+
+.text-decoration{
+	text-decoration:none;
+}
+.display-block{
+	display:block;
+}
+.display-inline-block{
+	display:inline-block;
+}
+.float-left{
+	float:left;
+}
+.float-right{
+	float:right;
+}
+.margin-lr{
+	margin:0px 20px;
+}
+.margin-tb{
+	margin: 10px 10px;
+}
+.padding-tb{
+	padding: 10px 0px;
+}
+.padding-lr{
+	padding:0px 10px;
+}
+.col-md-02{
+	width:50%;
+}
+.col-md-03{
+	width:33.33%;
+}
+.col-md-04{
+	width:25%;
+}
+.col-md-05{
+	width:20%;
+}
+.clearfix{
+	clear:both;
+}
+.list-style-type{
+	list-style-type:none;
+}
+.box-shadow{
+	box-shadow: 0px 0px 10px 2px red;
+}
+.img{
+	
+	display:block;
+	width:100%;
+	vertical-align:middle;
+	
+	
+}
+
+.slider>img{
+	height:300px;
+}
+.padding-lf-01{
+	padding-left:55px;
+}
+.padding-lf{
+	padding-left:15px;
+}
+.height-1 img{
+	height:200px;
+}
+.img-s img{
+	height: 200px;
+    width: 100%;
+}
+.bg-color1{
+	background-color:#211faf;
+	border:10px solid white;
+	color:white;
+	padding:10px;
+}
+.border{
+	border:5px solid red;
+	
+	
+}
+.color{
+	color:gray;
+}
+.padding{
+	padding:10px;
+}
+.hov:hover{
+	color:#009bd9;	
+}
+.font-w{
+	font-weight:bold;
+}
+.padding-right{
+	padding-left: 4%;
+}
+.border{
+	border: 1px dashed rgb(211 211 211);
+	
+	margin-left:10px;
+	margin:10px;
+}
+.width{
+	
+	width:18%;
+	padding:20px;
+}
+.background{
+	background-color:#808080;
+	padding:19px;
+}
+.margin{
+	margin:10px;
+}
+.line{
+	height:1px;
+	width:65%;
+	background-color:gray;
+	margin:0 auto;
+}
+.color{
+	color:black;
+}
