@@ -1,35 +1,41 @@
+
 .grid{
     display: flex;
     align-items: center;
 }
+
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
+    font-family: 'Raleway', sans-serif;
 }
 .col{
     width:100%;
 }
 ul{
      list-style: none;
+     padding-left: 0;
     
 }
 a{
     text-decoration: none;
     color:white;           
 }
-nav{
-    padding-bottom: 10px;
-}
+
 li{
     display: inline-block;
     margin-left: 15px;
 }
-.clr{
+.clr-1{
      background-color:rgb(0 72 108);
 }
 .mar{
     border: 1px solid rgb(255 255 255);
-    padding: 2px;
+    padding: 14px 42px;
     margin: 2px;
+
 }
 .alin{
     text-align: right;
@@ -45,6 +51,8 @@ li{
    }
    .layer{
     background-color: #000000ab;
+    /* height: 355px; */
+    padding-bottom: 100px;
 }
 .wth{
     width:98px;
@@ -72,11 +80,12 @@ li{
     font-size: 35px;
 }
 .size{
-    width: 99%;
+    width: 100%;
     height: 457px;
-    padding: 3px;
 }
-
+.blocks{
+    margin: 3px;
+}
 .icon{
     width: 50px;
 }
@@ -87,14 +96,14 @@ li{
     padding: 10px;
 }
 .clr{
-    color: rgba(48, 120, 237, 0.615);
+    color:  rgb(0 72 108);
 }
 .hgt{
     width: 97%;
     height: 309px;
 }
 .uli{
-    padding-left: 0;
+    padding-left: 0px;
 }
 
 .blk{
@@ -128,13 +137,18 @@ ul{
     font-size: 100px;
     color: aliceblue;
 }
+.size-about{
+  font-size: 26px;
+}
 .footer-img{
     width: 88px;
     border-radius: 50%;
     background: rgb(139 0 0);
+    text-align: center;
 }
 .footer-h{
     font: size 43px;;
+    text-align: center;
 } 
 .contactbg-img{
     background-image: url(./regal.jpg);
@@ -143,10 +157,118 @@ ul{
     background-repeat: no-repeat;
 }
 .book-btn{
-    background: rgb(0 72 108);
+    background: rgb(4, 59, 86);
     color: rgb(255 255 255);
     padding: 10px;
 }
 .roombg-img{
     background-image: url(./room.webp);
+}
+.room-content > ul{
+    list-style: none;
+
+}
+.room-content > ul > li{
+    display: block;
+    margin-top: 8px;
+}
+.room-content{
+    margin: 20px;
+}
+.align-start{
+    align-items: start;
+}
+.room-btn{
+    border: solid 1px black;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: #073965;
+    margin-top: 18px;
+    color: white;
+}
+form label,input,select{
+    display: block;
+    width: 100%;
+}
+form> div{
+    margin: 10px 0px;
+}
+form input,select{
+    padding: 8px 0px;
+}
+
+.contactadd, .formdata{
+    margin: 15px;
+}
+.contactadd>ul>li{
+    display: block;
+}
+
+article,section{
+    margin: 20px 0px;
+}
+.eventbg-img{
+    background-image:url(event.jpj.jpg);
+    background-size: 100%;
+    background-position: 40%;
+   background-repeat: no-repeat;
+} 
+.event>ul>li{
+    display: block;
+    font-size: 19px;
+    text-align: center;
+    padding: 8px;
+}
+.event>h1{
+    font-size: 30px;
+    text-align:center;
+}
+.event-img>img{
+    width:99%;
+
+}
+.hover li:hover{
+    background-color: rgb(242, 202, 151);
+    padding: 8px 6px;
+}
+.hover li{
+    text-align: center;
+}
+.blocks:hover{
+    outline: 5px solid white;
+    outline-offset: -30px;
+    transition: 0.5s;
+}
+.room-content ul li{
+    margin: 0;
+}
+.res-img{
+    background-image:url(restaurant.jpj.jpg);
+}
+.res-content li{
+    display: block;
+    margin: 8px;  
+}
+.reserv-img{
+    background-image: url(https://cdn.wallpapersafari.com/5/27/eQZzC0.jpg);
+}
+.start{
+    align-items: flex-start;
+}
+.contactadd  li{
+    margin: 20px 0px;
+}
+.reser-cont>p{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 200;
+   
+}
+.reser-cont{
+    margin-top:30px;
+}
+.res-sz{
+    height: 259px;
+    width: 98%;
+    padding: 2px;
 }

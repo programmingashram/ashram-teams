@@ -188,3 +188,40 @@ button{
 .contact-info {
     margin-left: 30px;
 }
+@media(max-width:767px){
+    .grid{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .img-pad{
+        width: 100%;
+        padding: 0;
+        margin-top: 10px;
+    }
+    .container{
+        width: 90%;
+        margin:0 auto;
+    }
+    .nav-logo img{
+        width: 244px;
+    }
+    .navmenu, #menu{
+        display: none;
+    }
+    #menu:checked ~ nav .navmenu{
+        display: block;
+    }
+    .menu-btn{
+        position: absolute;
+        right: 0;
+        top: 15px;
+        font-size: 20px;
+    }
+    nav .container{
+        position: relative;
+    }
+    .navmenu li{
+        display: block;
+    }
+}
