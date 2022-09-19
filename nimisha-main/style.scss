@@ -469,8 +469,15 @@ body{
         }
     }
 
+    .icon_three{
+        display: none;
+    }
     .topbar_three{
         background-color: #1d2a7a;
+
+        .menu-icon-hit, .icon{
+            display: none;
+        }
 
         .menu_ul{
             list-style: none;
@@ -481,6 +488,7 @@ body{
             .menu_li{
                 padding: $p-sm;
                 text-align: center;
+                display: inline-block;
 
                 .menu_a{
                     text-decoration: none;
@@ -543,7 +551,7 @@ body{
             .row{
                 justify-content: space-between;
                 display: flex;
-                margin: 0 200px;
+                margin: 0 120px;
 
                 .col_6{
                     width: 50%;
@@ -587,7 +595,7 @@ body{
         padding: 100px 0;
 
         .container{
-            margin: 0 200px;
+            margin: 0 120px;
 
             .service_row{
                 display: flex;
@@ -667,6 +675,7 @@ body{
                         .s_img{
                             width: 100%;
                             height: 190px;
+                            object-fit: cover;
                         }
                     }
 
@@ -722,6 +731,9 @@ body{
                         line-height: 40px;
                     }
                 }
+                .review_video{
+                    width: 100%;
+                }
             }
         }
     }
@@ -745,7 +757,7 @@ body{
                     width: 100%;
 
                     .col_5{
-                        width: 50%;
+                        width: 45%;
                         line-height: $lh-lg;
 
                         .appoinment_title{
@@ -762,7 +774,7 @@ body{
                     }
 
                     .col_7{
-                        width: 75%;
+                        width: 70%;
                         line-height: 30px;
                     
                         .appoinment_form{
@@ -773,17 +785,19 @@ body{
                             border-radius: 10px;
                             justify-content: space-around;
 
-                            .col_6{
+                            .input_box{
                                 width: 50%;
                                 text-align: center;
 
                                 .form_input{
-                                    font-size: $font-20;
-                                    padding: 10px 10px 10px 10px;
+                                    font-size: 20px;
                                     border: 1px solid #ebeced;
                                     margin-bottom: 10px;
-                                    color: $gray-color;
+                                    color: #A1A1A1;
                                     border-radius: 5px;
+                                    padding-top: 10px;
+                                    padding-bottom: 10px;
+                                    padding-left: 5px;
                                 }
                             }
 
@@ -875,7 +889,7 @@ body{
 
                     .surgery_img{
                         background-image: url(images/dotted-background.png);
-                        width: 500px;
+                        width: 100%;
                         height: 380px;
                         position: relative;
                         padding-left: 50px;
@@ -947,6 +961,7 @@ body{
                             .box_img{
                                 width: 100%;
                                 height: 240px;
+                                object-fit: cover;
                             }
                         }
 
@@ -1157,7 +1172,7 @@ body{
     }
 }
 
-@media (max-width: 360px){
+@media (max-width: 415px){
     .topbar_up{
         padding: 5px 0;
         display: inline-block !important;
@@ -1254,6 +1269,9 @@ body{
             width: 100% !important;
         }
     }
+    .appoinment_form{
+        display: inline-block !important;
+    }
     .container_box{
         padding: 0px !important;
 
@@ -1316,7 +1334,7 @@ body{
 }
 
 
-@media (max-width: 650px){
+@media (max-width: 767px){
     .topbar_up{
         width: 100%;
         padding: 5px 0;
@@ -1340,16 +1358,43 @@ body{
         display: block !important;
 
     }
-    .menu_ul{
-        display: flex !important;
-        padding-left: 5px !important;
 
-        .menu_li{
-            padding: 10px !important;
+    .icon_three{
+        display: none !important;
+    }
+    #icon:checked ~ nav .tipbar_three_menu{
+        display: block;
+    }
+    .menu-icon-hit{
+        position: relative;
+        right: -50px;
+        top: 2px;
+        display: block !important;
+        color: white;
+        padding: 15px;
+    }
+    .tipbar_three_menu{
+        text-align: left;
+        margin-top: 30px;
+        display: none;    
+        
+        .menu_ul{
+            display: block !important;
+            padding-bottom: 20px;
+        
 
-            .menu_a{
-                font-size: 15px !important;
-                padding: 0px !important;
+            .menu_li{
+                padding: 10px !important;
+                display: block !important;
+                text-align: initial !important;
+                background: black;
+                border-bottom: 1px solid gray;
+                margin-right: 120px;
+
+                .menu_a{
+                    font-size: 15px !important;
+                    padding: 0px !important;
+                }
             }
         }
     }
@@ -1451,7 +1496,7 @@ body{
 
             .surgery_right{
                 position: inherit !important;
-                margin-left: 25x;
+                margin-left: 10px !important;
 
                 .surgery_img{
                     padding: 10px !important;
@@ -1542,6 +1587,7 @@ body{
     .row{
         margin: 0px !important;
         padding: 20px !important;
+        display: block !important;
 
         .col_6{
             width: 100% !important;
