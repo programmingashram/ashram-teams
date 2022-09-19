@@ -692,7 +692,7 @@ body .about_surgery .surgery_row .col_6 {
 body .about_surgery .surgery_row .col_6 .surgery_right {
   position: absolute;
   padding-top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 45px;
 }
 body .about_surgery .surgery_row .col_6 .surgery_right .surgery_img {
   background-image: url(images/dotted-background.png);
