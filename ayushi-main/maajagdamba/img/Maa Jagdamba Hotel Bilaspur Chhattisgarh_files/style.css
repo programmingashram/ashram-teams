@@ -1,0 +1,225 @@
+* {
+    margin: 0 px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cormorant Garamond', serif!important;
+    font-family: 'Raleway', sans-serif!important;
+}
+
+a:hover {
+    background-color: transparent!important;
+    text-decoration: none!important;
+}
+h1,h2,h3,h4,h5,h6{
+	font-size: 35px!important;
+}
+a {
+    font-size: 15px!important;
+    color: black!important;
+}
+.mybig{
+	font-size: 50px!important;
+}
+.pad_10,
+nav,
+p,
+article,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 10px!important;
+}
+
+.color-blk,
+p {
+    color: black;
+    font-size: 17px
+}
+
+.color_white,
+.my_footer_widget {
+    color: white!important;
+}
+
+.my_Widget>ul>li>a,
+.my_footer_widget>ul>li>a {
+    color: white!important;
+}
+
+.item img{
+	    width: 100%;
+    height: 350px!important;
+}
+
+.my_btn {
+       padding: 10px;
+    /* border: 1px solid rgb(255 255 255); */
+    color: rgb(255 255 255)!important;
+    border-radius: 0px;
+    margin: 10px;
+    background: rgb(0 0 0);
+}
+
+.my_btn_1 {
+    padding: 10px 11px;
+    border: 1px solid rgb(0 0 0);
+    color: rgb(0 0 0)!important;
+    margin: 0px 10px;
+}
+
+.my_banner_content {
+    margin-top: 37px;
+}
+
+#body {
+    background-image: url(..//images/hotel_view/jagdamba_palace_bilaspur_slider0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    
+   
+}
+section {
+   
+    padding: 150px 10px;
+   
+}
+
+.my_facility {
+    border-radius: 15px;
+    box-shadow: 3px 5px 56px 1px #80808026;
+    margin: 10px 0px;
+}
+
+.my_facility img {
+    width: 80px;
+    height: 81px;
+    padding: 10px;
+}
+
+
+/* header start */
+
+.logo {
+    transform: rotate( 3deg);
+    width: 101px;
+    padding: 10px;
+}
+
+header {
+    backdrop-filter: blur(21px);
+    background: rgb(128 128 128);
+    background: rgb(128 128 128 / 29%);
+}
+
+
+/* ====== */
+
+
+/* nav */
+
+nav {
+    background-color: white;
+    
+    position: sticky;
+    top: 0px;
+    z-index: 9999999999;
+}
+
+
+/* ==== */
+
+
+/* --facility */
+
+.facility {
+    font-size: 41px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 3px 5px 56px 1px #80808026;
+    margin: 10px 0px;
+}
+
+
+/* ---- */
+
+
+/* --room */
+
+.my_room {
+    padding: 30px 10px;
+    margin: 20px 0px;
+    box-shadow: 3px 5px 56px 1px #80808026;
+    border-radius: 10px;
+}
+
+.my_room>img {
+    height: 206px;
+    width: 100%;
+}
+
+
+
+
+.food_2,
+.food_1,
+.food_3,
+.hall_1,
+.hall_2,
+.hall_3,
+.hall_4 {
+    background-image: url(..//images/restaurent/chinese_food_in_hotel_jagdamaba_hotel.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0px 0px;
+    text-align: center;
+}
+.food_1 {
+    background-image: url(..//images/restaurent/indian-food-india_hotel.jpg)!important;
+}
+.food_3 {
+    background-image: url(..//images/restaurent/masala-dosa-_south_indian_food_in_jagdamaba_palace.jpg);
+}
+
+.hall_1 {
+    background-image: url(..//images/hall/party_hall_in_jagdamba_palace_bilaspur_chhattishgarh.jpg);
+}
+
+.hall_2 {
+    background-image: url(..//images/hall/party_hall_in_jagdamba_palace_bilaspur_chhattishgarh_011.jpg);
+}
+
+.hall_3 {
+    background-image: url(..//images/hall/marige_hall_in_bilaspur_hotel_jagadamba_palace_bilaspur.jpg);
+}
+
+.hall_4 {
+    background-image: url(..//images/hall/party_hall_in_jagdamba_palace_bilaspur_chhattishgarh_12.jpg);
+}
+
+.blur,
+.blur>p {
+    padding: 49px 0px;
+    font-weight:900;
+    font-size: 40px;
+    margin: 10px 0px;
+}
+.text_back{
+	position: relative;
+    top: 60px;
+    background: rgb(0 0 0 / 56%);
+}
+footer {
+    background: rgb(0 0 0 / 90%);
+}
+
+
+/* ---- */
