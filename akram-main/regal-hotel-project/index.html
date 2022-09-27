@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="clr">
+    <header class="clr-1">
         <div class="grid"><!--grid-->
             <div class="col">
                 <ul>
@@ -41,7 +44,7 @@
               <div class="container">
                 <div class="grid"><!--grid-->
                     <div class="col">
-                        <ul>
+                        <ul class="hover">
                             <li>
                                 <a href="index.html">Home</a>
                             </li>
@@ -49,10 +52,10 @@
                                 <a href="about.html">About</a>
                             </li>
                             <li>
-                                <a href="#">Rooms</a>
+                                <a href="room.html">Rooms</a>
                             </li>
                             <li>
-                                <a href="#">Events</a>
+                                <a href="event.html">Events</a>
                             </li>
                         </ul>
                         <hr>
@@ -61,12 +64,12 @@
                         <img src="http://www.hotelregal.in/img/logo-hotel-regal-bus-stand-road-bilaspur-chhattisgarh-hotels-o26fx06.png" alt="hotel regal" class="wth">
                     </div>
                     <div class="col aln mgn">
-                        <ul>
+                        <ul class="hover">
                             <li>
-                                <a href="">Restaurant</a>
+                                <a href="Restaurant.html">Restaurant</a>
                             </li>
                             <li>
-                                <a href="">Reservation</a>
+                                <a href="Restaurant.html">Reservation</a>
                             </li>
                             <li>
                                 <a href="contact.html">Contact us</a>
@@ -98,19 +101,21 @@
                     <p class="heart p2">
                         The Heart of City
                     </p>
-                    <a href="#" class="mar">
+                    <a href="#welcome" class="mar">
                         Explore
                     </a>
                 </div>
               </div>
         </div>
     </nav>
-    <section>
-        <div class="aln hw">
-            <h1>Welcome to  
-                <span class="heart"> Hotel Regal</span>
-            </h1>
-        </div>
+
+    <div class="aln hw" id="welcome">
+        <h1>Welcome to  
+            <span class="heart"> Hotel Regal</span>
+        </h1>
+    </div>
+    <section >
+       
         <div class="grid"><!--grid-->
             <div class="col">
                 <img src="http://www.hotelregal.in/img/Regal-hotel-Restorent-Crousel-image-3.png" alt="hotel regal" class="col">
@@ -119,36 +124,48 @@
                 <p class="hrt">About US</p>
                 <h1>Hotel Regal in Old Bus Stand Road, Bilaspur-chhattisgarh</h1>
                 <p class="hrt">
-                    <b>Hotel Regal in Bilaspur-chhattisgarh.</b> The hotel is strategically located in Old Bus Stand Road. Many have also reviewed the hotel to be among the sought after Hotels in Bilaspur-chhattisgarh. The hotel functions Catering to the convenience of its guests, the hotel makes available various
+                    <b>Hotel Regal in Bilaspur-chhattisgarh.
+
+                    </b> The hotel is strategically located in Old Bus Stand Road. Many have also reviewed the hotel to be among the sought after Hotels in Bilaspur-chhattisgarh. The hotel functions Catering to the convenience of its guests, the hotel makes available various
 
                 </p>
                 <h4>payment methods to ease out the payment process like,Net Banking & Cash.</h4>
             </div>
         </div>
     </section>
-    <section class="gap">
+
+
+    <article class="gap">
        <div class="grid">
             <div class="col">
-                <img src="http://www.hotelregal.in/img/Event-Hotel-Regal-Shiv-Talkies-Road,%20Nehru%20Nagar-Bilaspur.png" alt="" class="size">
+                <div class="blocks">
+                    <img src="http://www.hotelregal.in/img/Event-Hotel-Regal-Shiv-Talkies-Road,%20Nehru%20Nagar-Bilaspur.png" alt="" class="size">
+                </div>
             </div>
             <div class="col">
+               <div class="blocks">
                 <img src="http://www.hotelregal.in/img/Restorent-Hotel-Regal-Shiv-Talkies-Road,%20Nehru%20Nagar-Bilaspur.png" alt="" class="size">
+               </div>
             </div>
             <div class="col">
-                <img src="http://www.hotelregal.in/img/Confrance-hotel-regal-bus-stand-road-bilaspur-chhattisgarh-hotels-xtremyi.png" alt="" class="size">
+                <div class="blocks">
+                    <img src="http://www.hotelregal.in/img/Confrance-hotel-regal-bus-stand-road-bilaspur-chhattisgarh-hotels-xtremyi.png" alt="" class="size">
+                </div>
             </div>
             <div class="col">
+               <div class="blocks">
                 <img src="http://www.hotelregal.in/img/Reooms-Hotel-Regal-Shiv-Talkies-Road,%20Nehru%20Nagar-Bilaspur.png" alt="" class="size">
+               </div>
             </div>
        </div>
-    </section>
-    <section>
-        <div class="col aln">
-            <h1>
-                OUR   <span class="heart">SERVICES</span>
-            </h1>
-        </div>
-        <div class="container">
+    </article>
+    <div class="col aln">
+        <h1>
+            OUR   <span class="heart">SERVICES</span>
+        </h1>
+    </div>
+    <article>
+         <div class="container">
             <div class="grid"><!--grid-->
                 <div class="col pdg">
                     <i class="fa fa-wifi font-icn color-blue pad-10 hw clr" aria-hidden="true"></i>
@@ -207,7 +224,7 @@
                     </p>
                 </div>
             </div>
-                <div class="col aln ">
+                <div class="col aln">
                     <p class="hrt hw">
                         Our Rooms
                     </p>
@@ -236,7 +253,9 @@
                         <li  class="blk">Single - TARIFF 2300/-</li>
                         <li class="blk"s >Double - TARIFF 2300/-</li>
                         <li class="blk">
-                            <a href=""></a>
+                            <a href="reservation.html" class="room-btn">
+                                BOOK NOW
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -246,7 +265,9 @@
                         <li class="blk">Type - AIR CONDITIONING</li>
                         <li class="blk">Rate - SINGLE 1300/- TARIFF 1600/-</li>
                         <li class="blk">
-                            <a href=""></a>
+                            <a href="reservation.html" class="room-btn">
+                                BOOK NOW
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -257,24 +278,28 @@
                         <li class="blk">Rate - SINGLE 700</li>
                         <li class="blk">Rate - Double 800</li>
                         <li class="blk">
-                            <a href=""></a>
+                            <a href="reservation.html" class="room-btn">
+                                BOOK NOW
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
        
-    </section>
+    </article>
+
+    <div class="col aln">
+        <p>
+            MORE ROOMS
+        </p>
+        <h1 class="hw">
+            OUR GALLERY
+        </h1>
+        
+    </div>
     <article>
-            <div class="col aln">
-                <p>
-                    MORE ROOMS
-                </p>
-                <h1 class="hw">
-                    OUR GALLERY
-                </h1>
-                
-            </div>
+            
         <div class="grid"><!--grid-->
             <div class="col">
                 <img src="http://www.hotelregal.in/img/gallery-hotel-regal-bus-stand-road-bilaspur-chhattisgarh-hotels-jqlnf1x.jpg" alt="" class="sr">
@@ -309,7 +334,7 @@
                 <h1 class="footer-h">
                     Services
                 </h1>
-                <ul>
+                <ul class="hover">
                     <li class="bli"><a href="">party</a></li>
                     <li class="bli"><a href="" >Birthday</a></li>
                     <li class="bli"><a href="">Marriage Reception</a></li>
@@ -321,25 +346,27 @@
                 <h1  class="footer-h">
                     Menu
                 </h1>
-                <ul>
-                    <li class="bli"><a href="">HOME</a></li>
-                    <li class="bli"><a href="">ABOUT</a></li>
-                    <li class="bli"><a href="">ROOMS</a></li>
-                    <li class="bli"><a href="">RESTAURENT</a></li>
-                    <li class="bli"><a href="">RESERVATION</a></li>
-                    <li class="bli"><a href="">CONTACT US</a></li>
+                <ul class="hover">
+                    <li class="bli"><a href="index.html">HOME</a></li>
+                    <li class="bli"><a href="about.html">ABOUT</a></li>
+                    <li class="bli"><a href="room.html">ROOMS</a></li>
+                    <li class="bli"><a href="Restaurant.html">RESTAURENT</a></li>
+                    <li class="bli"><a href="reservation.html">RESERVATION</a></li>
+                    <li class="bli"><a href="contact.html">CONTACT US</a></li>
                 </ul>
             </div>
             <div class="col ask">
                 <h1 class="footer-h">
                     Contact Us
                 </h1>
-                <ul>
+                <ul class="hover">
                     <li class="bli"><a href="">99772-66118</a></li>
                     <li class="bli"><a href="">example@gmail.com</a></li>
                     <li class="bli"><a href="">173,shiv talkies Road, Old Bus Stand Road Bilaspur,teliparra Chhattishgarh 495001</a></li>
                 </ul>
+               <div class="col aln">
                 <img src="http://www.hotelregal.in/img/logo-hotel-regal-bus-stand-road-bilaspur-chhattisgarh-hotels-o26fx06.png" class="footer-img" alt="">
+               </div>
             </div>
         </div>
     </footer>

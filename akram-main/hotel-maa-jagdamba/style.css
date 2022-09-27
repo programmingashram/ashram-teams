@@ -1,0 +1,260 @@
+*{
+    margin:0;
+    padding:0;
+}
+/* index page css start from here */
+/* header start */
+.col{
+    width:100%;
+}
+.grid{
+    display: flex;
+}
+.header-contain >ul{
+    margin-top: 10px;
+}
+
+ul>li{
+    display:inline-block;
+    list-style-type:none;
+    margin-right: 30px;
+}
+a{
+    text-decoration:none;
+    color: white;
+}
+
+.container{
+    width:80%;
+    margin: 0 auto;
+}
+.img-size{
+    width: 50px;
+}
+header{
+    background-image: url(./img/jagdamba_palace_bilaspur_slider0.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+.layer{
+    background-color: rgb(128 128 128 / 29%);
+}
+.header-contain{
+    padding: 15px;
+}
+/* header end */
+
+
+/* nav start here */
+.nav-contain a{
+    color:black;
+   padding: 12px;
+   font-size: 17px;
+}
+nav{
+    padding: 20px;
+}
+/* nav end */
+/* section start */
+section{
+    padding: 220px 0;
+    background-image: url(./img/jagdamba_palace_bilaspur_slider0.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+section h1{
+    font-size: 35px;
+    color:white;
+   
+}
+.button{
+    border: solid 1px black;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: black;
+}
+/* section end */
+/* article start */
+.align{
+    text-align: center;
+}
+article h1{
+    padding: 29px 0px;
+    font-size: 35px;
+}
+
+.aside-contain img{
+    width: 45px;
+}
+.aside-contain p{
+    color: black;
+}
+.width, .aside-room img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.article-2{
+    margin-right: 20px;
+}
+.article-2 >p{
+    font-size: 18px;
+}
+/* article end */
+ /* aside start  */
+
+ aside h1{
+    font-size: 32px;
+    margin-bottom: 10px;
+ }
+ .aside-contain, .aside-room{
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 3px 5px 56px 1px #8080804a;
+    margin: 10px 18px;
+    line-height: 40px;
+}
+
+.aside-contain >i{
+    font-size: 30px;
+}
+.width01{
+    width: 80%;
+    margin-top: 15px;
+}
+/* aside end */
+/* article */
+.article-01 ul>li{
+    display: block;
+    margin: 35px;
+    text-align: left;
+}
+.article-01 p{
+    margin: 52px;
+}
+.btn-article{
+    border: 1px solid black;
+    margin: 4px 8px;
+    color: black;
+    padding: 10px;
+}
+.article-02 img{
+    width: 80%;
+}
+.article-03{
+    background-image: url(./img/888888888.jpg);
+}
+.article-04{
+    background-image: url(./img/chinese_food_in_hotel_jagdamaba_hotel\ \(1ooooooo\).jpg);
+}
+.article-05{
+ background-image: url(./img/south\ indian\ food.jpg);
+}
+.article-05,.article-04,.article-03{
+    padding: 60px 0px;
+    margin: 10px 8px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contain-food{
+    position: relative;
+    top: 60px;
+    background: rgb(0 0 0 / 56%);
+    color: white;
+    font-size: 40px;
+}
+.aside-room >ul>li{
+    display: block;
+    margin-top: 35px;
+}
+.article-77{
+    margin: 15px;
+}
+/* article end */
+/* foooter start here */
+footer{
+    background-color: black;
+    padding: 50px;
+}
+footer ul>li{
+    display: block;
+    color: white;
+    text-align:centre;
+    margin: 20px;
+}
+footer h1{
+    color: white;
+}
+/* footer end */
+/* our room */
+.our-rooms{
+    padding: 50px;
+    background-image: url(./img/jagdamba_palace_bilaspur_slider0.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+.col-1{
+    width: 33%;
+   
+}
+.col-1 img{
+    width: 100%;
+    display: block;
+    max-width: 100%;
+}
+/* our room end */
+/* ours hall */
+.article-6{
+    background-image: url(./img/hall01.jpg);
+}
+.article-7{
+    background-image: url(./img/hall02.jpg);
+}
+.article-8{
+    background-image: url(./img/hall03.jpg);
+}
+.article-9{
+    background-image: url(./img/hall5.jpg);
+}
+.article-6 ,.article-7,.article-8,.article-9{
+    padding: 68px 0px;
+    margin: 10px 8px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* our-gallery start */
+
+.gallery-contain img{
+    height: 154px;
+    margin: 10px 0px;
+    width: 96%;
+}
+/* book now */
+.form-group{
+    margin-left: 20px;
+    padding: 15px;
+}
+input, textarea{
+    width: 100%;
+    padding: 6px 8px;
+    border-radius:4px ;
+    border: 1px solid lightgrey;
+}
+.width-auto{
+    width: auto;
+}
+.book li{
+    display: block;
+    margin: 20px 0px;
+}
+.book{
+    margin: 10px;
+}
+.now{
+    padding: 20px;
+}
