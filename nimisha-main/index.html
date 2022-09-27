@@ -1,97 +1,176 @@
 <!DOCTYPE html>
 <html>
-<style>
-  .tooltip {
-    margin-top: 50px;
-    position: relative;
-    display: inline-block;
-  }
 
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 245px;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-    top: 150%;
-    left: 0%;
-    margin-left: -60px
-  }
+<head>
+    <style>
+        .section {
+            display: flex;
+            background-color: cornsilk;
+            height: 500px;
+            padding-top: 100px;
+        }
 
-  .tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent black transparent;
-  }
+        .container {
+            position: relative;
+        }
 
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-  }
+        .div_1 {
+            margin-top: 50px;
+            width: 300px;
+            height: 140px;
+            background-color: rgb(120, 217, 122);
+            transform: scaleX(0.5);
+            border-radius: 15px;
+            box-shadow: 0px 3px;
+        }
 
-  .tool_heading{
-    font-size: 20px;
-  }
-  .parag {
-    text-align: start;
-    padding-left: 8px
-  }
+        #box_1 {
+            position: absolute;
+            top: 10px;
+        }
 
-  .tool_dis {
-    color: grey;
-    font-size: 12px;
-  }
+        #box_2 {
+            opacity: 0.7;
+            position: absolute;
+            top: 30px;
+        }
 
-  .footer {
-    display: flex;
-    width: 100%;
-    margin-bottom: -16px;
-  }
+        #box_3 {
+            opacity: 0.5;
+            position: absolute;
+            top: 50px;
+        }
 
-  .foot_70 {
-    width: 70%;
-    background-color: black;
-    color: white;
-    padding-top: 10px;
-    padding-right: 15px;
-    text-align: initial;
-    padding-left: 5px;
-    border-radius: 0px 0px 0px 6px;
-  }
+        #box_4 {
+            opacity: 0.3;
+            position: absolute;
+            top: 70px;
+        }
 
-  .foot_30 {
-    color: white;
-    background-color: blue;
-    padding: 10px 12px;
-    border-radius: 0px 0px 6px 0px;
-  }
-</style>
+        .div_2 {
+            width: 150px;
+            height: 140px;
+            background-color: rgb(238, 94, 161);
+            border-radius: 15px;
+            box-shadow: 0px 3px;
+        }
+        .container_1{
+            position: relative;
+            left: 350px;
+            margin-top: 80px;
+        }
+        #box2_1 {
+            position: absolute;
+        
+        }
 
-<body style="text-align:center;">
+        #box2_2 {
+            opacity: 0.7;
+            position: absolute;
+            transform: rotate(20deg);
+        }
 
-  <div class="tooltip">Hover over me
-    <div class="tooltiptext">
-      <div class="tooltip_div">
-        <div class="parag">
-          <p class="tool_heading ruby">Guided tour tooltip</p>
-          <p class="tool_dis ruby">Codepen by Yoann Helin</p>
+        #box2_3 {
+            opacity: 0.5;
+            position: absolute;
+            transform: rotate(40deg);
+        }
+
+        #box2_4 {
+            opacity: 0.3;
+            position: absolute;
+            transform: rotate(60deg);
+        }
+
+        .container_2{
+            position: relative;
+            left: 650px;
+            margin-top: 80px;
+        }
+        .div_3{
+            width: 125px;
+            height: 100px;
+            background-color: rgb(18, 163, 199);
+            border-radius: 15px;
+            box-shadow: 0px 3px;
+        }
+        #box3_1 {
+            position: absolute;
+        
+        }
+
+        #box3_2 {
+            opacity: 0.7;
+            position: absolute;
+            transform: scale(1.2, 1.5);
+        }
+
+        #box3_3 {
+            opacity: 0.5;
+            position: absolute;
+            transform: scale(1.5, 2);
+        }
+
+        #box3_4 {
+            opacity: 0.3;
+            position: absolute;
+            transform: scale(1.8, 2.5);
+        }
+
+    </style>
+</head>
+
+<body>
+    <section class="section">
+        <div class="nav">
+            <div class="container">
+                <div class="div_1" id="box_1">
+
+                </div>
+                <div class="div_1" id="box_2">
+
+                </div>
+                <div class="div_1" id="box_3">
+
+                </div>
+                <div class="div_1" id="box_4">
+
+                </div>
+            </div>
         </div>
-        <br>
-        <br>
-        <div class="footer ruby">
-          <p class="foot_70">Step 3</p>
-          <p class="foot_30">NEXT</p>
+        <div class="nav">
+            <div class="container_1">
+                <div class="div_2" id="box2_1">
+
+                </div>
+                <div class="div_2" id="box2_2">
+
+                </div>
+                <div class="div_2" id="box2_3">
+
+                </div>
+                <div class="div_2" id="box2_4">
+
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
+        <div class="nav">
+            <div class="container_2">
+                <div class="div_3" id="box3_1">
+
+                </div>
+                <div class="div_3" id="box3_2">
+
+                </div>
+                <div class="div_3" id="box3_3">
+
+                </div>
+                <div class="div_3" id="box3_4">
+
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 
