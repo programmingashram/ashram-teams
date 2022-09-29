@@ -1,177 +1,1391 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/20328e2db0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
     <style>
-        .section {
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: poppins, sans-serif;
+            font-size: 14px;
+        }
+
+        .grid {
             display: flex;
-            background-color: cornsilk;
-            height: 500px;
-            padding-top: 100px;
+            flex-wrap: wrap;
+        }
+
+        .justify {
+            justify-content: space-around;
+
+        }
+
+        .logo_heading {
+            text-decoration: none;
+            color: black;
+            font-size: 35px;
+            padding-top: 15px;
+            padding-left: 100px;
+        }
+
+        .logo_color {
+            color: #28a745;
+        }
+
+        .menu_ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .menu_li {
+            list-style: none;
+            padding-right: 50px;
+            padding-bottom: 10px;
+            padding-top: 25px;
+        }
+
+        .menu_a {
+            text-decoration: none;
+            font-family: poppins, sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            color: #4a6f8a;
+        }
+
+        .menu_a:hover {
+            color: #28a745;
+        }
+
+        .drop_menu {
+            list-style: none;
+            display: none;
+            background-color: white;
+            box-shadow: 1px 1px 1px 1px;
+            padding: 15px;
+        }
+
+        #drop:hover~.drop_menu {
+            display: block !important;
+        }
+
+        .active {
+            color: #28a745;
+        }
+
+        .container {
+            padding: 100px;
+        }
+
+        .col_6 {
+            width: 50%;
+        }
+
+        .text_title {
+            font-size: 50px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .text {
+            color: #6084a4;
+            line-height: 1.9;
+            margin-bottom: 25px;
+            font-size: 17px;
+            margin-top: 10px;
+        }
+
+        .btn {
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 18px;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #44ce6f;
+            text-decoration: none;
+            box-shadow: 0 0 10px rgba(72, 69, 224, 0.1);
+        }
+
+        .btn:hover {
+            background-color: #c679e3;
+            transform: translateY(-10px);
+        }
+
+        .img {
+            position: relative;
+            animation-name: img_slid;
+            animation-duration: 3s;
+            animation-delay: 2s;
+        }
+
+        .col_6_img {
+            width: 100%;
+        }
+
+        @keyframes img_slid {
+            0% {
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        @keyframes hover {
+            0% {
+                left: 0px;
+                top: 50px;
+            }
+
+            100% {
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        .col_3 {
+            border: 1px dashed #cdf1d8;
+            padding: 30px 20px;
+            border-radius: 5px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(72, 69, 224, 0.1);
+            width: 23%;
+            margin-bottom: 30px;
+            margin-right: 20px;
+        }
+
+        .box_i {
+            width: 55px;
+            height: 55px;
+            line-height: 55px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        #box-i1 {
+            background: #cdf1d8;
+            color: #44ce6f;
+        }
+
+        #box-i2 {
+            color: #f78acb;
+            background: rgba(247, 138, 203, 0.3);
+        }
+
+        #box-i3 {
+            color: #c679e3;
+            background: #edc3fc;
+        }
+
+        .box-i4 {
+            background: rgba(235, 107, 61, 0.3);
+            color: #eb6b3d;
+        }
+
+        .box_title {
+            padding-bottom: 20px;
+            padding-top: 10px;
+        }
+
+        .box_hover:hover {
+            background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%);
+            animation-delay: 3s;
+            animation-duration: 4s;
+            color: white;
+            transform: translateY(-10px);
+        }
+
+        .col_6_img {
+            width: 100%;
+        }
+
+        .con_color {
+            background-color: #eee;
+        }
+
+        .con_title {
+            margin-bottom: 0;
+            text-transform: capitalize;
+            font-size: 28px;
+            font-weight: 600;
+            padding-bottom: 15px;
+        }
+
+        .option {
+            color: #6084a4;
+            line-height: 1.9;
+            font-size: 17px;
+            font-weight: 600;
+        }
+
+        .text_back {
+            background-color: white;
+            margin: 0 50px 20px 0;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .text1_back {
+            background-color: #eee;
+            margin: 0 50px 20px 0;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .text_back:hover {
+            background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%);
+            animation-delay: 3s;
+            animation-duration: 4s;
+            transform: translateY(-10px);
+        }
+
+        .text1_back:hover {
+            transform: translateY(-10px);
+            animation-duration: 4s;
+            background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%);
+            animation-delay: 3s;
+        }
+
+        .option :hover {
+            color: white;
+        }
+
+        .sec_title {
+            margin: 0 auto;
+            line-height: 37px;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .s_title {
+            font-size: 28px;
+            font-weight: 600;
+            padding-bottom: 20px;
+        }
+
+        .col-3 {
+            text-align: center;
+            line-height: 30px;
+        }
+
+        .num {
+            color: #44ce6f;
+            font-size: 32px;
+            font-weight: 500;
+        }
+
+        .contact-box {
+            border: 1px dashed #cdf1d8;
+            padding: 20px;
+            border-radius: 5px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(72, 69, 224, 0.1);
+            margin: 10px auto;
+            width: 45%;
+        }
+
+        .cont_title {
+            margin-bottom: 0;
+            text-transform: capitalize;
+            font-size: 20px;
+            font-weight: 500;
+            padding-bottom: 10px;
+        }
+
+        .con-btn {
+            margin-top: 20px;
+        }
+
+        .iframe_box {
+            width: 30%;
+            margin-right: 20px;
+        }
+
+        .iframe {
+            width: 100%;
+            height: 210px;
+        }
+
+        .logo_head {
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .col_4 {
+            width: 30%;
+        }
+
+        .footer-box {
+            padding-left: 70px;
+
+        }
+
+        .footer-h {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .footer-ul {
+            list-style: none;
+            color: #6084a4;
+            line-height: 25px;
+        }
+
+        .col-12 {
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .foot-last {
+            padding: 15px 0;
+            border-top: 1px solid #d8ebfd;
+        }
+
+        .star {
+            position: absolute;
+            animation-name: alternate;
+            left: 30px;
+            font-size: 25px;
+            color: lightslategray;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes alternate {
+            0% {
+                left: 20px;
+                top: 20px;
+            }
+
+            25% {
+                left: 150px;
+                top: 50;
+            }
+
+            50% {
+                left: 180px;
+                top: 100px;
+            }
+
+            75% {
+                left: 200px;
+                top: 120px;
+            }
+
+            100% {
+                left: 220px;
+                top: 150px;
+            }
+        }
+
+        .star1 {
+            position: absolute;
+            animation-name: alternate;
+            font-size: 25px;
+            color: lightslategray;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes alternate-t {
+            0% {
+                right: 40px;
+                top: 20px;
+            }
+
+            25% {
+                right: 100px;
+                top: 80;
+            }
+
+            50% {
+                right: 150px;
+                top: 120px;
+            }
+
+            75% {
+                right: 180px;
+                top: 150px;
+            }
+
+            100% {
+                right: 200px;
+                top: 180px;
+            }
+        }
+
+        @keyframes alternate {
+            0% {
+                right: 20px;
+                top: 20px;
+            }
+
+            25% {
+                right: 150px;
+                top: 50;
+            }
+
+            50% {
+                right: 180px;
+                top: 100px;
+            }
+
+            75% {
+                right: 200px;
+                top: 120px;
+            }
+
+            100% {
+                right: 220px;
+                top: 150px;
+            }
         }
 
         .container {
             position: relative;
         }
 
-        .div_1 {
-            margin-top: 50px;
-            width: 300px;
-            height: 140px;
-            background-color: rgb(120, 217, 122);
-            transform: scaleX(0.5);
-            border-radius: 15px;
-            box-shadow: 0px 3px;
-        }
-
-        #box_1 {
+        .plus {
             position: absolute;
-            top: 10px;
+            animation-name: round;
+            font-size: 40px;
+            right: 70px;
+            color: rgb(40, 209, 130);
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
         }
 
-        #box_2 {
-            opacity: 0.7;
+        .plus1 {
             position: absolute;
-            top: 30px;
+            animation-name: round;
+            font-size: 40px;
+            left: 68px;
+            color: rgb(40, 209, 130);
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
         }
 
-        #box_3 {
-            opacity: 0.5;
+        @keyframes round {
+            0% {
+                transform: rotate(0);
+            }
+
+            25% {
+                transform: rotate(30deg);
+            }
+
+            50% {
+                transform: rotate(90deg);
+            }
+
+            75% {
+                transform: rotate(180deg);
+            }
+
+            100% {
+                transform: rotate(0);
+            }
+        }
+
+        @keyframes round-c {
+            0% {
+                transform: scaleY(0);
+            }
+
+            25% {
+                transform: scaleY(30deg);
+            }
+
+            50% {
+                transform: scaleY(90deg);
+            }
+
+            75% {
+                transform: scaleY(180deg);
+            }
+
+            100% {
+                transform: scaleY(0);
+            }
+        }
+
+        .hastag {
             position: absolute;
-            top: 50px;
+            animation-name: alternate;
+            font-size: 25px;
+            left: 500px;
+            color: rgb(97, 211, 21);
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
         }
 
-        #box_4 {
-            opacity: 0.3;
+        .circle {
             position: absolute;
-            top: 70px;
+            animation-name: alternate;
+            font-size: 30px;
+            left: 800px;
+            top: 100px;
+            color: rgb(248, 163, 234);
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
         }
 
-        .div_2 {
-            width: 150px;
-            height: 140px;
-            background-color: rgb(238, 94, 161);
-            border-radius: 15px;
-            box-shadow: 0px 3px;
+        .sun {
+            position: absolute;
+            animation-name: alternate-t;
+            font-size: 20px;
+            right: 600px;
+            top: 200px;
+            color: rgb(201, 178, 207);
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
         }
-        .container_1{
+
+        .round {
+            width: 70px;
+            height: 70px;
+            left: 30px;
+            border-radius: 50%;
+            position: absolute;
+            opacity: 0.6;
+            animation-name: round-x;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            background: linear-gradient(180deg, #bd7a23 0%, #e7ce43 100%);
+        }
+
+        @keyframes round-x {
+            0% {
+                transform: scaleX(0);
+            }
+
+            25% {
+                transform: scaleX(.5);
+            }
+
+            50% {
+                transform: scaleX(1);
+            }
+
+            75% {
+                transform: scaleX(.5);
+            }
+
+            100% {
+                transform: scaleX(0);
+            }
+        }
+
+        .progress {
+            width: 100px;
+            height: 8px;
+            border-radius: 10px;
+            background-color: #94e6ae;
+            position: absolute;
+        }
+
+        .bar {
+            width: 10px;
+            height: 12px;
+            border-radius: 50%;
             position: relative;
-            left: 350px;
-            margin-top: 80px;
+            background-color: #44ce6f;
+            top: -2px;
+            animation-name: bar;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
         }
-        #box2_1 {
-            position: absolute;
+
+        .prog-bar {
+            padding-bottom: 10px;
+        }
+
+        .bar-flex {
+            display: flex;
+            justify-content: center;
+        }
+
+        @keyframes bar {
+            0% {
+                left: 0%;
+            }
+
+            25% {
+                left: 25%;
+            }
+
+            50% {
+                left: 50%;
+            }
+
+            75% {
+                left: 75%;
+            }
+
+            100% {
+                left: 85%;
+            }
+        }
+
+        .back-img {
+            background-image: url(image/back.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
         
+        .icon {
+            display: none;
         }
 
-        #box2_2 {
-            opacity: 0.7;
-            position: absolute;
-            transform: rotate(20deg);
+        .icon_three {
+            display: none;
         }
 
-        #box2_3 {
-            opacity: 0.5;
-            position: absolute;
-            transform: rotate(40deg);
+
+
+
+
+
+
+
+        @media (max-width: 392px) {
+            .menu_ul {
+                display: block !important;
+            }
+
+            .logo_heading {
+                font-size: 20px !important;
+                padding: 5px 0 !important;
+            }
+
+
         }
 
-        #box2_4 {
-            opacity: 0.3;
-            position: absolute;
-            transform: rotate(60deg);
+        @media (max-width: 767px) {
+            .container{
+                padding: 20px !important;
+            }
+            .col_6{
+                width: 100% !important;
+            }
+            .col_3{
+                width: 100% !important;
+            }
+            .col-3{
+                width: 50% !important;
+            }
+            .iframe_box{
+                width: 100% !important;
+                margin-bottom: 20px;
+            }
+            .text1_back{
+                margin: 10px !important;
+            }
+            .con-btn{
+                margin-top: 0px !important;
+                margin-bottom: 10px;
+            }
+            .col_4{
+                width: 100% !important;
+            }
+            .footer-box{
+                padding: 0px !important;
+                margin-bottom: 30px;
+            }
+            .text_title{
+                font-size: 25px;
+            }
+            .plus{
+                right: 5px;
+            }
+            .plus1{
+                left: 5px;
+            }
+            .round{
+                width: 40px !important;
+                height: 40px !important;
+                left: 5px !important;
+            }
+            .img{
+                margin-top: 50px;
+            }
+            .icon_three {
+                display: none !important;
+            }
+
+            #icon:checked~nav .menu_bar {
+                display: block;
+                text-align: end;
+            }
+
+            .menu_bar {
+                text-align: left;
+                margin-top: 30px;
+                display: none;
+            }
+
+            .menu_li {
+                padding: 10px 0 !important;
+                border-bottom: 1px solid #6084a4;
+            }
+
+            .menu-icon-hit {
+                display: inline-block !important;
+                color: black;
+                padding: 12px !important;
+                text-align: end;
+                font-size: 25px !important;
+            }
+
+            .menu_ul {
+                display: block !important;
+            }
+            .contact-box{
+                width: 100% !important;
+                text-align: center;
+            }
+            .cont_title{
+                font-size: 18px;
+            }
+            .text{
+                font-size: 15px;
+                
+            }
         }
 
-        .container_2{
-            position: relative;
-            left: 650px;
-            margin-top: 80px;
-        }
-        .div_3{
-            width: 125px;
-            height: 100px;
-            background-color: rgb(18, 163, 199);
-            border-radius: 15px;
-            box-shadow: 0px 3px;
-        }
-        #box3_1 {
-            position: absolute;
-        
-        }
+        @media (max-width: 991px) {
+            .head{
+                padding: 15px;
+                margin-left: 15px;
+                border-bottom: 1px solid #d3d5d7;;
+            }
+            .container{
+                padding: 20px !important;
+            }
+            
+            .logo_heading {
+                font-size: 25px !important;
+                padding: 5px 0 !important;
+            }
+            .justify{
+                justify-content: space-between;
+            }
+            
+            .col_6{
+                width: 100% !;
+            }
+            .col_3{
+                margin: 10px !important;
+            }
+            .box_hover{
+                width: 47%;
+            }
+            .col-3{
+                width: 50% !important;
+            }
+            .iframe_box{
+                width: 100% !important;
+                margin-bottom: 20px;
+            }
+            .text1_back{
+                margin: 10px !important;
+            }
+            .con-btn{
+                margin-top: 0px !important;
+                margin-bottom: 10px;
+            }
+            .col_4{
+                width: 100% !important;
+            }
+            .col_12{
+                width: 50% !important;
+            }
+            .footer-box{
+                padding: 0px !important;
+                margin-bottom: 30px;
+            }
+            .text_title{
+                font-size: 25px;
+            }
+            .plus{
+                right: 5px;
+            }
+            .plus1{
+                left: 5px;
+            }
+            .round{
+                width: 40px !important;
+                height: 40px !important;
+                left: 5px !important;
+            }
+            .img{
+                margin-top: 50px;
+            }
+            .icon_three {
+                display: none !important;
+            }
 
-        #box3_2 {
-            opacity: 0.7;
-            position: absolute;
-            transform: scale(1.2, 1.5);
-        }
+            #icon:checked~nav .menu_bar {
+                display: block;
+                text-align: end;
+            }
 
-        #box3_3 {
-            opacity: 0.5;
-            position: absolute;
-            transform: scale(1.5, 2);
-        }
+            .menu_bar {
+                text-align: left;
+                margin-top: 30px;
+                display: none;
+            }
 
-        #box3_4 {
-            opacity: 0.3;
-            position: absolute;
-            transform: scale(1.8, 2.5);
-        }
+            .menu_li {
+                padding: 10px 0 !important;
+                border-bottom: 1px solid #6084a4;
+            }
 
+            .menu-icon-hit {
+                display: inline-block !important;
+                color: black;
+                text-align: end;
+                font-size: 30px;
+               
+            }
+
+            .menu_ul {
+                display: block !important;
+            }
+            
+        }
     </style>
 </head>
 
 <body>
-    <section class="section">
-        <div class="nav">
-            <div class="container">
-                <div class="div_1" id="box_1">
-
+    <header>
+        <input type="checkbox" id="icon" class="icon_three">
+        <nav class="head">
+            <div class="grid justify">
+                <div class="logo">
+                    <a href="#" class="logo_heading">
+                        <h1>
+                            <span class="logo_color">Code</span>
+                            Fusion
+                        </h1>
+                    </a>
                 </div>
-                <div class="div_1" id="box_2">
-
-                </div>
-                <div class="div_1" id="box_3">
-
-                </div>
-                <div class="div_1" id="box_4">
-
+                <div class="menu-icon-hit">
+                    <label for="icon" class="icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                    <div class="menu_bar">
+                        <ul class="menu_ul">
+                            <li class="menu_li">
+                                <a href="#" class="menu_a active">Home</a>
+                            </li>
+                            <li class="menu_li">
+                                <a href="#" class="menu_a">About</a>
+                            </li>
+                            <li class="menu_li" id="drop">
+                                <a href="#" class="menu_a">Services <i class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="drop_menu">
+                                    <li class="menu_li">
+                                        <a href="#" class="menu_a active">Website Development</a>
+                                    </li>
+                                    <li class="menu_li">
+                                        <a href="#" class="menu_a active">Mobile App Development</a>
+                                    </li>
+                                    <li class="menu_li">
+                                        <a href="#" class="menu_a active">Digital Marketing</a>
+                                    </li>
+                                    <li class="menu_li">
+                                        <a href="#" class="menu_a active">Web Hosting</a>
+                                    </li>
+                                    <li class="menu_li">
+                                        <a href="#" class="menu_a active">Content Writing</a>
+                                    </li>
+                                    <li class="menu_li">
+                                        <a href="#" class="menu_a active">Graphic Designing</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu_li">
+                                <a href="#" class="menu_a">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="nav">
-            <div class="container_1">
-                <div class="div_2" id="box2_1">
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <div class="round">
 
-                </div>
-                <div class="div_2" id="box2_2">
-
-                </div>
-                <div class="div_2" id="box2_3">
-
-                </div>
-                <div class="div_2" id="box2_4">
-
-                </div>
             </div>
-        </div>
-        <div class="nav">
-            <div class="container_2">
-                <div class="div_3" id="box3_1">
-
+            <div class="sun">
+                <i class="fa-regular fa-sun"></i>
+            </div>
+            <div class="grid justify">
+                <div class="hastag">
+                    <i class="fa-solid fa-hashtag"></i>
                 </div>
-                <div class="div_3" id="box3_2">
-
+                <div class="plus">
+                    <i class="fa-solid fa-plus"></i>
                 </div>
-                <div class="div_3" id="box3_3">
-
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
                 </div>
-                <div class="div_3" id="box3_4">
-
+                <div class="col_6">
+                    <h4 class="text_title">Website is Best 
+                        Marketing Material </h4>
+                    <p class="text">- we do the Best for All Businesses.</p>
+                    <p class="text">We strongly understand the value of a good website & App.
+                        A website is not just few pages on your domain but is reflection of
+                        your business and its standards. A website is what search engines need
+                        to make you visible. Each word on website is content and today content
+                        is king. We have proven again and again that website design and
+                        development is art which involves technology. </p>
+                    <a href="#" class="btn">GET STASTED</a>
+                </div>
+                <div class="col_6">
+                    <div class="img">
+                        <img src="image/img2.png" alt="awosame" class="col_6_img">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <section>
+        <div class="container">
+            <div class="plus1">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="circle">
+                <i class="fa-regular fa-circle"></i>
+            </div>
+            <div class="star1">
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="grid">
+                <div class="col_3 box_hover">
+                    <div href="#" class="box_i" id="box-i1">
+                        <i class="fa-solid fa-display"></i>
+                    </div>
+                    <h3 class="box_title">
+                        Web Design &<br> Development
+                    </h3>
+                    <p class="text">We design and develop websites
+                        that elevate your brand effectively.</p>
+                </div>
+                <div class="col_3 box_hover">
+                    <div href="#" class="box_i" id="box-i2">
+                        <i class="fa-solid fa-display"></i>
+                    </div>
+                    <h3 class="box_title">
+                        Wordpress Website
+                    </h3>
+                    <p class="text">We suggest using WordPress for Content Management Systems.
+                        WordPress is the top rated CMS in the industry. </p>
+                </div>
+                <div class="col_3 box_hover">
+                    <div href="#" class="box_i" id="box-i3">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <h3 class="box_title">
+                        Mobile App Development
+                    </h3>
+                    <p class="text">We design and develop custom mobile apps for
+                        iOS and Android platforms. </p>
+                </div>
+                <div class="col_3 box_hover">
+                    <div href="#" class="box_i box-i4">
+                        <i class="fa-solid fa-bullhorn"></i>
+                    </div>
+                    <h3 class="box_title">
+                        Digital Marketing Services
+                    </h3>
+                    <p class="text">We offer a total bundle of web marketing
+                        solutions to help your business grow. </p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col_3 box_hover">
+                    <div href="#" class="box_i box-i4">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                    </div>
+                    <h3 class="box_title">
+                        Web Hosting
+                    </h3>
+                    <p class="text">Web Services offers hosting services for your website,
+                        which is a requirement for any website on the Internet. We can provide not only hosting but
+                        email
+                        accounts for your business with SPAM filtering. </p>
+                </div>
+                <div class="col_3 box_hover">
+                    <div href="#" class="box_i box-i4">
+                        <i class="fa-brands fa-searchengin"></i>
+                    </div>
+                    <h3 class="box_title">
+                        Wordpress SEO
+                    </h3>
+                    <p class="text">We use ethical, effective and proven methods to attain top 10 rankings
+                        in Google Guaranteed. Our flexible methodology and proven SEO Optimization techniques ensures
+                        customized SEO Marketing Strategy for your unique requirements. </p>
+                </div>
+                <div class="col_3 box_hover">
+                    <div href="#" class="box_i box-i4">
+                        <i class="fa-solid fa-magnifying-glass-location"></i>
+                    </div>
+                    <h3 class="box_title">
+                        Search Engine Optimization (SEO)
+                    </h3>
+                    <p class="text">We are the best digital marketing agency providing SEO services that help you to
+                        receive more web traffic, customers and profits. Our SEO experts use a combination of
+                        on-page and off-page SEO activities to offer top results. </p>
+                </div>
+                <div class="col_3 box_hover">
+                    <div href="#" class="box_i box-i4">
+                        <i class="fa-solid fa-magnifying-glass-dollar"></i>
+                    </div>
+                    <h3 class="box_title">
+                        Search Engine Marketing (SEM)
+                    </h3>
+                    <p class="text">SEM refers to using paid advertising to get traffic from search engines. The most
+                        common form of search engine marketing is probably Google Adwords
+                        for the simple reason that Google is by far the most used search engine. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container con_color">
+            <div class="sun">
+                <i class="fa-regular fa-sun"></i>
+            </div>
+            <div class="plus">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="star">
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="grid justify">
+                <div class="col_6">
+                    <div class="img">
+                        <img src="image/img.png" alt="awosame" class="col_6_img">
+                    </div>
+                </div>
+                <div class="col_6">
+                    <h4 class="con_title">Design & Development </h4>
+                    <div class="prog-bar">
+                        <div class="progress">
+                            <div class="bar">
 
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text">With our years of website production and design experience,
+                        we are able to deliver the ideal web design and development solutions to you. </p>
+                    <div class="grid">
+                        <div class="col_6 col_12">
+                            <div class="text_back">
+                                <p class="option">Responsive Design</p>
+                            </div>
+                        </div>
+                        <div class="col_6 col_12">
+                            <div class="text_back">
+                                <p class="option">React web development</p>
+                            </div>
+                        </div>
+                        <div class="col_6 col_12">
+                            <div class="text_back">
+                                <p class="option">Android apps development</p>
+                            </div>
+                        </div>
+                        <div class="col_6 col_12">
+                            <div class="text_back">
+                                <p class="option">Wordpress web development</p>
+                            </div>
+                        </div>
+                        <div class="col_6 col_12">
+                            <div class="text_back">
+                                <p class="option">iOS apps development</p>
+                            </div>
+                        </div>
+                        <div class="col_6 col_12">
+                            <div class="text_back">
+                                <p class="option">UX/UI design</p>
+                            </div>
+                        </div>
+                        <div class="col_6 col_12">
+                            <div class="text_back">
+                                <p class="option">E-commerce development</p>
+                            </div>
+                        </div>
+                        <div class="col_6 col_12">
+                            <div class="text_back">
+                                <p class="option">Print ready design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="circle">
+                <i class="fa-regular fa-circle"></i>
+            </div>
+            <div class="plus1">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="star1">
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="grid justify">
+                <div class="col_6">
+                    <div class="img">
+                        <img src="image/img1.png" alt="awosame" class="col_6_img">
+                    </div>
+                </div>
+                <div class="col_6">
+                    <h4 class="con_title">Digital Marketing & Web Hosting Services </h4>
+                    <div class="prog-bar">
+                        <div class="progress">
+                            <div class="bar">
+
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <div class="grid">
+                        <div class="col_6 col_12">
+                            <div class="text1_back">
+                                <p class="option">Search Engine Optimization</p>
+                            </div>
+                        </div>
+                        <div class="col_6 col_12">
+                            <div class="text1_back">
+                                <p class="option">Pay-Per-Click Advertising (PPC)</p>
+                            </div>
+                        </div>
+                        <div class="col_6 col_12">
+                            <div class="text1_back">
+                                <p class="option">Website hosting</p>
+                            </div>
+                        </div>
+                        <div class="col_6 col_12">
+                            <div class="text1_back">
+                                <p class="option">Content Marketing</p>
+                            </div>
+                        </div>
+                        <div class="col_6 col_12">
+                            <div class="text1_back">
+                                <p class="option">Social Media Marketing</p>
+                            </div>
+                        </div>
+                        <div class="col_6 col_12">
+                            <div class="text1_back">
+                                <p class="option">Local SEO</p>
+                            </div>
+                        </div>
+                        <div class="col_6 col_12">
+                            <div class="text1_back">
+                                <p class="option">Email Marketing</p>
+                            </div>
+                        </div>
+                        <div class="col_6 col_12">
+                            <div class="text1_back">
+                                <p class="option">Mobile SEO Optimization</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container back-img">
+            <div class="sun">
+                <i class="fa-regular fa-sun"></i>
+            </div>
+            <div class="plus">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="hastag">
+                <i class="fa-solid fa-hashtag"></i>
+            </div>
+            <div class="star">
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="sec_title">
+                <h2 class="s_title">We Always Try To Understand Users Expectation</h2>
+                <div class="prog-bar bar-flex">
+                    <div class="progress">
+                        <div class="bar">
+
+                        </div>
+                    </div>
+                </div>
+                <p class="text">We ensure that all our web development and mobile application<br> development projects
+                    are
+                    not only engineered using the most cutting <br>edge technologies,
+                    but also they're created through a human-centred design process.
+                </p>
+            </div>
+            <div class="grid justify">
+                <div class="col-3">
+                    <div class="box">
+                        <h3 class="num">50+</h3>
+                        <p class="text">Project completed</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="box">
+                        <h3 class="num">20+</h3>
+                        <p class="text">Team Members</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="box">
+                        <h3 class="num">3+</h3>
+                        <p class="text">Year of Experience</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="box">
+                        <h3 class="num">99%</h3>
+                        <p class="text">Client Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-box grid justify">
+                <div class="contact-text">
+                    <h3 class="cont_title">Have any question about us?</h3>
+                    <p class="text"> Don't hesitate to contact us</p>
+                </div>
+                <div class="con-btn">
+                    <a href="#" class="btn">Contact</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="circle">
+                <i class="fa-regular fa-circle"></i>
+            </div>
+            <div class="plus1">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="star1">
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="sec_title">
+                <h2 class="s_title">Our Recent Works</h2>
+                <div class="prog-bar bar-flex">
+                    <div class="progress">
+                        <div class="bar">
+
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Your business is unique, and so are your customer's needs. We design <br>websites based
+                    on
+                    the goals that are
+                    important to your business to help <br> you turn your website visitors into customers.
+                </p>
+            </div>
+            <div class="grid justify">
+                <div class="iframe_box">
+                    <iframe src="http://maajagdambahotel.com/" title="web site" class="iframe"></iframe>
+                </div>
+                <div class="iframe_box">
+                    <iframe src="http://www.8pillars.in/" title="web site" class="iframe"></iframe>
+                </div>
+                <div class="iframe_box">
+                    <iframe src="http://www.panchsheelew.com/" title="web site" class="iframe"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container back-img">
+            <div class="round">
+
+            </div>
+            <div class="grid justify">
+                <div class="col_4">
+                    <a href="#" class="logo_head">
+                        <h1>
+                            <span class="logo_color">Code</span>
+                            Fusion
+                        </h1>
+                    </a>
+                    <p class="text">The Vision of our company is to become the most trusted name in the realm of IT by
+                        offering unmatched
+                        services, solutions and support for the growth of our precious clients. </p>
+                </div>
+                <div class="col_4">
+                    <div class="footer-box">
+                        <h3 class="footer-h">Company</h3>
+                        <ul class="footer-ul">
+                            <li class="footer-li">About Us</li>
+                            <li class="footer-li">Services</li>
+                            <li class="footer-li"> Contact us</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col_4">
+                    <div class="footer1-box">
+                        <h3 class="footer-h">Address</h3>
+                        <ul class="footer-ul">
+                            <li class="footer-li">Sector-7, Ganga Nagar,<br>
+                                Mangla Chowk,<br>
+                                Bilaspur,<br>
+                                Chhattisgarh,<br>
+                                495001 </li>
+                            <li class="footer-li">Email : info@codefusioninfotech.com </li>
+                            <li class="footer-li"> Phone: +91 831 963 6062</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="foot-last">
+                    <p class="text">Copyright @ 2021 Code Fusion Infotech. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
