@@ -1,0 +1,109 @@
+.navbar-brand{
+    width: 80px;
+}
+section{
+    background-image: url(./background\ img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.circle{
+    position: absolute;
+    right: 0;
+    top: -270px;
+    animation-name: circle;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    
+}
+.whastapp-widegt a {
+    width: 50px;
+    right: 20px!important;
+    right: 17px;
+    bottom: 20px;
+}
+.service-card i {
+    font-size: 30px;
+}
+.service-card:hover {
+    border: 2px solid;
+    transition: 0.5s;
+}
+.animation{
+    position: relative;
+}
+.animation-1{
+    position: relative;
+}
+.rotate{
+        position: absolute;
+        left: -112px;
+        top: -3px;
+        animation-name:rotate;
+        animation-iteration-count: infinite;
+        animation-duration: 10s;
+}
+.jumbotron{
+    background-color: #e9ecef;
+}
+.service-card .pkg-wrapper{
+    margin: 10px 0px;
+    color: black;
+    border-radius: 10px !important;
+}
+.nav-pills .btn-success{
+    color: green;
+}
+.nav-pills .btn-secondary{
+    color: gray;
+}
+.nav-pills .btn-success.active{
+    background-color: green;
+    color: white;
+}
+.nav-pills .btn-secondary.active{
+    background-color: gray;
+    color: white;
+}
+.shadow-sm-success.active{
+    color: #fff;
+    background-color: #28a745 !important;
+    border-color: #28a745;
+}
+@keyframes circle{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(60deg);
+    }
+    50%{
+        transform: rotate(90deg);
+    }
+    75%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+   
+}
+@keyframes rotate{
+    0%{
+        transform: rotateY(0deg);
+    }
+    25%{
+        transform: rotateY(60deg);
+    }
+    50%{
+        transform: rotateY(90deg);
+    }
+    75%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+    
+   
+}
