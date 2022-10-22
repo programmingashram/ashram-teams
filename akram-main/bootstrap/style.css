@@ -1,0 +1,21 @@
+.background div {
+    padding: 10px;
+}
+.content img{
+    width: 397px;
+}
+.content{
+    padding: 162px 0px;
+}
+section{
+    position: relative;
+}
+section::after{
+    content: '';
+    position: absolute;
+    background-image: url(./bottom_cross.png);
+    height: 200px;
+    width: 100%;
+    background-repeat: no-repeat;
+    bottom: -50px;
+}
