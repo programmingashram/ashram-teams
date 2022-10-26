@@ -1,0 +1,83 @@
+@media(max-width:1200px){
+	.dis{
+		display:none!important;
+	}
+	header{
+	   position:sticky;
+	   top:0px;
+	   z-index:9999999999999;
+	}
+	.sticky {
+   position: fixed;
+    top: 0px;
+    z-index: 999999999;
+    box-shadow: 0px 6px 10px -3px;
+    transition: 0.4s;
+    padding: 0px;
+    background: rgb(0 0 0 / 91%);
+    width: 100%;
+}
+
+	section {
+   
+    padding: 110px 0px;
+   
+   }
+	.mybig {
+    font-size: 30px!important;
+    }
+	#body {
+    background-image: url(..//images/hotel_view/hotel_jagdamba_palace_bilaspur.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    
+   
+}
+	h1,h2,h3,h4,h5,h6{
+	font-size: 32px!important;
+}
+	nav{
+	   
+	position: fixed;
+    width: 100%;
+    top: 72px;
+	}
+	.col-md-3,.my_banner_content>.col-md-6{
+		float:left;
+		width:50%;
+	}
+	
+	.my_facility img {
+    width: 47%;
+   }
+   .first{
+	  border: 1px solid rgb(255 255 255);
+    width: 15%;
+    margin: 8px 0px;
+   }
+   .sec{
+	border: 1px solid rgb(255 255 255);
+    width: 10%;
+   }
+   .menu{
+	   line-height: 6;
+    position: absolute;
+    top:34px;
+    right: 32px;
+    width: 56%;
+    transform: rotate(-180deg);
+   }
+   .my_Widget{
+	   display:none;
+   }
+   .my_facility img {
+    width: 80px;
+    height: auto;
+	padding:10px;
+    }
+	.my_room>img {
+    height: auto;
+    width: 100%;
+     }
+}
