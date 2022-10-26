@@ -1,0 +1,73 @@
+.logo{
+    width:70px;
+}
+
+.navbar-logo span{
+    font-size: 36px;
+}
+.slider-wrapper{
+ background-image: url(./hero-img.jpg);
+ padding:250px 0px;
+ background-position: bottom;
+ background-size: cover;
+}
+.bg{
+    background-color: #d3d3d3;
+}
+.color-pink{
+    color:#E77785;
+    font-size: 60px;
+}
+.textbox-contant{
+    background: white;
+    padding: 28px 20px;
+    line-break: loose;
+    line-height: 2;
+    margin:10px 10px;
+    border-top-left-radius:56px;
+    border-top-right-radius:56px;
+    border-bottom-left-radius:56px;
+}
+.textbox-contant img{
+    width: 80px;
+    border-radius: 100px;
+}
+.wps-wrapper{
+    display: flex;
+    text-align: center;
+    padding: 20px;
+}
+.wps-wrapper i{
+    color:#E77785;
+    margin: 0px 10px;
+    font-size: 55px;
+}
+.panal-wrapper{
+    background-image: url(./bg-hero.jpg);
+    color: #d3d3d3;
+    font-size: 18px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.panal-wrapper .bg-fade{
+    padding:10px;
+    backdrop-filter:brightness  (0.5);
+}
+.panal-contant img{
+   width:100%;
+   border:4px solid #E77785;
+   height: 187px;
+   border-radius: cover;
+    object-fit: cover;
+}
+.fluid-wrapper img{
+    width:100%;
+    height:332px;
+}
+
+
+
+
+

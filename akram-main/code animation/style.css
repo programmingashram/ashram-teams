@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.grid{
+    display:flex;
+    align-items: center;
+}
+.container{
+    width:80%;
+    margin: 0 auto;
+}
+.col{
+    width: 100%;
+}
+/* /header start */
+.color-1{
+    color:#44ce6f;
+}
+ul{
+   list-style-type: none;
+}
+li{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+ul li a{
+    font-size: 17px;
+    margin: 8px;
+}
+.dropdown-content li{
+    display: block;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-content{
+    position: absolute;
+    padding: 10px;
+    background: yellow;
+    display: none;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
