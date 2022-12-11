@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    background-color: #fff;
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+}
+.logo{
+    color: rgb(90, 90, 243);
+    font-size: 20px;
+    padding-left: 30px;
+    padding-top: 26px;
+    float: left;
+    font-weight: bold;
+}
+.menu{
+    width: 700px;
+    height: 70px;
+    color: rgb(90, 90, 243);
+    float: right;
+    
+}
+ul{
+    float:;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 30px;
+    margin-top: 27px;
+    margin-right: 20px;
+}
+ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
