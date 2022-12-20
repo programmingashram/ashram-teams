@@ -9,18 +9,36 @@
 } 
 .logo{
     display: inline-block;
+    margin: 20px;
 }
 
 ul{
     list-style-type: none;
     text-align: center;
     /* display: inline-block; */
+    margin-top: 22px;
+    padding-right: 10px;
 }
 .col-md-6{
     width: 50%;
     float: left;
     
     
+}
+.menu{
+    margin: 20px;
+    display: inline-block;
+    
+}
+li{
+    display: inline;
+    padding-left: 10px;
+    text-align: end;
+    margin: 20px;
+}
+a{
+    text-decoration: none;
+
 }
 .block{
     text-align: center;
@@ -70,6 +88,8 @@ ul{
     border: 1px solid black;
     color: #fff;
     /* height: ; */
+    /* padding-top: 20px; */
+    /* margin-top: 20px; */
 }
 .bjp{
     border: 1px solid #fff;
