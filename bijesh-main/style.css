@@ -85,7 +85,7 @@ a{
     width: 100%;
     text-align: center;
     background: #000;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     color: #fff;
     /* height: ; */
     /* padding-top: 20px; */
@@ -104,5 +104,20 @@ h1{
  display: inline-block;
  /* margin: 150px; */
  padding: 8px;
+
+}
+label{
+    display: block;
+    margin: 3px;
+    
+}
+.form1{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+h2{
+    margin-left: 30px;
+    margin-top: 10px;
+    text-decoration: underline;
 
 }
