@@ -1,123 +1,42 @@
 *{
     margin: 0;
-    /* padding: 0; */
+    padding: 0;
 }
-.row::after{
-    content: "";
-    clear: both;
-    display: table;
-} 
-.logo{
-    display: inline-block;
+body{
+    background: pink;
+}
+.container{
+    margin: 10px;
+    background: rgb(122, 227, 237);
+    border: 2px solid black;
+    padding: 10px;
+}
+hr{
     margin: 20px;
 }
+.formgroup{
+    margin-left: 20px;
+    margin-top: 13px;
+}
 
-ul{
-    list-style-type: none;
-    text-align: center;
-    /* display: inline-block; */
-    margin-top: 22px;
-    padding-right: 10px;
-}
-.col-md-6{
-    width: 50%;
-    float: left;
-    
-    
-}
-.menu{
-    margin: 20px;
-    display: inline-block;
-    
-}
-li{
-    display: inline;
-    padding-left: 10px;
-    text-align: end;
-    margin: 20px;
-}
-a{
-    text-decoration: none;
-
-}
-.block{
-    text-align: center;
-    border: 1px solid #fff;
-    background: #000;
-    color: aliceblue;
-
-}
-.col-md-3{
-    width: 24.8%;
-    float: left;
-    border: 1px solid #fff;
-    text-align: center;
-    background-color: blue;
-    color: #fff;
-}
-.col-md-8{
-    background: #000;
-    border: 1px solid white;
-    color: white;
-    text-align: center;
-    width: 66.50%;
-    float: left;
-}
-.col-md-4{
-    background: #000;
-    color: #fff;
-    /* height: 4rem; */
-    text-align: center;
-    width: 33.00%;
-    float: left;
-    border: 1px solid white;
-}
-.col-md-1{
-    width: 8.16%;
-    float: left;
-    border: 1px solid white;
-    background-color: blue;
-    text-align: center;
-    color: #fff;
-    
-}
-.col-md-12{
-    width: 100%;
-    text-align: center;
-    background: #000;
-    /* border: 1px solid black; */
-    color: #fff;
-    /* height: ; */
-    /* padding-top: 20px; */
-    /* margin-top: 20px; */
-}
-.bjp{
-    border: 1px solid #fff;
-    padding: 8px;
-    /* font-style: italic; */
-    /* list-style: ; */
-    
-}
 h1{
- border: 1px solid white;
- /* background-color: cyan; */
- display: inline-block;
- /* margin: 150px; */
- padding: 8px;
+    text-align: center;
+    margin-top: 15px;
 
 }
-label{
-    display: block;
-    margin: 3px;
+input{
+    padding: 10px;
+    width: 70%;
     
 }
-.form1{
-    margin-top: 10px;
-    margin-left: 30px;
+.gander{
+    width: 10%;
+    display: inline-flex;
+    margin: 10px;
+    
 }
-h2{
-    margin-left: 30px;
-    margin-top: 10px;
-    text-decoration: underline;
-
+.gander input{
+    padding: 10px;
+    margin-left: 10px;
+    
 }
