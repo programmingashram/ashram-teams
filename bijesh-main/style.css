@@ -40,3 +40,12 @@ input{
     margin-left: 10px;
     
 }
+.button{
+    width: 70%;
+    padding: 10px;
+    background: rgb(23, 197, 23);
+    color: #fff;
+    border: none;
+    font-size: medium;
+    margin-top: 10px;
+}
