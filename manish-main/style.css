@@ -1,0 +1,46 @@
+* {margin: 0;
+    padding: 0;
+}
+
+body {
+    background: pink;
+}
+.bg{
+    background-color: aqua;
+    border: 1px rgb(66, 65, 65) solid;
+    border-radius: 20px;
+    width: 50%;
+}
+.top { 
+    text-align: center;
+
+}
+
+.form{
+    padding-top:2px;
+}
+input { width: ;
+    margin-left: 8px;
+}
+label {
+    
+    display:block;
+    margin:2px 0 9px 9px;
+   
+}
+.address input{
+    
+    width: 80%;
+    height: 125px;
+}
+
+.button {
+    background: rgb(58, 196, 4);
+    margin: 15px 0 15px 15px ;
+    width: 90%;
+    text-align: center;
+    padding: 10px;
+    border-radius:15px ;
+}
+
+.gender { display: inline;}

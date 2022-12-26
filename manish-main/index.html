@@ -2,91 +2,111 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/manish-main/css/style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <nav class="gride">
-            <div class="col">
-                <div>
-                    <img src="https://cdn.dribbble.com/users/2112026/screenshots/10947552/media/990f79e3b2cff7ff3eebc24106b1c9e2.gif"
-                        alt="" class="logo-img" width="100">
+  <!-- <div class="top">
+  <h2>-- FORM -- </h2>
+  </div>
+    <div class="form">
 
-                </div>
-            </div>
-            <div class="col">
-                <div class="ul1">
-                    <ul>
-                        <li>
-                            <a href="#">HOME</a>
-                        </li>
-                        <li>
-                            <a href="#">ABOUT</a>
-                        </li>
-                        <li>
-                            <a href="#">GALARY</a>
-                        </li>
-                        <li>
-                            <a href="#">JADU</a>
-                        </li>
-                        <li>
-                            <a href="#">BABA NUMBER</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="white">
-        <marquee behavior="" direction="">
-            <h1>यहां काला  जादू किया जाता है मुफ्त में.....!!!</h1>
-            <h1>यहाँ हाथ पड़े जाते हे बाबा रस्तोगी के द्वारा .....!!!</h1>
-        </marquee>
-    </div>  
-    <hr>
-    <div class="con1">
-        <div class="border red">
-            <h1>
-                हाथ पढ़े जाते हे
-            </h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-        </div>
-        <div class="border purple">
-            <h1>
-                हाथ पढ़े जाते हे
-            </h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-        </div>
+  <form action="" name="">
 
-        <div class="border blue">
-            <h1>
-                हाथ पढ़े जाते हे
-            </h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-        </div>
+    <label for="">LAST NAME</label>
+    <input type="text" name="" value="" placeholder="EXAMPLE- MEHTA"> <br><br>
+    <label for="">FIRST NAME</label>
+    <input type="text" name="" value="" placeholder="EXAMPLE- MANISH"><br><br>
+   
+    <label for="">CONTACT NUMBER</label>
+    <input type="number" name="" value="jsdelivr" placeholder="958287984"> 
+    <button>submit</button>
+  </form>
 
-        <div class="border black">
-            <h1>
-                हाथ पढ़े जाते हे
-            </h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-        </div>
+    </div> -->
+
+  <div class="bg">
+    <div class="top">
+      <h1>
+        Student Ragistration Form
+      </h1>
     </div>
+    <hr color="white">
+    <br>
+
+    <form action="">
+      <div class="form">
+        <div><label for="text">First Name</label>
+          <input type="text" name="" value="" placeholder="name">
+
+          <label for="text">Middle Name</label>
+          <input type="text" name="" value="" placeholder="">
+
+          <label for="text">Last Name</label>
+          <input type="text" name="" value="" placeholder="">
+
+        </div>
+
+        <div>
+          <label for="text:">Corse : </label>
+          <select name="Course" id="">
+            <option value="Hindi">Hindi</option>
+            <option value="English">English</option>
+            <option value="Biology">Biology</option>
+            <option value="Physics">Physics</option>
+            <option value="Chemestry">Chemestry</option>
+          </select>
+
+        </div>
+        <div class="gender">
+          <label for="text"> Select Gender </label>
+          <label for="">Male</label>
+          <input type="radio" id="gender" name="gender" value="Male">
+          <label for="Gender">Female </label>
+          <input type="radio" id="gender" name="gender" value="feMale">
+          <label for="Gender"> Other </label>
+          <input type="radio" id="gender" name="gender" value="other">
+
+        </div>
+        <div>
+          <label for="text">PHONE</label>
+          <input type="number" name="" value="" placeholder="+91 000000000">
+
+        </div>
+
+            <div class="address">
+             <label for="address">Currunt Address</label>
+             <input class="address" type="text" name=""  value="" placeholder="161 vijay nagar">
+            </div>
+
+         <div>
+          <label for="gmail">Gmail</label>
+          <input type="gmail" name="" value="" placeholder="">
+         </div>
+
+         <div>
+          <label for="pasword">pasword</label>
+          <input type="password" name="" value="" placeholder="">
+         </div>
+
+         <div>
+          <label for="Re-Type-pasword">Re-Type-pasword</label>
+          <input type="password" name="" value="" placeholder="Re-Type-pasword">
+         </div>
 
 
+      </div>
+
+    </form>
+    <input  class="button" type="submit">
+    <button class="button">REGISTERD</button>
+
+  </div>
 </body>
 
 </html>
