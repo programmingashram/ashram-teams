@@ -79,6 +79,7 @@ a{
 }
 .simple-hight{
    margin-top: 5px;
+   padding: 8px;
 }
 .button1{
  
@@ -92,5 +93,13 @@ text-align: center;
     background:  rgb(96, 94, 169);
     color:rgb(7, 4, 4);
     border-radius: 40px;
+}
+.simple-hight p {
+    font-size: 10px;
+    padding-top: 4px;
+}
+
+.simple-hight input {
+    padding-left: 10px;
 }
 
