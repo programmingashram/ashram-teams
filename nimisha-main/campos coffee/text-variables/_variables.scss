@@ -1,0 +1,147 @@
+// Variables
+$color-green: #b2f5f3;
+$light-green-color: #6f9372;
+$color-black: #000000;
+$color-darkGrey: #898f4b;
+$color-white: #ffffff;
+
+// radius
+$radius-large: 15px;
+$radius-mid: 10px;
+$radius-sm: 5px;
+$radius-none: 0px;
+
+
+// font size
+$font-45: 45px;
+$font-40: 40px;
+$font-35: 3px;
+$font-30: 30px;
+$font-20: 20px;
+$font-15: 15px;
+$font-10: 10px;
+
+// margin
+$m-sm: 20px;
+$m-lg: 30px;
+$m-nrml: 10px;
+$m-mid: 15px;
+$m-auto: auto;
+$m-0: 0px;
+
+
+// padding
+$p-sm: 20px;
+$p-lg: 35px;
+$p-nrml: 10px;
+$p-mid: 15px;
+$p-auto: auto;
+$p-0: 0px;
+
+.nav-link {
+    padding: $p-0 $p-mid;
+}
+
+.drop-menu {
+    padding: $p-mid $p-lg;
+    border-radius: $radius-sm;
+    margin: $m-mid $m-0 $m-0 -60px;
+}
+
+.drop-link:hover {
+    font-size: $font-15;
+}
+
+.top-icon {
+    font-size: $font-20;
+    padding: $p-0 $p-mid;
+}
+
+.home-title {
+    font-size: $font-45;
+}
+
+.btn-shop p {
+    padding: $p-sm $p-lg;
+    border-radius: $radius-mid;
+}
+
+.product-block {
+    padding: $p-nrml $p-lg;
+
+    h2 {
+        font-size: $font-30;
+    }
+
+    .col-md-3 {
+        margin-top: $m-lg;
+    }
+
+    .product-card {
+        border-radius: $radius-mid;
+        margin: $m-0 $m-mid;
+
+        .price-detail {
+            padding: $p-nrml $p-sm;
+        }
+    }
+
+    .block-text {
+        font-size: $font-20;
+    }
+}
+
+.section {
+    margin: $m-0 auto;
+    padding: 50px $p-0;
+
+    .card-text {
+        margin: auto;
+        padding: $p-lg;
+
+        .card-order-title {
+            font-size: $font-40;
+            padding-bottom: 50px;
+        }
+    }
+
+    .text {
+        padding: $p-mid $p-0;
+    }
+
+    .card-title {
+        font-size: $font-30;
+    }
+
+    .product-card {
+        border-radius: $radius-mid;
+        margin: $m-0 $m-mid;
+
+        hr {
+            margin-left: $m-sm;
+        }
+
+        .product-detail {
+            padding: $p-sm;
+        }
+    }
+}
+
+.footer_list {
+    padding: $p-lg $p-sm;
+    background-color: $color-darkGrey;
+
+    hr {
+        margin: $m-nrml $m-0;
+        background-color: $color-white;
+    }
+
+    h4 {
+        padding-right: $p-sm;
+        color: $color-white;
+    }
+
+    .footer_li {
+        color: $color-white;
+    }
+}
