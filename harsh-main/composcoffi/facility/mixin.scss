@@ -1,0 +1,34 @@
+@mixin btn-shop{
+    padding: 15px 50px;
+    background: #898f4b;
+    color: white;
+    border-radius: 12px;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+
+
+@mixin tile{
+    border-radius: 0 0 78% 78%/0 0 25% 25%;
+    height: 180px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    top:0px;
+}
+
+@mixin cell{
+   
+    color:black;
+    display:inline-block;
+    font-weight: 700;
+}
+
+@mixin underline{
+        height: 4px;
+        background-color: #898f4b;
+        width: 45px;
+        margin: 0 auto;
+        margin-bottom: 17px;
+}

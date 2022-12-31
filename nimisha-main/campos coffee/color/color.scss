@@ -1,0 +1,104 @@
+@use '../text-variables/variables';
+@use 'sass:map';
+
+$color: (
+    "c-green" : variables.$color-green,
+    "c-lgray" : variables.$light-green-color,
+    "c-black" : variables.$color-black,
+    "c-white" : variables.$color-white,
+    "c-dgrey" : variables.$color-darkGrey,
+);
+
+header {
+    &[background-color='white'] {
+        background-color: map.get($color, "c-white");
+    }
+
+    .nav-link {
+        &[color='black'] {
+            color: map.get($color, "c-black");
+        }
+    }
+
+    .drop-menu {
+        &[background-color='white'] {
+            background-color: map.get($color, "c-white");
+        }
+    }
+
+    .drop-link {
+        &[color='black'] {
+            color: map.get($color, "c-black");
+        }
+    }
+
+    .drop-link:hover {
+        color: map.get($color, "c-dgrey");
+    }
+
+    .top-icon:hover {
+        color: map.get($color, "c-dgrey");
+    }
+}
+
+.home-title {
+    &[color='white'] {
+        color: map.get($color, "c-white");
+    }
+}
+
+p {
+    &[color='white'] {
+        color: map.get($color, "c-white");
+    }
+
+    &[background-color='dgray'] {
+        background-color: map.get($color, "c-dgrey");
+    }
+}
+
+
+a {
+    &[color='black'] {
+        color: map.get($color, "c-black");
+    }
+}
+
+
+
+a {
+    &[color='black'] {
+        color: map.get($color, "c-black");
+    }
+}
+
+a {
+    &[color='black'] {
+        color: map.get($color, "c-black");
+    }
+}
+
+hr {
+    &[background-color='dgray'] {
+        background-color: map.get($color, "c-dgrey");
+    }
+
+}
+
+.text {
+    &[color='dgray'] {
+        color: map.get($color, "c-dgrey");
+    }
+}
+
+hr {
+    &[background-color='dgray'] {
+        background-color: map.get($color, "c-dgrey");
+    }
+}
+
+    .footer_heading {
+        &[color='white'] {
+            color: map.get($color, "c-white");
+        }
+    }
