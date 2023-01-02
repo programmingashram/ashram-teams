@@ -1,0 +1,20 @@
+@mixin btn{
+    padding:10px 20px;
+    color:white;    
+}
+.view-btn{
+    @include btn;
+    background-color: #bd9401!important;
+}
+@mixin background{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@mixin big-btn{
+    background-color: #bd9401;
+    padding: 7px 59px;
+    color:white;
+
+
+}

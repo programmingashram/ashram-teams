@@ -6,107 +6,111 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!-- <div class="top">
-  <h2>-- FORM -- </h2>
-  </div>
-    <div class="form">
-
-  <form action="" name="">
-
-    <label for="">LAST NAME</label>
-    <input type="text" name="" value="" placeholder="EXAMPLE- MEHTA"> <br><br>
-    <label for="">FIRST NAME</label>
-    <input type="text" name="" value="" placeholder="EXAMPLE- MANISH"><br><br>
-   
-    <label for="">CONTACT NUMBER</label>
-    <input type="number" name="" value="jsdelivr" placeholder="958287984"> 
-    <button>submit</button>
-  </form>
-
-    </div> -->
-
-  <div class="bg">
-    <div class="top">
-      <h1>
-        Student Ragistration Form
-      </h1>
-    </div>
-    <hr color="white">
-    <br>
-
-    <form action="">
-      <div class="form">
-        <div><label for="text">First Name</label>
-          <input type="text" name="" value="" placeholder="name">
-
-          <label for="text">Middle Name</label>
-          <input type="text" name="" value="" placeholder="">
-
-          <label for="text">Last Name</label>
-          <input type="text" name="" value="" placeholder="">
-
-        </div>
-
-        <div>
-          <label for="text:">Corse : </label>
-          <select name="Course" id="">
-            <option value="Hindi">Hindi</option>
-            <option value="English">English</option>
-            <option value="Biology">Biology</option>
-            <option value="Physics">Physics</option>
-            <option value="Chemestry">Chemestry</option>
-          </select>
-
-        </div>
-        <div class="gender">
-          <label for="text"> Select Gender </label>
-          <label for="">Male</label>
-          <input type="radio" id="gender" name="gender" value="Male">
-          <label for="Gender">Female </label>
-          <input type="radio" id="gender" name="gender" value="feMale">
-          <label for="Gender"> Other </label>
-          <input type="radio" id="gender" name="gender" value="other">
-
-        </div>
-        <div>
-          <label for="text">PHONE</label>
-          <input type="number" name="" value="" placeholder="+91 000000000">
-
-        </div>
-
-            <div class="address">
-             <label for="address">Currunt Address</label>
-             <input class="address" type="text" name=""  value="" placeholder="161 vijay nagar">
-            </div>
-
-         <div>
-          <label for="gmail">Gmail</label>
-          <input type="gmail" name="" value="" placeholder="">
-         </div>
-
-         <div>
-          <label for="pasword">pasword</label>
-          <input type="password" name="" value="" placeholder="">
-         </div>
-
-         <div>
-          <label for="Re-Type-pasword">Re-Type-pasword</label>
-          <input type="password" name="" value="" placeholder="Re-Type-pasword">
-         </div>
-
-
+  <div class="contenour">
+    <div class="row">
+      <div class="col-md-4">
+        <h2>
+          YELLOW-1
+        </h2>
       </div>
 
-    </form>
-    <input  class="button" type="submit">
-    <button class="button">REGISTERD</button>
+      <div class="col-md-1">
+        <div class="imgnev">
+          <img src="/img/yellow.png" alt="yellow">
+        </div>
+      </div>
 
+      <div class="col-md-7">
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">CONTACT ME</a></li>
+          <li><a href="">GALLERY</a></li>
+        </ul>
+      </div>
+
+
+    </div>
   </div>
+
+  <div class="section">
+    <section>
+      <div class="formh2">
+        <h2>
+          YELLOW-1 Ragister Form
+        </h2>
+      </div>
+      <div class="row-form-12">
+        <form action="" class="form-body">
+          <div class="simple-hight">
+            <label for="">Name: </label>
+            <input type="text" name="" value="" placeholder="Your Full Name">
+          </div>
+          <div class="simple-hight" >
+            <label for="">Email:</label>
+            <input type="email" name="" value="" placeholder="Your Email">
+          </div>
+          <div class="simple-hight">
+            <label for="">Password</label>
+            <input type="password" name="" value="" placeholder="Password">
+            <p> USE UPPER CASE AND LOWER CASE WITH SPACIAL CHARECTER</p>
+          </div>
+          <div class="simple-hight">
+            <label for="">Phone Number:</label>
+            <select name="in" id="">
+              <option value="select code">+00 CODE</option>
+              <option value="IN + 91">In +91</option>
+              <option value="china +86 ">China +86</optixon>
+              <option value="IN + 91">Us +1</option>
+              <option value="IN + 91">Russia +7</option>
+            </select>
+            <input type="number" name="" value="" placeholder="Phone Number">
+          </div>
+          <div class="simple-hight">
+            <label for="">Gender:</label>
+            <label for="male">Male</label>
+            <input type="radio" value="male" name="gander" id="male">
+            <label for="female">Female</label>
+            <input type="radio" value="female" name="gander" id="female">
+            <label for="other">other</label>
+            <input type="radio" value="other" name="gander" id="other">
+          </div>
+          <div class="simple-hight">
+            <label for="language">Language</label>
+            <select>
+              <option value="hindi">SELECT LANGUAGE</option>
+              <option value="hindi">हिन्दी</option>
+              <option value="ENGLISH">ENGLISH (US)</option>
+              <option value="ENGLISH">ENGLISH (UK)</option>
+              <option value="china">姓名</option>
+              <option value="filophian">pilipino </option>
+              <option value="japan">日本</option>
+              <option value="koria">한국어</option>
+              <option value="nepoli">नेपाली</option>
+            </select>
+          </div>
+          <div class="simple-hight">
+            <label for="zip code">Zip Code</label>
+            <input type="number" name="" value="" placeholder="453518">
+          </div>
+
+          <div class="simple-hight">
+            <label for="">Why Did You Choose <span>YELLOW-1</span>...?</label> 
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <input type="text" name="" value="" placeholder="TYPE.....!!">
+          </div>
+          <div class="button1">
+            <input type="submit" value="Ragister" name="">
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
+
 </body>
 
 </html>
