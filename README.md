@@ -1,6 +1,6 @@
 # Let's join Ashram
 
-> ### If you are bow joiner so please follow this steps.
+> ### If you are new joiner so please follow this steps.
 
 1. Create one branch <br>
     branch name should be
