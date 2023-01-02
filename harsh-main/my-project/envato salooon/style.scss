@@ -1,0 +1,176 @@
+@import'./utilities/space.scss';
+@import'./utilities/color.scss';
+@import'./fuction/mixin.scss';
+a{
+    text-decoration: none;
+}
+body{
+    background-color: black;
+}
+.row{
+    align-items: center;
+    // --bs-gutter-x: 0;
+}
+.center{
+  text-align: center;
+}
+
+
+header,nav , .underline{
+    border-bottom: 1px solid white;
+}
+nav{
+    position: sticky;
+    top: 0;
+    background-color: #00000036;
+    backdrop-filter: blur(18px);
+}
+.bg-nav{
+    background-image: url(images/hero-home.jpg);
+   @include background;
+        .layer{
+            background-color: #333333;
+            opacity: 0.8;
+            
+        }
+    a{
+        font-size: 14px!important;
+        color: white !important;
+    }
+}   
+section{
+    .nav-contant{
+        h1{
+        font-size: 4.6rem!important;  
+        padding-top:9rem; 
+        }
+    }
+}
+.service-card:hover .img-contant{
+    display: block;
+    animation: flip 2s;
+   transition: 0.2s;
+}
+
+@keyframes flip{
+    from{
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.f-35{
+    font-size:$fs-6!important;
+}
+article{
+    .page{
+        padding:3rem;
+        width: 95%;
+        margin-top: 100px;
+        
+    }
+   
+    .img-contant{
+       display:none;
+       width: 65%;
+       padding: 34px;
+       position: absolute;
+       left: 70px;
+       bottom: 5px;
+       z-index: 9999999;
+    }
+    }
+    // background-mid//
+    .bg-mid{
+        background-image: url(images/ornament1.png);
+         @include background;
+    }
+
+    .card-img{
+        background-image: url(images/about-us-sect.jpg);
+        @include background;
+        .c-layer{
+            background-color: #333333;
+            opacity: 0.3;
+        }
+       .card-setup{
+        margin-top: 100px;
+         padding: 18.3rem 0px;
+        object-fit: cover;
+        
+       }
+    }   
+    article{
+        .img1{
+            background-image: url(images/appoint1.jpg);
+            @include background;
+            width:95%
+        }
+        .width90{
+            width:95%;
+        }
+        .discribe{
+            h1{
+                padding-top: 257px;
+            }
+        }
+        
+        .img-2{
+            background-image: url(images/appoint2.jpg);
+        }
+    }
+    .appointement-form{
+        h1{
+            font-size: 1.3rem;
+            padding: 15px 0px;
+        }
+        .date{
+            
+            input{
+                padding: 9px 30px
+            }
+        }
+
+          
+        }
+        .time{
+            margin-top: 20px;
+        
+        }
+        .number{
+            margin-top: 20px;
+           
+        }
+        .big-btn{
+            @include big-btn;
+        }
+    
+    section{
+        .img-location{
+            background-image: url(images/appoi1.jpg);
+            @include background;
+            padding: 31px 9px;
+            padding-top: 223px;
+        }
+    }
+    footer{
+        background-image: url(images/footer-bg.jpg);
+        @include background;
+       .nav-link{
+        color:white;
+       }
+       .layyer{
+        background-color: #1d1807;
+        opacity: 0.8;
+       }
+       .nav{
+        display:wr
+       }
+    }
+    .start{
+        align-items: flex-start;
+    }
