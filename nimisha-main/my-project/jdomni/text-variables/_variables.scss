@@ -1,0 +1,74 @@
+// Variables
+$color-blue: #037ce7;
+$light-blue-color: #0086ff;
+$color-black: #000000;
+$color-bgblue: #f2f9ff;
+$color-white: #ffffff;
+$color-lgrey: #f1f1f1;
+$color-grey: #eaeaea;
+$color-dgrey: #3f4755;
+
+
+// radius
+$radius-xlarge: 20px;
+$radius-large: 15px;
+$radius-mid: 10px;
+$radius-sm: 5px;
+$radius-none: 0px;
+
+
+// font size
+$font-45: 45px;
+$font-40: 40px;
+$font-35: 3px;
+$font-30: 30px;
+$font-20: 20px;
+$font-15: 15px;
+$font-10: 10px;
+
+// margin
+$m-sm: 20px;
+$m-lg: 30px;
+$m-nrml: 10px;
+$m-mid: 15px;
+$m-auto: auto;
+$m-0: 0px;
+
+
+// padding
+$p-sm: 20px;
+$p-lg: 35px;
+$p-nrml: 10px;
+$p-mid: 15px;
+$p-auto: auto;
+$p-0: 0px;
+
+.btn-shadow {
+    font-size: $font-15;
+}
+
+span {
+    font-size: $font-10;
+}
+
+.radius {
+    border-radius: 25% 25% 0 0;
+}
+
+.heading-default {
+    font-size: initial;
+    line-height: inherit;
+}
+.feature-child {
+    line-height: inherit;
+    padding-bottom: $p-mid;
+}
+.feature-heading {
+    font-size: inherit;
+}
+.card:hover {
+    border-radius: $radius-mid;
+}
+.inner-box{
+    border-radius: $radius-mid;
+}

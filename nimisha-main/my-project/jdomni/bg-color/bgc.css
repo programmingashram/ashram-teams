@@ -1,0 +1,45 @@
+.btn-shadow {
+  font-size: 15px;
+}
+
+span {
+  font-size: 10px;
+}
+
+.radius {
+  border-radius: 25% 25% 0 0;
+}
+
+.heading-default {
+  font-size: initial;
+  line-height: inherit;
+}
+
+.feature-child {
+  line-height: inherit;
+  padding-bottom: 15px;
+}
+
+.feature-heading {
+  font-size: inherit;
+}
+
+.card:hover {
+  border-radius: 10px;
+}
+
+.inner-box {
+  border-radius: 10px;
+}
+
+.back-color[background-color=bg-blue] {
+  background-color: #f2f9ff;
+}
+
+.footer[background-color=lgray] {
+  background-color: #f1f1f1;
+}
+
+.last-footer[background-color=grey] {
+  background-color: #eaeaea;
+}/*# sourceMappingURL=bgc.css.map */
