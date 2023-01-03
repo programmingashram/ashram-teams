@@ -27,7 +27,6 @@ header{
     width: 90%;
     text-align: end;
     margin-top: 10px;
-    /* margin-left: 30px; */
     font-weight:lighter;
 }
 .coll{
@@ -57,7 +56,6 @@ header{
 .menu{
     padding: 25px;
     margin-left: 40px;
-
 }
 ul{
     margin-left: 120px;
@@ -75,13 +73,13 @@ a{
     text-decoration: none;
     color: #13C5DD!important;
 }
+.home{
+    background-image: url(./img/dr.jpg);
+    width: 100%;
+    padding-bottom: 20px;  
+}
 .bk{
     display: block;
-    width: 100%;
-    position: absolute;
-    z-index: -1;
-}
-.caption{
     width: 100%;
 }
 .caption h3{
@@ -90,9 +88,7 @@ a{
     padding-left: 90px;
     font-family: "Roboto Condensed",sans-serif;
     color: #13C5DD!important;
-
 }
-
 .caption hr{
     width: 21%;
     margin-left: 87px;
@@ -116,7 +112,7 @@ a{
 }
 .bp{
     width: 28%;
-    margin-top: 180px;
+    margin-top: 90px;
     margin-left: 90px;
     border-radius: 10px;
     display: block;
@@ -149,7 +145,6 @@ a{
     margin-top: 159px;
     text-align: center;
     font-family: "Roboto Condensed",sans-serif;
-
 }
 .service hr{
     width: 13%;
@@ -157,7 +152,6 @@ a{
 }
 .service h2{
     color: #13C5DD!important;
-
 }
 .service h1{
     font-size: 50px;
@@ -179,8 +173,6 @@ a{
     border-radius: 13px;
     font-size: 15px;
     font-family: "Roboto Condensed",sans-serif;
-    
-    
 }
 .card i{
     font-size: 65px;
@@ -208,9 +200,7 @@ a{
 }
 .cat h3{
     color: #fff;
-    font-size: 18px;
-    
-
+    font-size: 18px;  
 }
 .cat hr{
     width: 26%;
@@ -237,7 +227,39 @@ a{
     padding-left: 80px;
 }
 .d-flex{
-    width: 50%;
-    margin-left: 40rem;
-    margin-top: -40rem;
+    width: 37%;
+    margin-left: 42rem;
+    margin-top: -36rem;
+    border: 1px solid black;
+    text-align: center;
+    padding: 30px 0px;
+    border-radius: 8px;
+    background: #fff;
+}
+input{
+    margin: 15px;
+    border-radius: 5px;
+    padding: 15px;
+    border: 0px;
+    background:rgb(208, 208, 204);
+    width: 31%;
+}
+.d-flex select{
+    margin: 10px 15px;
+    padding: 12px;
+    /* text-align: center; */
+    width: 37%;
+    border-radius: 5px;
+    color: rgb(208, 208, 204);
+}
+.d-flex h1{
+    font-size: 37px;
+    margin-bottom: 11px;
+}
+.button{
+    width: 85%;
+    background: #13C5DD!important;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
 }
