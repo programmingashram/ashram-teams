@@ -299,6 +299,10 @@ footer .blankline {
   padding: 16px;
 }
 
+.center {
+  justify-content: center;
+}
+
 .align-start {
   align-items: flex-start;
 }
@@ -334,8 +338,9 @@ section h1 {
   background-color: #898f4b;
 }
 .section-square h2 {
-  font-size: 1rem;
+  font-size: 1.6rem;
   color: #f6eed8;
+  padding-top: 44px;
 }
 
 .product {
