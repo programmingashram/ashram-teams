@@ -292,6 +292,9 @@ footer{
         padding: 16px;
     }
 }
+.center{
+    justify-content: center;
+}
 .align-start{
     align-items: flex-start;
 }
@@ -324,8 +327,9 @@ section{
 .section-square{
     background-color: map-get($color, "green" );
     h2{
-        font-size: 1rem;
+        font-size: 1.6rem;
         color: #f6eed8;
+        padding-top: 44px;
     }
 }
 
