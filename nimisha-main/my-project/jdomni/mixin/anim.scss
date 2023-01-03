@@ -1,0 +1,34 @@
+@keyframes img_slid {
+    0% {
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+@keyframes img_slid_r {
+    0% {
+        left: 150px;
+        top: 0px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+.anim-right{
+    position: relative;
+    animation-name: img_slid_r;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+.anim-top {
+    position: relative;
+    animation-name: img_slid;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}

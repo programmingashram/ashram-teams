@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.contenour{
+    border: 1px black solid;
+}
+
+.col-md-4{
+    float: left;
+    width:16.66%;
+    background: rgb(254 205 8);
+}
+
+.col-md-1{
+    float: left;
+    width: 8.33%;
+}
+
+
+.col-md-7{
+  float: left;
+   width:74.99%;
+   background: rgb(254 205 8);
+   margin-top: 8px;
+ }
+
+.col-md-4 h2{
+    margin:4px 0 3px 56px;
+}S
+
+ul{
+    margin-top: 15px;
+    padding-left: 10px;
+    padding: 8px;
+}
+
+li{
+    display: inline;
+    margin-left: 40px;
+    padding-top:20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.imgnev img {
+    width: 32px;
+}
+
+.section {
+    width: 100%;
+    background: rgb(147, 199, 212);
+}
+
+.row-form-12
+{
+    width: 60%;
+    background-color: rgb(231, 225, 74);
+    margin-left:17em;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding-bottom:40px;
+}
+.form-body{
+    padding: 12px 0px 0px 20px ;
+}
+.formh2{
+    text-align: center;
+    padding-top: 15px;
+}
+.simple-hight{
+   margin-top: 5px;
+   padding: 8px;
+}
+.button1{
+ 
+text-align: center;
+ padding: 4%;
+}
+.button1 input{
+    width: 30%;
+    padding:10px 40px 10px 40px;
+    font-size: larger;
+    background:  rgb(96, 94, 169);
+    color:rgb(7, 4, 4);
+    border-radius: 40px;
+}
+.simple-hight p {
+    font-size: 10px;
+    padding-top: 4px;
+}
+
+.simple-hight input {
+    padding-left: 10px;
+}
+
