@@ -137,9 +137,9 @@
         background-color: rgb(234, 234, 231);
         font-size: 12px;
     }
+
     .condition {
         align-items: center;
-        padding-left: 25px;
 
         &[size='small'] {
             font-size: 8px;
@@ -158,124 +158,200 @@
 
     }
 }
-.google{
+
+.google {
     width: 100%;
+}
+
+.sup-img {
+    width: 150px;
 }
 
 
 
 @media only screen and (max-width: 655px) {
-    .icon{
+    .icon {
         width: 40% !important;
+
         .logo-icon {
             width: 80px !important;
         }
-    
+
     }
-    
+
     .nav-hid {
         display: none !important;
     }
-    .menu{
+
+    .menu {
         width: 50% !important;
         text-align: end;
+
         .drop-menu {
             display: block !important;
         }
     }
-    .back-img{
+
+    .back-img {
         width: 100px;
     }
-    .container{
+
+    .container {
         text-align: center;
     }
-    .radius{
+
+    .radius {
         margin-top: 220px;
     }
-    .anim-top{
+
+    .anim-top {
         padding-bottom: 18px;
     }
-    h2{
+
+    h2 {
         font-size: 26px !important;
     }
-    .feature-child{
-        padding:  0px 40px;
 
-        .feature-img{
+    .feature-child {
+        padding: 0px 40px;
+
+        .feature-img {
             width: 130px !important;
         }
-    }
-    .justify{
-        justify-content: center;
 
-        .rounded-pill{
-            margin-bottom: 8px; 
-            font-size: 12px;  
+        .rounded-pill {
+            margin-bottom: 8px;
+            font-size: 12px;
         }
     }
-    .inner-box{
+
+    .justify {
+        justify-content: center;
+
+        .rounded-pill {
+            margin-bottom: 8px;
+            font-size: 12px;
+        }
+    }
+
+    .inner-box {
         margin-bottom: 13px;
     }
-    .google{
+
+    .google {
         width: 140px !important;
         margin-bottom: 10px;
+    }
+
+    .sup-img {
+        width: 70px !important;
+    }
+    .iner-box{
+        width: 90% !important;
+        .title{
+            font-size: 20px;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        .input{
+            font-size: 10px;
+        }
+        .btn{
+            font-size: 12px !important;
+        }
+        p{
+            font-size: 10px !important;
+        }
     }
 }
 
 @media (max-width: 764px) {
-    .icon{
+    .icon {
         width: 40% !important;
+
         .logo-icon {
             width: 85px !important;
         }
-    
+
     }
-    
+
     .nav-hid {
         display: none !important;
     }
-    .menu{
+
+    .menu {
         width: 50% !important;
         text-align: end;
+
         .drop-menu {
             display: block !important;
         }
     }
-    .back-img{
+
+    .back-img {
         width: 110px;
     }
-    .container{
+
+    .container {
         text-align: center;
     }
-    .radius{
+
+    .radius {
         margin-top: 240px;
     }
-    .anim-top{
+
+    .anim-top {
         padding-bottom: 20px;
     }
-    h2{
+
+    h2 {
         font-size: 28px !important;
     }
-    .feature-child{
-        padding:  0px 40px;
 
-        .feature-img{
+    .feature-child {
+        padding: 0px 40px;
+
+        .feature-img {
             width: 150px !important;
         }
     }
-    .justify{
+
+    .justify {
         justify-content: center;
 
-        .rounded-pill{
+        .rounded-pill {
             font-size: 12px;
-            margin-bottom: 10px;   
+            margin-bottom: 10px;
         }
     }
-    .inner-box{
+
+    .inner-box {
         margin-bottom: 15px;
     }
-    .google{
+
+    .google {
         width: 150px !important;
         margin-bottom: 10px;
+    }
+
+    .sup-img {
+        width: 75px !important;
+    }
+    .iner-box{
+        width: 90% !important;
+        .title{
+            font-size: 20px;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        .input{
+            font-size: 10px;
+        }
+        .btn{
+            font-size: 12px !important;
+        }
+        p{
+            font-size: 10px !important;
+        }
     }
 }
