@@ -1,6 +1,6 @@
 @import '../jdomni/color/color.css';
 @import '../jdomni/bg-color/bgc.css';
-@import '../jdomni/minix/anim.css';
+@import '../jdomni/mixin/anim.css';
 .btn-shadow {
   font-size: 15px;
 }
@@ -159,7 +159,6 @@ span {
 }
 .iner-box .condition {
   align-items: center;
-  padding-left: 25px;
 }
 .iner-box .condition[size=small] {
   font-size: 8px;
@@ -175,6 +174,10 @@ span {
 
 .google {
   width: 100%;
+}
+
+.sup-img {
+  width: 150px;
 }
 
 @media only screen and (max-width: 655px) {
@@ -215,6 +218,10 @@ span {
   .feature-child .feature-img {
     width: 130px !important;
   }
+  .feature-child .rounded-pill {
+    margin-bottom: 8px;
+    font-size: 12px;
+  }
   .justify {
     justify-content: center;
   }
@@ -228,6 +235,26 @@ span {
   .google {
     width: 140px !important;
     margin-bottom: 10px;
+  }
+  .sup-img {
+    width: 70px !important;
+  }
+  .iner-box {
+    width: 90% !important;
+  }
+  .iner-box .title {
+    font-size: 20px;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .iner-box .input {
+    font-size: 10px;
+  }
+  .iner-box .btn {
+    font-size: 12px !important;
+  }
+  .iner-box p {
+    font-size: 10px !important;
   }
 }
 @media (max-width: 764px) {
@@ -281,5 +308,25 @@ span {
   .google {
     width: 150px !important;
     margin-bottom: 10px;
+  }
+  .sup-img {
+    width: 75px !important;
+  }
+  .iner-box {
+    width: 90% !important;
+  }
+  .iner-box .title {
+    font-size: 20px;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .iner-box .input {
+    font-size: 10px;
+  }
+  .iner-box .btn {
+    font-size: 12px !important;
+  }
+  .iner-box p {
+    font-size: 10px !important;
   }
 }/*# sourceMappingURL=style.css.map */
