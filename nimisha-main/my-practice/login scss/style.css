@@ -1,0 +1,62 @@
+@import './backgrounds/bg.css';
+@import './text-variables/variables.css';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  background-image: url(back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+}
+.box .iner-box {
+  box-shadow: 0px 2px 5px gray;
+  background-color: white;
+  margin: 20px auto;
+  text-align: center;
+  width: 40%;
+  padding-top: 30px;
+}
+.box .iner-box .title {
+  padding: 10px 0;
+}
+.box .iner-box .title[size=large] {
+  font-size: 25px;
+}
+.box .iner-box .input {
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  border: none;
+  width: 75%;
+  background-color: rgb(234, 234, 231);
+  font-size: 12px;
+}
+.box .iner-box .condition {
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+}
+.box .iner-box .condition[size=small] {
+  font-size: 8px;
+}
+.box .iner-box .condition .btn {
+  border-radius: 20px;
+  border: none;
+  padding: 10px 30px;
+  margin-right: 5px;
+}
+.box .iner-box .condition .btn[size=medium] {
+  font-size: 15px;
+}
+.box .iner-box .row {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+.box .iner-box .online {
+  padding: 30px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* The animation code */
+    @keyframes row_1 {
+        from {background-color: pink;}
+        to {background-color: yellow;}
+    }
+    @keyframes row_2 {
+        from {background-color: red;}
+        to {background-color: blue;}
+    }
+    @keyframes row_3 {
+        from {background-color: orange;}
+        to {background-color: pink;}
+    }
+    @keyframes row_4 {
+        from {background-color: green;}
+        to {background-color: purple;}
+    }
+    @keyframes row_5 {
+        from {background-color: blue;}
+        to {background-color: red;}
+    }
+    @keyframes row_6 {
+        from {background-color: purple;}
+        to {background-color: green;}
+    }
+    @keyframes row_7 {
+        from {background-color: pink;}
+        to {background-color: orange;}
+    }
+    @keyframes row_8 {
+        from {background-color: orangered;}
+        to {background-color: gainsboro;}
+    }
+    @keyframes row_9 {
+        from {background-color: yellow;}
+        to {background-color: palevioletred;}
+    }
+    @keyframes alternate {
+        0%   {left:0px; top:0px;}
+        25%  {left:200px; top:0px;}
+        50%  {left:200px; top:200px;}
+        75%  {left:0px; top:200px;}
+        100% {left:0px; top:0px;}
+    }
+    .container{
+        display: flex;
+        padding-top: 200px;
+        padding-left: 100px;
+        position: relative;
+        animation-name: alternate;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    .row{
+        width: 25px;
+        height: 50px;
+        margin-right: 10px;
+    }
+    
+    #div_1{
+        background-color: pink;
+        animation-name: row_1;
+        animation-duration: 4s;
+        transform: scaleY(1);
+        animation-iteration-count: infinite;
+    }
+    
+    #div_2{
+        background-color: red;
+        animation-name: row_2;
+        animation-duration: 4s;
+        transform: scaleY(2);
+        animation-iteration-count: infinite;
+    }
+    
+    #div_3{
+        background-color: orange;
+        animation-name: row_3;
+        animation-duration: 4s;
+        transform: scaleY(3);
+        height: 60px;
+        animation-iteration-count: infinite;
+    }
+    
+    #div_4{
+        background-color: green;
+        animation-name: row_4;
+        animation-duration: 4s;
+        transform: scaleY(4);
+        margin-top: 40px;
+        animation-iteration-count: infinite;
+    }
+    
+    #div_5{
+        background-color: blue;
+        animation-name: row_5;
+        animation-duration: 4s;
+        transform: scaleY(5);
+        margin-top: 85px;
+        height: 45px;
+        animation-iteration-count: infinite;
+    }
+    
+    #div_6{
+        background-color: purple;
+        animation-name: row_6;
+        animation-duration: 4s;
+        transform: scaleY(4);
+        margin-top: 40px;
+        animation-iteration-count: infinite;
+    }
+    
+    #div_7{
+        background-color: pink;
+        animation-name: row_7;
+        animation-duration: 4s;
+        transform: scaleY(3);
+        height: 60px;
+        animation-iteration-count: infinite;
+    }
+   
+    #div_8{
+        background-color: red;
+        animation-name: row_8;
+        animation-duration: 4s;
+        transform: scaleY(2);
+        animation-iteration-count: infinite;
+    }
+    
+    #div_9{
+        background-color: yellow;
+        animation-name: row_9;
+        animation-duration: 4s;
+        transform: scaleY(1);
+        animation-iteration-count: infinite;
+    }
+    
+
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row" id="div_1">
+        </div>
+
+        <div class="row" id="div_2">
+        </div>
+
+        <div class="row" id="div_3">
+        </div>
+
+        <div class="row" id="div_4">
+        </div>
+
+        <div class="row" id="div_5">
+        </div>
+
+        <div class="row" id="div_6">
+        </div>
+
+        <div class="row" id="div_7">
+        </div>
+
+        <div class="row" id="div_8">
+        </div>
+
+        <div class="row" id="div_9">
+        </div>
+    </div>
+</body>
+</html>
