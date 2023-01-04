@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.logo-img img {
+  width: 25%;
+}
+
+.btn-green {
+  text-align: end;
+}
+
+.logo-img1 img {
+  width: 35%;
+}
+
+.bg-img {
+  background-image: url(../img/front-view-smiley-man-holding-pair-glasses-hand_23-2148429659.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0px;
+}
+.bg-img .sec-content {
+  padding: 115px 0px;
+}
+
+.sec-head h1 {
+  font-size: 4.5rem;
+}
+
+.sec-btn .hover-me:hover {
+  background-color: #464646;
+}
+
+.element-icon {
+  width: 100%;
+}
+
+.bg-grey {
+  background-color: rgba(122, 122, 122, 0.23);
+}
+
+.element-kit {
+  display: flex;
+  padding: 50px 0px;
+}
+.element-kit .element-icon {
+  width: 20%;
+}
+
+.elementor-widget h4 {
+  font-size: 16px;
+  color: #df676d;
+}
+
+.elementor-head {
+  display: flex;
+}
+.elementor-head .elementor-blog {
+  margin-right: 50px;
+}
+.elementor-head .elementor-details h3 {
+  font-size: 18px;
+}
+
+.elementor-blog .f-5 {
+  font-size: 50px;
+}
+
+.elementor-img img {
+  width: 100%;
+  padding: 50px 0;
+}
+
+.elementor-block p {
+  font-size: 25px;
+}
+
+.elementor-block {
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.25);
+  padding: 1em 1em 1em 1em;
+  background: #ffffff;
+  position: relative;
+  top: -140px;
+  left: -22px;
+}
+
+.art-img {
+  background-image: url(../img/OIP.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0px;
+}
+.art-img span {
+  color: white;
+}
+
+.font-75 {
+  font-size: 75px;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+
+.info h4 {
+  color: #df676d;
+}
+
+.info {
+  padding: 40px 0px;
+}
+
+.info h1 {
+  margin-top: 40px;
+}
+
+.info p {
+  font-size: 21px;
+}
+
+.card {
+  padding: 10px 14px;
+  text-align: center;
+}
+
+.tile img:hover {
+  transform: scale(1.5);
+  transition: 0.2s ease-out;
+}
+
+.tile {
+  overflow: hidden;
+  position: relative;
+}
+
+.mt-105 {
+  margin-top: 105px;
+}
+
+.hero-img {
+  background-image: url(../img/stock-photo-oculist-young-patient-trial-frame.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 50px 0px;
+}
+
+.elementor-heading {
+  padding: 174px 0px;
+}
+
+.elementor-heading h1 {
+  font-size: 70px;
+}
+
+.elementor-heading p {
+  font-size: 20px;
+}
+
+.mt-90 {
+  margin-top: 90px;
+}
+
+.box p {
+  font-size: 18px;
+}
+
+.content-img {
+  background-image: url(../img/black-plastic-eye-glasses-with-copy-space.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  padding: 150px 40px;
+  color: white;
+}
+
+.badge {
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+
+.pro-img {
+  background-image: url(../img/elegant-young-woman-posing-in-hat-eyeglasses-and-brown-jacket-on-roof.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 123px 0px;
+}
+
+.pro-content {
+  padding: 100px;
+}
+
+.profile-img {
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  border: 2px solid white;
+}
+
+.profile-details {
+  height: 371px !important;
+}
+
+.profile-details {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.1411764706);
+  padding: 63px 50px;
+  display: none;
+  height: 92%;
+  width: 92%;
+  left: 12px;
+  top: 20px;
+}
+
+.block:hover .profile-details {
+  display: block;
+  -webkit-animation: flip 1s;
+          animation: flip 1s;
+  transition: 0.2s;
+  height: 100%;
+}
+
+@-webkit-keyframes flip {
+  from {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes flip {
+  from {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.appointment {
+  display: flex;
+  padding: 50px;
+}
+.appointment span {
+  font-size: 60px;
+  margin-right: 31px;
+}
+.appointment p {
+  font-size: 25px;
+}
+
+.footer-list {
+  display: table-caption;
+}
+
+.footer-list a {
+  color: black;
+}/*# sourceMappingURL=style.css.map */

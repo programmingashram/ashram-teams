@@ -1,0 +1,117 @@
+// mixin start from here //
+@mixin custom-btn{
+    padding: 12px 50px;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 50%);
+    border-radius: 3px;
+    font-size: 14px;
+}
+@mixin button{
+    color: $bg-grey;
+}
+// hover //
+@mixin slidup{
+    transform: translate3d(0,-20px,0);
+    transition: all .2s;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+}
+// card images//
+@mixin card{
+    .card-1{
+        background-image: url(../img/project-1.jpg);
+        background-position: center;
+        background-image: cover;
+        background-repeat: no-repeat;
+            }
+    .card-2{
+                background-image: url(../img/project-2.jpg);
+                background-position: center;
+                background-image: cover;
+                background-repeat: no-repeat;
+            }
+    .card-3{
+                background-image: url(../img/project-3.jpg);
+                background-position: center;
+                background-image: cover;
+                background-repeat: no-repeat;
+            }
+    .card-4{
+                background-image: url(../img/blog-4\ \(1\).jpg);
+                background-position: center;
+                background-image: cover;
+                background-repeat: no-repeat;
+                    }
+     .card-5{
+                        background-image: url(../img/blog-4.jpg);
+                        background-position: center;
+                        background-image: cover;
+                        background-repeat: no-repeat;
+                    }
+    .card-6{
+                        background-image: url(../img/blog-5.jpg);
+                        background-position: center;
+                        background-image: cover;
+                        background-repeat: no-repeat;
+                    }  
+    .card-7{
+                        background-image: url(../img/blog-6.jpg);
+                        background-position: center;
+                        background-image: cover;
+                        background-repeat: no-repeat;
+                            }
+    .card-8{
+                                background-image: url(../img/blog-7.jpg);
+                                background-position: center;
+                                background-image: cover;
+                                background-repeat: no-repeat;
+                            }
+    .card-9{
+                                background-image: url(../img/blog-8.jpg);
+                                background-position: center;
+                                background-image: cover;
+                                background-repeat: no-repeat;
+                            } 
+                            .card-10{
+                                background-image: url(../img/project-3.jpg);
+                                background-position: center;
+                                background-image: cover;
+                                background-repeat: no-repeat;
+                            }
+            .card-11{
+                                background-image: url(../img/project-4.jpg);
+                                background-position: center;
+                                background-image: cover;
+                                background-repeat: no-repeat;
+                            }  
+            .card-12{
+                                background-image: url(../img/project-5.jpg);
+                                background-position: center;
+                                background-image: cover;
+                                background-repeat: no-repeat;
+                                    }
+            .card-13{
+                                        background-image: url(../img/project-6.jpg);
+                                        background-position: center;
+                                        background-image: cover;
+                                        background-repeat: no-repeat;
+                                    }
+            .card-14{
+                                        background-image: url(../img/project-3.jpg);
+                                        background-position: center;
+                                        background-image: cover;
+                                        background-repeat: no-repeat;
+                                    }                                               
+}
+// background -image//
+@mixin bg-1{
+    background-image: url(../img/gallery-5\ \(1\).jpg);
+}
+// 
+@mixin box{
+    width: 100%;
+    border: none;
+    height: 46px;
+    padding: 12px 18px;
+    font-size: 14px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+}
