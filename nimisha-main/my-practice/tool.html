@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<style>
+  .tooltip {
+    margin-top: 50px;
+    position: relative;
+    display: inline-block;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 245px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 0%;
+    margin-left: -60px
+  }
+
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .tool_heading{
+    font-size: 20px;
+  }
+  .parag {
+    text-align: start;
+    padding-left: 8px
+  }
+
+  .tool_dis {
+    color: grey;
+    font-size: 12px;
+  }
+
+  .footer {
+    display: flex;
+    width: 100%;
+    margin-bottom: -16px;
+  }
+
+  .foot_70 {
+    width: 70%;
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    padding-right: 15px;
+    text-align: initial;
+    padding-left: 5px;
+    border-radius: 0px 0px 0px 6px;
+  }
+
+  .foot_30 {
+    color: white;
+    background-color: blue;
+    padding: 10px 12px;
+    border-radius: 0px 0px 6px 0px;
+  }
+</style>
+
+<body style="text-align:center;">
+
+  <div class="tooltip">Hover over me
+    <div class="tooltiptext">
+      <div class="tooltip_div">
+        <div class="parag">
+          <p class="tool_heading ruby">Guided tour tooltip</p>
+          <p class="tool_dis ruby">Codepen by Yoann Helin</p>
+        </div>
+        <br>
+        <br>
+        <div class="footer ruby">
+          <p class="foot_70">Step 3</p>
+          <p class="foot_30">NEXT</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
