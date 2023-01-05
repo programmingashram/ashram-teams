@@ -193,16 +193,146 @@ var x = x - y
 
 // 5. Conditional Operators
 
-let a = 20;
-let b = 20;
+// let a = 20;
+// let b = 20;
 
-if(a > b){
-    console.log("a is greater then b");
-}
-else if (a == b){
-    console.log('a is equal to b');
+// if(a > b){
+//     console.log("a is greater then b");
+// }
+// else if (a == b){
+//     console.log('a is equal to b');
+// }
+// else{
+//     console.log("Statement is incorrect!!!");
+// }
+
+let a = 10;
+let b = 15;
+
+if(a == b){
+    console.log("a is equal to b");
 }
 else{
-    console.log("Statement is incorrect!!!");
+    console.log("a is not equal to b");
 }
+
+
+if(a === b){
+    console.log("a is equal value and equal type of b");
+}
+else{
+    console.log("a is not is equal value and equal type of b");
+}
+
+
+if(a != b){
+    console.log("a is not equal to b");
+}
+else{
+    console.log("a is equal to b");
+}
+
+
+
+if(a !== b){
+    console.log("a is not equal value or not equal type of b");
+}
+else{
+    console.log("a is equal value or equal type of b");
+}
+
+
+if(a > b){
+    console.log("a is greater than of b");
+}
+else{
+    console.log("a is not greater than of b");
+}
+
+
+if(a < b){
+    console.log("a is less than of b");
+}
+else{
+    console.log("a is not less than of b");
+}
+
+
+
+if(a >= b){
+    console.log("a is greater than or equal to of b");
+}
+else{
+    console.log("a is not greater than or equal to of b");
+}
+
+
+if(a <= b){
+    console.log("a is less than or equal to of b");
+}
+else{
+    console.log("a is not less than or equal to of b");
+}
+
+
+
+let e = 20;
+let g = 40;
+
+if(e == g){
+    console.log("e is equal to g");
+}
+else if(e === g){
+    console.log("e is equal value and equal type of g");
+}
+else if(e != g){
+    console.log("e is not equal to g");
+}
+else if(e !== g){
+    console.log("e is not equal value or not equal type of g");
+}
+else if(e > g){
+    console.log("e is greater than of g");
+}
+else if(e < g){
+    console.log("e is less than of g");
+}
+else if(e >= g){
+    console.log("e is greater than or equal to of g");
+}
+else if(e <= g){
+    console.log("e is less than or equal to of g");
+}
+else{
+    console.log("a is not equal to b");
+}
+
+
+
+let age = 19;
+
+if (age < 18) {
+  console.log("anil is 18 years old.");
+} 
+else if (age >= 18 && age <= 21) {
+  console.log("anil is between the ages of 18 and 21.");
+} 
+else {
+  console.log("anil is adult.");
+}
+
+
+
+
+let ball = 30;
+let bet = 35;
+let btn = document.getElementById(btn1);
+
+if(ball == bet){
+    console.log("e is equal to g");
+}
+else if(e === g){
+    console.log("e is equal value and equal type of g");
+}
+
 
