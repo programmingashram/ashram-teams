@@ -20,7 +20,7 @@ HTML is hyper text markup language for a creting web page layout|.
 
 # What is symnatic element?
 symanatic elements clearly describes its meaning to both the browser and the developer.
-*Heading* *navigation* *section* *article* *footer*
+1. *Heading* *navigation* *section* *article* *footer*
 
 # What is the diifernce about hTML5 or old html?
  HTML5 is a new version of HTML with new functionalities with Internet technologies.
@@ -31,7 +31,7 @@ HTML attributes provide additional information about HTML elements.
 **src** **href** **style** **width** **lang** **title** 
 
 # What is headings ?
-HTML headings are defined with the <h1> to <h6> tags.
+HTML headings are defined with the **h1** to **h6** tags.
 <h1> defines the most important heading. <h6> defines the least important heading.
 
 # What is paragraph ?
