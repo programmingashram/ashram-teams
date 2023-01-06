@@ -174,3 +174,21 @@ article{
     .start{
         align-items: flex-start;
     }
+    // media quary//
+    @media(max-width:767px){
+        .menu-icon{
+            position: absolute ;
+            right: 26px;
+            font-size: 22px;
+            display: block;
+            top: 30px;
+            border-radius: 9px;
+            padding: 8px 10px;
+        }
+        header{
+            display:none;
+        }
+        nav{
+            display:none;
+        }
+    }
