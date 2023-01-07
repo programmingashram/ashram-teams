@@ -1,0 +1,6 @@
+/* mobile view (portrait and landscape) */
+@media (max-width: 767px) {
+  .media {
+    display: none !important;
+  }
+}/*# sourceMappingURL=media.css.map */

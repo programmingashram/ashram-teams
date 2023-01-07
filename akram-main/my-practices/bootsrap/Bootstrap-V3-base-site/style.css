@@ -1,0 +1,36 @@
+body{
+    text-transform: capitalize;
+}
+header a{
+    color: rgb(39, 7, 7);
+}
+header .nav{
+    margin-top: 8px;
+    float: right;
+}
+/* nav css*/
+nav a{
+    color: black;
+}
+.navbar{
+    margin-bottom: 0;
+}
+/* section css */
+.jumbotron{
+    text-align: center;
+    font-size: 42px !important;
+    color: #fff;
+    background-color: #337ab7 !important;
+}
+.my-project{
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.progress{
+    margin-top: 20px;
+}
+article{
+    margin: 30px 0;
+}

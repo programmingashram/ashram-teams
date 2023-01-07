@@ -15,91 +15,67 @@
     transition: all .2s;
     box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
 }
+@mixin bg-details{
+    background-position: center;
+    background-image: cover;
+    background-repeat: no-repeat;
+}
 // card images//
 @mixin card{
     .card-1{
         background-image: url(../img/project-1.jpg);
-        background-position: center;
-        background-image: cover;
-        background-repeat: no-repeat;
+        @include bg-details();
             }
     .card-2{
                 background-image: url(../img/project-2.jpg);
-                background-position: center;
-                background-image: cover;
-                background-repeat: no-repeat;
+                @include bg-details();
             }
     .card-3{
                 background-image: url(../img/project-3.jpg);
-                background-position: center;
-                background-image: cover;
-                background-repeat: no-repeat;
+                @include bg-details();
             }
     .card-4{
                 background-image: url(../img/blog-4\ \(1\).jpg);
-                background-position: center;
-                background-image: cover;
-                background-repeat: no-repeat;
+                @include bg-details();
                     }
      .card-5{
                         background-image: url(../img/blog-4.jpg);
-                        background-position: center;
-                        background-image: cover;
-                        background-repeat: no-repeat;
+                        @include bg-details();
                     }
     .card-6{
                         background-image: url(../img/blog-5.jpg);
-                        background-position: center;
-                        background-image: cover;
-                        background-repeat: no-repeat;
+                        @include bg-details();
                     }  
     .card-7{
                         background-image: url(../img/blog-6.jpg);
-                        background-position: center;
-                        background-image: cover;
-                        background-repeat: no-repeat;
+                        @include bg-details();
                             }
     .card-8{
                                 background-image: url(../img/blog-7.jpg);
-                                background-position: center;
-                                background-image: cover;
-                                background-repeat: no-repeat;
+                                @include bg-details();
                             }
     .card-9{
                                 background-image: url(../img/blog-8.jpg);
-                                background-position: center;
-                                background-image: cover;
-                                background-repeat: no-repeat;
+                                @include bg-details();
                             } 
                             .card-10{
                                 background-image: url(../img/project-3.jpg);
-                                background-position: center;
-                                background-image: cover;
-                                background-repeat: no-repeat;
+                                @include bg-details();
                             }
             .card-11{
                                 background-image: url(../img/project-4.jpg);
-                                background-position: center;
-                                background-image: cover;
-                                background-repeat: no-repeat;
+                                @include bg-details();
                             }  
             .card-12{
                                 background-image: url(../img/project-5.jpg);
-                                background-position: center;
-                                background-image: cover;
-                                background-repeat: no-repeat;
+                                @include bg-details();
                                     }
             .card-13{
                                         background-image: url(../img/project-6.jpg);
-                                        background-position: center;
-                                        background-image: cover;
-                                        background-repeat: no-repeat;
+                                        @include bg-details();
                                     }
-            .card-14{
-                                        background-image: url(../img/project-3.jpg);
-                                        background-position: center;
-                                        background-image: cover;
-                                        background-repeat: no-repeat;
+            .card-14{  background-image: url(../img/project-3.jpg);
+                @include bg-details();
                                     }                                               
 }
 // background -image//
