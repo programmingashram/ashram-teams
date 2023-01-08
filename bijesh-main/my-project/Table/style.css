@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    background: rgb(250, 235, 235);
+}
+table{
+    width: 100%;
+    text-align: left;
+    
+}
+img{
+    width: 50px;
+    height: 50px;
+    display: inline;
+    border-radius: 70px;
+}
+tr,th,td{
+    /* border: 1px solid black; */
+    background: #fff;
+
+    
+}
+table, th, td{
+    /* border: 0px solid black; */
+    padding: 5px;
+}
+tr{
+    margin-bottom: 10px;
+}
+a{
+    text-decoration: none;
+}
+.re{
+    margin-top: -29px;
+    margin-right: 4px;
+    position: relative;
+    top: 27px;
+}
+.con{
+    border:2px solid rgb(18, 226, 80);
+    background: rgb(18, 236, 76);
+    color: #fff;
+    border-radius: 4px;
+}

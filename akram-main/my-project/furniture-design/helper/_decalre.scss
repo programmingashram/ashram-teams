@@ -1,0 +1,26 @@
+@use "sass:map";
+@use "../variable/variable";
+
+
+$bg-color:(
+    "bg-orange":variable.$bg-orange,
+    "bg-light-orange":variable.$bg-lightorange,
+    "bg-light-grey":variable.$bg-lightgrey,
+    "bg-grey":variable.$bg-grey,
+    "bg-ofwhite":variable.$bg-ofwhite,
+);
+
+$text-color:(
+    "text-orange":variable.$text-orange,
+    "text-light-orange":variable.$text-lightorange,
+    "text-light-grey":variable.$text-lightgrey,
+    "text-grey":variable.$text-grey,
+    "text-ofwhite":variable.$text-ofwhite,
+);
+ $color:(
+    "orange":variable.$color-orange,
+    "light-orange":variable.$color-lightorange,
+    "light-grey":variable.$color-lightgrey,
+    "grey":variable.$color-grey,
+    "ofwhite":variable.$color-ofwhite,
+ );

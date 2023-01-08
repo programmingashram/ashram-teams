@@ -1,0 +1,24 @@
+@use '../text-variables/variables';
+@use 'sass:map';
+
+$text-color: (
+    "t-blue" : variables.$color-blue,
+    "t-lblue" : variables.$light-blue-color,
+    "t-bgblue" : variables.$color-bgblue,
+    "t-black" : variables.$color-black,
+    "t-white" : variables.$color-white,
+    "t-lgray" : variables.$color-lgrey,
+    "t-grey" : variables.$color-grey,
+    "t-dgrey" : variables.$color-dgrey
+);
+.blue:hover {
+    color: map.get($text-color, t-blue) !important;
+}
+
+.right-side{
+    color: map.get($text-color, t-dgrey);
+}
+.feature-text{
+    color: map.get($text-color, t-dgrey);
+    font-size: inherit;
+}

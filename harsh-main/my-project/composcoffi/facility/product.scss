@@ -1,0 +1,56 @@
+@import "./mixin.scss";
+.product{
+    padding: 40px 0px;
+    .product-card{
+        box-shadow: 0 5px 10px 0 rgb(0 0 0 / 12%);
+        border-radius: 12px;
+        margin-right:20px;  
+        padding-bottom: 28px;
+        .pro-rs{
+            padding:5px 15px;
+        }
+        .pro-name{
+            padding:5px 15px;
+            font-size:1.1rem;
+            font-weight: 900;  
+        }
+        .pro-detail{
+            padding: 5px 15px;  
+        }
+        .pro-img img{
+            width: 210px;  
+        }
+    }
+    .product-card:hover .tile{
+        @include tile;
+        background-color: #62763e;
+     } 
+     .product-card:hover{
+         transition: 0.3s ease-in;
+         transform: translateY(-15px);
+         box-shadow: 0 5px 10px 0 rgb(0 0 0 / 12%);
+     }
+     .pro-img{
+         position: relative;
+         text-align: center;  
+     }
+     .product-card{
+         a{
+            text-decoration: none;
+            color:black;
+         }
+     }
+     .product-card:hover .tile2{
+         @include tile;
+         background-color: #6c3b5d;
+     }
+     
+     .product-card:hover .tile3{
+         @include tile;
+         background-color: #7d6049;
+     }
+     .product-card:hover .tile4{
+         @include tile;
+         background-color: #1b3245;
+     }
+}

@@ -1,0 +1,250 @@
+@use 'sass:map';
+// @use '../helper/decalre';
+@import '../helper/decalre.scss';
+@import "../variable/variable";
+@import"../mixin/mixin.scss";
+@import"../media-query/media.scss";
+*{
+    margin: 0;
+    padding: 0;
+}
+//background color//
+.bg-ofwhite{
+    background-color: map.get($bg-color, "bg-ofwhite");
+}
+.bg-orange{
+    background-color: map.get($bg-color, "bg-orange");
+}
+.bg-light-orange{
+    background-color: map.get($bg-color, "bg-light-orange");
+}
+.bg-grey{
+    background-color: map.get($bg-color, "bg-grey");
+}
+.bg-light-grey{
+    background-color: map.get($bg-color, "bg-light-grey");
+}
+.bg-black{
+    background-color: black;
+}
+// color//
+.orange{
+        color: map.get($color, "orange");
+}
+.light-orange{
+    color: map.get($color, "light-orange");
+}
+.light-grey{
+    color: map.get($color, "light-grey");
+}
+.grey{
+    color: map.get($color, "grey");
+}
+// margin
+.margin-LR{
+    margin: 0px 15px;
+    @include button();
+}
+a:hover{
+    color: gray !important;
+}
+// header star from here//
+.header{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+.postion{
+    position: absolute;
+}
+.section{
+    position: relative;
+    z-index:999;
+}
+.carousel-item:hover .c-img{
+    transform: scale(1.9);
+    transition: 02s;
+}
+
+.header-details{
+    img{
+     width: 25%;
+    }
+ }
+ .carousel-caption{
+     text-align: left;
+     top: 395px;
+ }
+.product-card{
+    .product-title{
+      padding: 8px 15px;
+        p{
+            font-size: 0.7rem;
+        }
+    }
+}
+.icon{
+    padding: 4px 7px;
+    border-radius: 50%;
+}
+.product-title{
+    padding: 20px;
+}
+.width{
+    width: 303px;
+    height: 400px;
+    object-fit: cover;
+}
+.gallery:hover .width{
+    width: 450px;
+    transition: 0.5s;
+}
+.design-link{
+    position: absolute;
+    bottom: -70px;
+    right: 0px;
+    width: 100%;
+}
+.container-01{
+    max-width: 1112px;
+    margin: 0 auto;
+}
+.design-card{
+   p{
+    display: none;
+   }
+   a{
+    display: none !important;
+   }
+}
+.design-inner{
+    padding-bottom: 30px;
+}
+.card-1,.card-2,.card-3,.card-4,.card-10,.card-11,.card-12,.card-13,.card-14{
+    position: relative;
+    height: 505px;
+}
+.design-card:hover p{
+    display: block !important;
+}
+.design-card:hover a{
+    display: block !important;
+}
+.design-card:hover{
+    @include slidup();
+}
+.box-main{
+    overflow: hidden;
+}
+article{
+  @include card();
+  background-position: center
+}
+.btn-custom{
+   @include custom-btn();
+}
+.bg-1{
+   @include bg-1();
+}
+.bg-2{
+    @include bg-1();
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+.blog-card{
+    background-color: white;
+}
+.date{
+    border-right: 1px solid;
+}
+.blog-content a{
+    display: none;
+}
+.blog-content:hover a{
+    display: block;
+    transition: 3s;
+}
+.blog-card:hover{
+   @include slidup();
+}
+.blog-link{
+    position: absolute;
+    bottom: -24px;
+    width: 92%;
+    right: 15px;
+}
+.blog-card{
+    position: relative;
+}
+.img-gallery{
+    img{
+        transform: scale(1.2);
+    }
+}
+.img-gallery:hover img{
+    width: 280;
+    transform: scale(1);
+    transition: 2s;
+}
+// next page//
+.breadcrumb{
+    --bs-breadcrumb-margin-bottom: 0rem !important;
+    padding-bottom: 4rem;
+}
+.design-card{
+    h2{
+       .year{
+        font-size: 0.87rem;
+        display: block;
+       }
+    }
+}
+.short-card{
+    height: 250px !important;
+   .design-inner{
+    overflow: hidden;
+    background-color: transparent;
+   }
+}
+// footer start//
+.text-setting{
+    letter-spacing: 0.9px;
+    font-weight: 600;
+}
+.form-setting{
+    border: none;
+    background-color: black;
+    border-bottom: 1px solid orange;
+    width: 80%; 
+}
+.footer-social{
+    a{
+        margin-right: 15px;
+        align-items: end;
+    }
+}
+.footer-details>a:hover{
+    color: $color-lightorange;
+}
+// page3//
+.sm{
+    font-size: 0.8rem;
+}
+.search-box{
+   @include box;
+}
+.content-box a:hover{
+    box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+    color:orange !important;
+    transform: scale(1.3);
+    transition: .3s;
+}
+// page 3
+.dropdown-menu[data-bs-popper] {
+    top: 82% !important;
+    left: 967px !important;
+}

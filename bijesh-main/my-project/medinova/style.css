@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+header{
+    border: 1px solid black;
+    
+}
+.col-md-6{
+    width: 50%;
+    float: left;
+}
+.left{
+    width: 100%;
+    padding: 13px;
+    margin-left: 50px;
+    font-weight:lighter;
+    font-family: "Roboto Condensed",sans-serif;
+}
+.right{
+    padding: 10px;
+    width: 90%;
+    text-align: end;
+    margin-top: 10px;
+    font-weight:lighter;
+    
+}
+.coll{
+    margin-right: 5px;
+    font-size: 19px;
+}
+.col{
+    font-size: 19px;
+    margin-left: 15px;
+}
+.col-md-3{
+    width: 25%;
+    float: left;
+}
+.col-md-9{
+    width: 75%;
+    float: left;
+}
+.logo{
+    width: 100%;
+    padding: 23px;
+    color: #13C5DD!important;
+    margin-left: 40px;
+    font-size: 25px;
+    font-family: "Roboto Condensed",sans-serif;
+}
+.menu{
+    padding: 25px;
+    margin-left: 40px;
+}
+ul{
+    margin-left: 120px;
+}
+li{
+    list-style: none;
+    float: left;
+    margin: 18px;
+    margin-left: 40px;
+    font-size: 19px;
+    font-family: "Roboto Condensed",sans-serif;
+    
+}
+a{
+    text-decoration: none;
+    color: #13C5DD!important;
+}
+.home{
+    background-image: url(./img/dr.jpg);
+    width: 100%;
+    padding-bottom: 20px;  
+}
+.bk{
+    display: block;
+    width: 100%;
+}
+.caption h3{
+    font-size: 20px;
+    padding-top: 80px;
+    padding-left: 90px;
+    font-family: "Roboto Condensed",sans-serif;
+    color: #13C5DD!important;
+}
+.caption hr{
+    width: 21%;
+    margin-left: 87px;
+    margin-top: 5px;
+    font-size: larger;
+}
+.caption h1{
+    font-size: 69px;
+    padding-left: 90px ;
+    color: rgb(3, 35, 61);
+}
+.btn{
+    width: 15%;
+    height: 54px;
+    border-radius: 50px;
+    font-size: 13px;  
+}
+.click{
+    padding-left: 92px;
+    padding-top: 30px;
+}
+.bp{
+    width: 28%;
+    margin-top: 90px;
+    margin-left: 90px;
+    border-radius: 10px;
+    display: block;
+}
+.cap{
+    width: 50%;
+    margin-left: 30rem;
+    margin-top: -32rem;
+    font-family: "Roboto Condensed",sans-serif;
+}
+.cap hr{
+    width: 20%;
+}
+.cap h2{
+    color: #13C5DD!important;
+}
+.cap h1{
+    font-size: 50px;
+    padding-top: 8px;
+    color: rgb(3, 35, 61);
+}
+.cap p{
+    font-size: 17px;
+    margin-top: 19px;
+    letter-spacing: 2px;
+    color: rgb(165, 167, 169);
+    
+}
+.service{
+    margin-top: 159px;
+    text-align: center;
+    font-family: "Roboto Condensed",sans-serif;
+}
+.service hr{
+    width: 13%;
+    margin-left: 33rem;
+}
+.service h2{
+    color: #13C5DD!important;
+}
+.service h1{
+    font-size: 50px;
+    margin-top: 10px;
+    color: rgb(3, 35, 61);
+}
+.col-md-4{
+    width: 33.33%;
+    float: left;
+}
+.card1{
+    margin: 50px;
+}
+.card{
+    text-align: center;
+    margin: 0px 40px;
+    background: rgb(227, 237, 249);
+    padding: 35px;
+    border-radius: 13px;
+    font-size: 15px;
+    font-family: "Roboto Condensed",sans-serif;
+}
+.card i{
+    font-size: 65px;
+    background: #13C5DD!important;
+    color: aliceblue;
+    border-radius: 40%;
+    padding: 16px;
+}
+.card h1{
+    margin-top: 20px;
+}
+.card p{
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+.appointment{
+    background: #13C5DD!important;
+    margin-top: 80px;
+    font-family: "Roboto Condensed",sans-serif;
+    padding: 20px;
+}
+.cat{
+    width: 42%;
+    padding: 80px;
+}
+.cat h3{
+    color: #fff;
+    font-size: 18px;  
+}
+.cat hr{
+    width: 26%;
+}
+.cat h1{
+    font-size: 60px;
+    margin-top: 10px;
+    color: rgb(3, 35, 61);
+}
+.cat p{
+    color: #fff;
+    letter-spacing: 2px;
+    margin-top: 20px ;
+    font-size: 18px;
+}
+.btnn{
+    width: 15%;
+    height: 54px;
+    border-radius: 50px;
+    font-size: 13px;  
+}
+.clicked{
+    padding-bottom: 20px;
+    padding-left: 80px;
+}
+.d-flex{
+    width: 37%;
+    margin-left: 42rem;
+    margin-top: -36rem;
+    border: 1px solid black;
+    text-align: center;
+    padding: 30px 0px;
+    border-radius: 8px;
+    background: #fff;
+}
+input{
+    margin: 15px;
+    border-radius: 5px;
+    padding: 15px;
+    border: 0px;
+    background:rgb(208, 208, 204);
+    width: 31%;
+}
+.d-flex select{
+    margin: 10px 15px;
+    padding: 12px;
+    /* text-align: center; */
+    width: 37%;
+    border-radius: 5px;
+    color: rgb(208, 208, 204);
+}
+.d-flex h1{
+    font-size: 37px;
+    margin-bottom: 11px;
+}
+.button{
+    width: 85%;
+    background: #13C5DD!important;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}

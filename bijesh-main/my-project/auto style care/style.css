@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+:root{
+    --color-red:#E31E25;
+    --color-black:#000000;
+    --color-white:#ffffff;
+}
+.col-md-3{
+    width: 25%;
+    float: left;
+}
+.col-md-7{
+    width: 58.33%;
+    float: left;
+}
+.col-md-2{
+    width: 16.66%;
+    float: left;
+}
+.logo{
+    /* width: 100%; */
+    margin: 10px 20px;
+}
+.logo img{
+    width: 17%;
+    margin-left: 40px;
+}
+.menu{
+    
+    display: flex;
+    margin-top: 18px; 
+}
+li{
+    list-style: none;
+    display: inline-block;
+    margin: 17px;
+    margin-left: 31px;
+}
+.bk{
+    margin: 21px 19px;
+    font-size: 10px;
+}
+.search-box{
+    position: absolute;
+    display: flex;
+    margin-top: 33px;
+}
+.search-box .box{
+    margin: -6px 45px;
+    font-size: 13px;
+    border: 2px solid;
+    padding: 9px;
+    border-radius: 6px;
+
+}
+.search-box img{
+    width: 190%;
+}
+a{
+    text-decoration: none;
+}
+.color-red{
+    color: var(--color-red);
+}
+.color-black{
+    color:var(--color-black);
+}
+.color-white{
+    color: var(--color-white);
+}
+.bg-red{
+    background: var(--color-red);
+}
+.bg-white{
+    background: var(--color-white);
+}
+.border-red{
+    border: 1px solid var(--color-red);
+    border-radius: 5px;
+}
+.home{
+    padding: 30px;
+    background-image: url(./img/img-1.svg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+}
+.cap{
+margin: 20px;
+}
+.cap h1{
+    padding: 20px 0px;
+    font-size: 40px;
+}
+.cap h4{ 
+    padding-bottom: 15px ;
+    font-size: 20px;
+    
+}
+.cap p{
+    font-size: 20px;
+}
+.btn{
+    margin-left: 20px;
+    padding: 10px 0px;
+    
+
+}
+.btn .btnn{
+    padding: 15px 18px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    /* border: 1px solid; */
+}
+.btn .btnn-1{
+    padding: 15px 18px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    border: 1px solid var(--color-red); 
+    background: transparent;
+}
+.button{
+    margin: 29px 51px;
+    
+}
+.button button{
+    margin-right: 10px;
+    padding: 15px 73px;
+}
+.car-wash .cap{
+    width: 50%;
+    margin-left: 50px;
+}

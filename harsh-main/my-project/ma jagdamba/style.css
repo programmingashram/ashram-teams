@@ -1,0 +1,215 @@
+*{
+    padding:0;
+    margin:0;
+}
+.container{
+    width: 90%;
+    margin:0 auto;
+}
+header{
+    padding: 9px;
+}
+
+.logo img{
+    width:80px;
+}
+.row{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+col{
+    width:100%
+}
+li{
+    display:inline-block;
+}
+
+a{
+    text-decoration: none;
+    display:inline-block;
+   
+}
+.connect a{
+    color:white;
+}
+ul{
+    list-style-type: none;
+
+}
+.connect li{
+    margin-right: 20px;
+}
+.contact a{
+   color:black;
+}
+.contact li{
+    margin:20px;
+}
+nav{
+    padding: 15px 10px;
+    position: sticky;
+    background-color: white;
+}
+#bg-image{
+    background-image:url(image/jagdamba_palace_bilaspur_slider0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    
+}
+.hero-content{
+    padding: 200px 20px ;
+     
+}
+.hero-content>h1{
+
+    color: white;
+    font-size: 40px;
+}
+.btn{
+    color:white;
+    padding:10px;
+    background-color: black;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+.btn:hover{
+    background: transparent;
+}
+.text-center{
+    text-align: center;
+}
+.text-center>h1{
+    padding:35px 0px;
+    font-size: 30px;
+    word-spacing: 1px;
+}
+.col-md-2{
+    width:16.666%;
+    
+}
+.my-facility{
+    border-radius: 15px;
+    box-shadow: 3px 5px 56px 1px #80808026;
+    margin: 10px 0px;
+}
+.my_facility img {
+    width: 80px;
+ 
+}
+.col-md-6{
+    width:50%;
+}
+.col-md-6 img{
+    width:100%;
+    padding:20px 0px;
+    
+}
+.content h1 {
+    font-size: 36px;
+    padding: 25px;
+
+}
+   
+.content p{
+    padding: 25px;
+    font-size: 17px;
+    line-height: 25px;
+}
+.col-md-3{
+    width:25%;
+
+}
+.facility{
+    font-size: 41px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 3px 5px 56px 1px #80808026;
+    margin: 10px 25px;
+}
+.facility p{
+    font-size: 17px;
+    color: black;
+}
+.block li{
+    display:block;
+    margin-bottom:7px;
+    padding: 4px 25px;
+
+}
+.col-md-4{
+    width:33.333%;
+    float: left;
+
+}
+.simple-btn{
+    color:white;
+    padding:10px 23px;
+    background-color: black;
+    margin-top: 10px;
+    border-radius: 4px;
+    border-style:groove;
+}
+.food-bg{
+    background-image: url(image/indian-food-india_hotel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+    height: 170px;
+}
+.blur>p{
+    padding: 10px 0px;
+    font-weight: 900;
+    font-size: 40px;
+    margin: 10px 0px;
+    color: white;
+    position: relative;
+    top: 103px;
+    background: #0000008f;
+}
+iframe{
+    border-radius: 6px;
+}
+.special-facility>img{
+    width:100%;
+}
+.special-facility{
+    padding: 30px 10px;
+    margin: 20px 15px;
+    box-shadow: 3px 5px 56px 1px #80808026;
+    border-radius: 10px;
+}
+.special-facility p{
+    margin-top: 35px;
+}
+footer{
+    background-color: black;
+    padding:40px 0px;
+}
+.footer-facility a{
+    color:white;
+    padding: 10px;
+}
+.f-heading{
+    color:white;
+    padding: 30px 0px;
+   
+}
+.footer-facility li{
+    margin-bottom: 20px;
+    display:block;
+}
+.footer-icon i{
+    margin-right:5px;
+}
+.btn-booknow{
+    padding:8px;
+    color:black;
+    border-style: groove;
+}
+.align-start{
+    align-items: flex-start;
+}

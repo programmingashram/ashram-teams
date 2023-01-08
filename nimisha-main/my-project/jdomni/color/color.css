@@ -1,0 +1,46 @@
+.btn-shadow {
+  font-size: 15px;
+}
+
+span {
+  font-size: 10px;
+}
+
+.radius {
+  border-radius: 25% 25% 0 0;
+}
+
+.heading-default {
+  font-size: initial;
+  line-height: inherit;
+}
+
+.feature-child {
+  line-height: inherit;
+  padding-bottom: 15px;
+}
+
+.feature-heading {
+  font-size: inherit;
+}
+
+.card:hover {
+  border-radius: 10px;
+}
+
+.inner-box {
+  border-radius: 10px;
+}
+
+.blue:hover {
+  color: #037ce7 !important;
+}
+
+.right-side {
+  color: #3f4755;
+}
+
+.feature-text {
+  color: #3f4755;
+  font-size: inherit;
+}/*# sourceMappingURL=color.css.map */

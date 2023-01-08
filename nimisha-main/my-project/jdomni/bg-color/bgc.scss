@@ -1,0 +1,27 @@
+@use '../text-variables/variables';
+@use 'sass:map';
+
+$bg-color: (
+    "bg-blue" : variables.$color-blue,
+    "bg-lblue" : variables.$light-blue-color,
+    "bg-bgblue" : variables.$color-bgblue,
+    "bg-black" : variables.$color-black,
+    "bg-white" : variables.$color-white,
+    "bg-lgray" : variables.$color-lgrey,
+    "bg-grey" : variables.$color-grey,
+);
+.back-color{
+    &[background-color='bg-blue']{
+        background-color: map.get($bg-color, bg-bgblue);
+    }
+}
+.footer{
+    &[background-color='lgray']{
+        background-color: map.get($bg-color, bg-lgray);
+    }
+}
+.last-footer{
+    &[background-color='grey']{
+        background-color: map.get($bg-color, bg-grey);
+    }
+}
