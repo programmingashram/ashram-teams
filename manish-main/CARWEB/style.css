@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.row::after{
+    clear: both;
+    display: table;
+    content: "";
+}
+.col-md-2 {
+    float: left;
+    width: 16.66%;
+}
+.col-md-6{
+    float:left;
+    width: 49.99%;
+}
+
+.col-md-1{
+    float: left;
+    width: 8.33%;
+    margin-top: 30px;
+}
+.col-md-3{
+    float: left;
+    width: 24.99%;
+    margin-top: 2px;
+    
+}
+
+.col-md-2 img {
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+
+.col-md-6 ul li{
+    display: inline;
+    padding-right: 18px;
+    
+}
+
+.col-md-6 ul{
+    margin-top: 30px;
+}
+
+.col-md-6 a {
+    text-decoration: none;
+}
+.col-md-1 a {
+    text-decoration: none;
+    color: red;
+}
+
+.col-md-1 img{
+    Width:10px;
+    Height:10px;
+}
+.col-md-3-border {
+   
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 3px 10px 3px;
+    margin: 18px 101px 0px 63px;
+}
+.col-md-3 ul li {
+    display: inline;
+}
+.col-md-3 a {
+   color: red;
+
+}
+.section{
+    background-image: url(/manish-main/CARWEB/PHOTO/section1st-img.svg);
+    background-repeat: no-repeat;
+}
+
+.menu {
+    margin-top: 21px;
+    margin-left: 20px;
+}
+.menu h1 {
+    display: contents;
+}
+.menu-h1 {
+   color: red;
+   size: 30px ;
+   
+}
+
+/* 
+.menu p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+} */
