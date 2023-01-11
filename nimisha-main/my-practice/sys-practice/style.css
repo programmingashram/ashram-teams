@@ -1,0 +1,49 @@
+@media (max-width: 767px) {
+    .sys-sidebar-menu {
+        width: auto !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }   
+    .sys-sidebar-body ul, #collapseSidebar{
+        padding-left: 20px !important;
+    }
+    
+    .d-flex{
+        display: flex;
+        align-items: baseline;
+        font-size: 1rem;
+        text-decoration: none;
+        text-transform: capitalize;
+        color: rgba(108, 117, 125, 0.9);
+        padding: 1rem;
+    }
+    .navhid {
+        display: none;
+    }
+    .sys-sidebar-menu:hover .navhid{
+        display: block;
+        width: auto !important;
+    }   
+    .sys-sidebar-head:hover .navhid-menu{
+        display: block !important;
+    }
+    .fa{
+        font-size: 24px !important;
+    }
+}
+
+@media (max-width: 940px) {
+    .fa {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .fa-caret-down {
+        font-size: 22px;
+    }
+
+    .fa {
+        font-size: 20px;
+    }
+}
