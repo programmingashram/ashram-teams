@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 15px;
+  background-color: blue;
+  align-items: center;
+}
+header .container {
+  width: 85%;
+  margin: 0 auto;
+}
+header .container .row {
+  display: flex;
+}
+header .container .row .col-md-6 {
+  width: 100%;
+}
+header .container .row .col-md-6 .menu {
+  font-size: 20px;
+}
+header .container .row .col-md-6 .menu h1 {
+  color: rgb(175, 199, 37);
+}
+header .container .row ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+header .container .row ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+header .container .row ul li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+header .container .row .menu-1 ul {
+  margin-top: 14px;
+  font-size: 20px;
+}
+header .container .dropdown-menu .drop-list {
+  background-color: rgb(175, 199, 37);
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 3px;
+  position: absolute;
+  display: none;
+}
+header .container .dropdown-menu ul li {
+  display: block;
+  margin: 10px 0px;
+  padding: 0px 10px;
+}
+header .container .dropdown-menu .col-md-6 {
+  margin-right: 10px;
+}
+header .container .dropdown-menu .drop-list::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: rgb(175, 199, 37);
+  position: absolute;
+  transform: rotate(45deg);
+  top: -8px;
+}
+header .container .dropdown-menu:hover .drop-list {
+  display: block;
+}/*# sourceMappingURL=style.css.map */

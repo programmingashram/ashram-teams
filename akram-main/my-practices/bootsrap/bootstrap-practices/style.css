@@ -1,0 +1,44 @@
+.background div {
+    padding: 10px;
+}
+.content img{
+    width: 397px;
+}
+.content{
+    padding: 162px 0px;
+}
+section{
+    position: relative;
+}
+section::after{
+    content: '';
+    position: absolute;
+    background-image: url(./bottom_cross.png);
+    height: 200px;
+    width: 100%;
+    background-repeat: no-repeat;
+    bottom: -50px;
+}
+ul{
+    display: block;
+}
+li{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+.bg-clr{
+    background-color:#f2bf32;
+}
+.color{
+    color: white;
+}
+ul,li{
+    margin-left: 15px;
+    font-size: 15px;
+}
+.btn{
+    background-color:#f2bf32;
+    border-radius: 1px solid white;
+}

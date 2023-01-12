@@ -1,0 +1,51 @@
+body{
+    text-transform: capitalize;
+}
+header a{
+    color: rgb(39, 7, 7);
+}
+header .nav{
+    margin-top: 8px;
+    float: right;
+}
+/* nav css*/
+nav{
+    position: sticky !important;
+    top: 0px;
+    z-index: 999;
+}
+nav a{
+    color: black;
+}
+.navbar{
+    margin-bottom: 0;
+}
+/* section css */
+.jumbotron{
+    text-align: center;
+    font-size: 42px !important;
+    color: #fff;
+    background-color: #337ab7 !important;
+}
+.my-project{
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.progress{
+    margin-top: 20px;
+}
+article{
+    margin: 30px 0;
+}
+.badge{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+.nav-tab .active{
+    border: 1px soild grey;
+    color: white;
+    background-image:rgb(18, 26, 32);
+}

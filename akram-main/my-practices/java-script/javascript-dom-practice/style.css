@@ -1,0 +1,121 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Raleway", sans-serif !important;
+}
+
+.col {
+  width: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.col-md-6 img {
+  width: 100% !important;
+}
+
+.row {
+  display: flex;
+}
+
+ul li {
+  list-style-type: none;
+  display: inline-block;
+  color: white;
+  margin-left: 40px;
+}
+
+header {
+  background-color: darkgrey;
+}
+
+section {
+  width: 100%;
+}
+
+nav {
+  color: white;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+.carousel-item img {
+  width: 100% !important;
+  height: 750px;
+}
+
+.carousel-caption {
+  text-align: left !important;
+  position: absolute;
+  top: 200px;
+  left: 155px !important;
+}
+.carousel-caption ul {
+  text-align: left;
+  padding: 0px;
+}
+.carousel-caption ul li {
+  margin-left: 0px;
+  margin-right: 10px;
+}
+
+.article-content > img:hover {
+  background-color: rgba(144, 238, 144, 0.256);
+}
+
+.img-grid {
+  width: 100%;
+  height: 550px;
+}
+
+.flip-content {
+  height: 100%;
+  background-color: rgba(0, 128, 0, 0.5490196078);
+  width: 100%;
+  display: none;
+  color: white;
+}
+
+.custom:hover {
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid black !important;
+}
+
+.flip-card:hover .flip-content {
+  display: block;
+  -webkit-animation-name: flip;
+          animation-name: flip;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+}
+
+.action {
+  bottom: -20px;
+}
+
+@-webkit-keyframes flip {
+  from {
+    transform: rotateX(170deg);
+  }
+  to {
+    transform: rotateX(0);
+  }
+}
+
+@keyframes flip {
+  from {
+    transform: rotateX(170deg);
+  }
+  to {
+    transform: rotateX(0);
+  }
+}/*# sourceMappingURL=style.css.map */
