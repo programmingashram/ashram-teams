@@ -1,0 +1,65 @@
+@import'./utilities/mixin.scss';
+
+
+
+
+$c-aqua: #76c7c0;
+
+.hero{
+    background-image: url(images/fr.jpg);
+    @include bg-facility();
+    .height{
+        height:658px;
+        
+    }
+    
+    .color{
+        background-color: $c-aqua;
+        padding: 20px;
+    }
+}
+.aqua{
+    color:$c-aqua;
+}
+.facility{
+    padding:30px 70px;
+    .data{
+        span{
+            font-size:13px;
+        }
+    }
+}
+.bg-testomonial{
+    background-image: url(images/prime-background-home.jpg);
+    padding: 3rem;
+    @include bg-facility();
+}
+.cover{
+    border:5px solid $c-aqua;
+    border-radius: 40px;
+}
+.card-heading{
+    position: relative;
+    bottom: 85px;
+}
+.rounde{
+    position: relative;
+    bottom: 46px;
+    border-radius: 40px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+   
+
+.round{
+    border-radius: 40px;
+    border-bottom: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.blogs{
+    p{
+        font-size: 13px;
+        margin-top: 15px;
+    }
+}
