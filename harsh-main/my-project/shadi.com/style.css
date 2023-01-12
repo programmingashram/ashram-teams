@@ -1,0 +1,62 @@
+.hero {
+  background-image: url(images/fr.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero .height {
+  height: 658px;
+}
+.hero .color {
+  background-color: #76c7c0;
+  padding: 20px;
+}
+
+.aqua {
+  color: #76c7c0;
+}
+
+.facility {
+  padding: 30px 70px;
+}
+.facility .data span {
+  font-size: 13px;
+}
+
+.bg-testomonial {
+  background-image: url(images/prime-background-home.jpg);
+  padding: 3rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cover {
+  border: 5px solid #76c7c0;
+  border-radius: 40px;
+}
+
+.card-heading {
+  position: relative;
+  bottom: 85px;
+}
+
+.rounde {
+  position: relative;
+  bottom: 46px;
+  border-radius: 40px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.round {
+  border-radius: 40px;
+  border-bottom: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.blogs p {
+  font-size: 13px;
+  margin-top: 15px;
+}/*# sourceMappingURL=style.css.map */
