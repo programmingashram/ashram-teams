@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 30%;
+    margin: 60px auto;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.text{
+    position: relative;
+    padding: 27px 23px;
+}
+.icon{
+    border: 1px solid blue;
+    padding: 10px;
+    border-radius: 100px;
+    background-color: blue;
+    color: white;
+    position: absolute;
+    left: 35px;
+    top: 9px;
+
+}
+.btn{
+    text-decoration: none;
+    border: 1px solid rgb(185, 185, 247);
+    border-radius: 20px;
+    padding: 5px 19px;
+    position: absolute;
+    left: 280px;
+    bottom: 20px;
+    color: rgb(6, 6, 170);
+    background-color: rgb(185, 185, 247);
+
+}
+.container:hover{
+    /* content: "Bijesh"; */
+    background: #000;
+    color: white;
+    transform: translateY(10px);
+    transition: 0.4s;
+}
