@@ -1,29 +1,92 @@
-body{
-    background-color:rgb(45, 45, 45) ;
+*{
+    padding: 0;
+    margin: 0;
 }
-.border {
-    width: 30%;
-    padding: 15px 5px;
-    border: 1px white solid;
-    border-radius: 6px;
-    /* margin:9rem 25rem;  */
-    margin: auto;
-    background-color: white;
-   
+.head-1{
+    text-align: center;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  
 }
-.border:hover{
-   scale: 1.6;
+.head-1:hover{
+    color: white;
+    transform:rotateY('angle');
+    transition: 2s;
+  
 }
 
-.border span{
-    border: 1px solid black;
-    background-color: rgb(113, 113, 218);
-    padding: 0px 6px;
-    border-radius: 100%;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-   
+
+.d-flex {
+    display: flex;
+    position: absolute;
+    left: 14em;
+    top: 5em;
 }
-.border button{
-    margin-left: 19rem;
+
+.menu li{
+    display: inline;
+    text-decoration: none;
+    text-align: center;
+    margin: 0px 40px ;
+}
+.menu a{
+    text-decoration: none;
+
+}
+.menu a:hover{
+    text-decoration:wavy;
+    border: 2px solid rgb(19, 19, 20);
     padding: 2px 4px;
+    color: white;
+}
+.menu-bg{
+    
+    height: 60em;
+    background-image: linear-gradient(to bottom, rgba(28, 217, 241, 0.603), rgba(87, 159, 157, 0.365), rgb(9, 3, 5));
+    
+    position: relative;
+    
+}
+
+.row::after{
+    clear: both;
+    content: "";
+    display: table;
+    padding-top: 2em;
+    background-color: white;
+
+}
+
+.col-m-7{
+    width: 40.33%;
+    float: left;
+    background-color: white;
+    margin-top: 79px;
+    margin-left: 15em;
+    padding-bottom: 36.30em;
+}
+
+.col-m-5{
+    width: 30.65%;
+    float: left;
+}
+.border-1{
+    margin-top: 6em;
+    margin-left: 10em;
+    position: relative;
+}
+.col-m-7 h1{
+    position: absolute;
+    font-size: 4rem;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    text-shadow: 2px 2px blueviolet;
+   
+} 
+.col-m-5 img{
+    margin-top: 5em;  
+}
+
+.col-m-7 h1:hover{
+    transform: rotateX(365deg);
+    transition: 5s;
+
 }
