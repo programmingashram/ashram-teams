@@ -18,30 +18,12 @@ $colorlight:#4e3aa8e0;
 .details a{
     color: white;
 }
-.main i{
-    color: yellow;
-}
-.main2 i{
-    color: orangered;
-}
-.main3 i{
-    color:blue ;
-}
-span{
-    color: yellow !important;
-}
-.color-orang{
-    color: orangered;   
-}
-.color-blu{
-    color:blue;
-}
 .js{
     background-color: $colordark;
     color: white;
 }
 .fa-js{
-    color: yellowgreen;
+    color: yellow;
 }
 .angular{
     background-color: gray;
@@ -87,12 +69,4 @@ span{
     background-color: whitesmoke;
     border: 1px solid black;
 }
-.main4{
-    @include tile();
-    background-color: $colorblue;
-}
-.main5{
-    @include tile();
-    background-color: $colorlight;
-    color: white;
-}
+
