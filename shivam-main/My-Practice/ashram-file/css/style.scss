@@ -1,0 +1,98 @@
+$colordark:#000000e6;
+$colorgrey:#808080f0;
+$colorblue:#87ceebcc;
+$colorlight:#4e3aa8e0;
+
+
+.container{
+    width: 90%;
+    .row{
+        display: flex;
+        align-items: center;
+    }
+}
+
+.icon i{
+    font-size: 50px;
+}
+.details a{
+    color: white;
+}
+.main i{
+    color: yellow;
+}
+.main2 i{
+    color: orangered;
+}
+.main3 i{
+    color:blue ;
+}
+span{
+    color: yellow !important;
+}
+.color-orang{
+    color: orangered;   
+}
+.color-blu{
+    color:blue;
+}
+.js{
+    background-color: $colordark;
+    color: white;
+}
+.fa-js{
+    color: yellowgreen;
+}
+.angular{
+    background-color: gray;
+    
+}
+.fa-angular{
+    color: red !important;
+}
+.react{
+    background-color: whitesmoke;
+}
+.fa-react{
+    color: #311b92e0 !important;
+}
+.bootstrap{
+    background-color: #8feaf270;
+}
+.fa-bootstrap{
+    color: black !important;
+}
+.sass{
+    background-color:rgb(78 58 168 / 48%) ;
+}
+.fa-sass{
+    color: white !important;
+}
+@mixin tile {
+    border-radius: 11px;
+    margin-right: 20px;
+    padding: 24px;
+}
+
+ .main{
+    @include tile();
+
+}
+.main2{
+    @include tile();
+    background-color: $colorgrey;
+}
+.main3{
+    @include tile();
+    background-color: whitesmoke;
+    border: 1px solid black;
+}
+.main4{
+    @include tile();
+    background-color: $colorblue;
+}
+.main5{
+    @include tile();
+    background-color: $colorlight;
+    color: white;
+}

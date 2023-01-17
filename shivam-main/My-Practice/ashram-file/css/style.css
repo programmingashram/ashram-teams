@@ -1,0 +1,116 @@
+.container {
+  width: 90%;
+}
+.container .row {
+  display: flex;
+  align-items: center;
+}
+
+.icon i {
+  font-size: 50px;
+}
+
+.details a {
+  color: white;
+}
+
+.main i {
+  color: yellow;
+}
+
+.main2 i {
+  color: orangered;
+}
+
+.main3 i {
+  color: blue;
+}
+
+span {
+  color: yellow !important;
+}
+
+.color-orang {
+  color: orangered;
+}
+
+.color-blu {
+  color: blue;
+}
+
+.js {
+  background-color: rgba(0, 0, 0, 0.9019607843);
+  color: white;
+}
+
+.fa-js {
+  color: yellowgreen;
+}
+
+.angular {
+  background-color: gray;
+}
+
+.fa-angular {
+  color: red !important;
+}
+
+.react {
+  background-color: whitesmoke;
+}
+
+.fa-react {
+  color: rgba(49, 27, 146, 0.8784313725) !important;
+}
+
+.bootstrap {
+  background-color: rgba(143, 234, 242, 0.4392156863);
+}
+
+.fa-bootstrap {
+  color: black !important;
+}
+
+.sass {
+  background-color: rgba(78, 58, 168, 0.48);
+}
+
+.fa-sass {
+  color: white !important;
+}
+
+.main {
+  border-radius: 11px;
+  margin-right: 20px;
+  padding: 24px;
+}
+
+.main2 {
+  border-radius: 11px;
+  margin-right: 20px;
+  padding: 24px;
+  background-color: rgba(128, 128, 128, 0.9411764706);
+}
+
+.main3 {
+  border-radius: 11px;
+  margin-right: 20px;
+  padding: 24px;
+  background-color: whitesmoke;
+  border: 1px solid black;
+}
+
+.main4 {
+  border-radius: 11px;
+  margin-right: 20px;
+  padding: 24px;
+  background-color: rgba(135, 206, 235, 0.8);
+}
+
+.main5 {
+  border-radius: 11px;
+  margin-right: 20px;
+  padding: 24px;
+  background-color: rgba(78, 58, 168, 0.8784313725);
+  color: white;
+}/*# sourceMappingURL=style.css.map */
