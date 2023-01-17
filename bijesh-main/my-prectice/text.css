@@ -2,43 +2,94 @@
     margin: 0;
     padding: 0;
 }
-.container{
-    width: 30%;
-    margin: 60px auto;
-    border: 1px solid black;
-    border-radius: 5px;
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
 }
-.text{
-    position: relative;
-    padding: 27px 23px;
+:root{
+    --color-white:white;
+    --color-black:black;
 }
-.icon{
-    border: 1px solid blue;
-    padding: 10px;
-    border-radius: 100px;
-    background-color: blue;
-    color: white;
-    position: absolute;
-    left: 35px;
-    top: 9px;
+nav{
+    padding: 20px;
+    background: #000;
+    color: aliceblue;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
 
+.col-md-6{
+    width: 50%;
+    float: left;
 }
-.btn{
+.menu{
+    margin-left: 70px;
+}
+.logo{
+    display:inline-block;
+}
+li{
+    list-style: none;
+    display: inline;
+    padding: 19px 18px;
+}
+.color-white{
+    color: var(--color-white);
+}
+li a{
+    /* color: white; */
     text-decoration: none;
-    border: 1px solid rgb(185, 185, 247);
-    border-radius: 20px;
-    padding: 5px 19px;
-    position: absolute;
-    left: 280px;
-    bottom: 20px;
-    color: rgb(6, 6, 170);
-    background-color: rgb(185, 185, 247);
-
+    padding: 32px 20px;
+}
+.logo:hover{
+    background-color: var(--color-white);
+    color: #000;
+}
+a:hover{
+    background: var(--color-white);
+    color: #000;
 }
 .container:hover{
-    /* content: "Bijesh"; */
     background: #000;
-    color: white;
-    transform: translateY(10px);
-    transition: 0.4s;
+    color: wheat;
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+.container{
+    width: 50%;
+    margin: 2rem auto;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 50px;
+    /* align-items:center; */
+    text-align:center;
+    position: relative;
+}
+.container h1{
+    text-decoration:underline;
+    margin-bottom: 30px;
+}
+.container a{
+    border: 1px solid black;
+    position: absolute;
+    top:165px;
+    left: 305px;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    color:var(--color-white);
+    background-color: green;  
+}
+.side-bar{
+    position: fixed;
+    top: 110px;
+    width: 20%;
+    
+    padding-bottom: 60px;
+}
+.about{
+    font-size: 20px;
+    letter-spacing: 2px;
 }
