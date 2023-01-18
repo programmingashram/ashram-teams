@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+}
+header{
+    background-color: #2874f0; 
+}
+article a{
+    text-decoration: none;
+    color:black;
+}
+article .height{
+    height:200px;
+    object-fit: cover;
+    object-position: top;
+}
