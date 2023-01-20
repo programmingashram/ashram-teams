@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --color-white:white;
+    --color-black:black;
+    --color-red:red;
+    --color-blue:blue;
+    --color-green:green;
+}
+.color-red{
+    color: var(--color-red);
+}
+.color-white{
+    color: var(--color-white);
+}
+.color-black{
+    color: var(--color-black);
+}
+.color-green{
+    color: var(--color-green);
+}
+.color-blue{
+    color: var(--color-blue);
+}
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: #0d6efd;
+    /* box-sizing: border-box; */
+}
+.row{
+    display: flex;
+    justify-content:space-between ;
+    padding: 9px 0px 9px 10px;
+}
+.col-md-6 {
+    width: 50%;
+    float: left;
+}
+.hed-1{
+    padding: 0px 0px 5px 20px;
+}
+.hed-2{
+    padding-left: 10rem;
+    padding-top: 8px;
+
+}
+.hed-1 h2{
+display: inline-block;
+width: 20%;
+}
+.hed-1 a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 0px 10px;
+}
+
+
+.hed-2 a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* nav-bar */
+
+
+.nav-bar{
+    display: flex;
+    width: 100%;
+    height: 78px;
+    justify-content: space-between;
+    position: static;
+}
+.nav-img img{
+    width: 15%;
+    padding: 10px;
+}
+
+
+.nav-menu li{
+    display: inline-block;
+    padding:24px;
+}
+.nav-menu a{
+    text-decoration: none;
+    color: black;
+}
+
+/* section-1 */
+
+.container{
+    display: flex;
+    align-items: center;
+    padding: 0px 60px;
+
+}
+.sec-1{
+    background-image: url(	https://www.royaldigimedia.com//images/m.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+
+.container-1{
+    width: 100%;
+    position: relative;
+    bottom: 30px;
+}
+.container-1 h1 {
+    font-size: 50px;
+}
+
+.container-2 img{
+    width: 100%;
+    position: relative;
+    bottom: 0px;
+}
+
+.button-both{
+    display: flex;
+    position: relative;
+    align-items: center;
+    bottom: -40px;
+    gap:0px 10px;
+}
+.btn-1 a{
+    text-decoration: none;
+    padding: 8px 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(238, 55, 55);
+    color: white;
+}
+.btn-2 a{
+    text-decoration: none;
+    padding: 8px 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(66, 66, 243);
+    color: white;
+  
+}
+.btn-1 a:hover{
+    background-color: rgb(221, 43, 43);
+}
+
+.btn-2 a:hover{
+    background-color: #0066ff;
+}
+
+.container-3{
+    background-color: #0066ff;
+    padding: 15px 0px;
+    color: white;
+    padding-left: 30px;
+}
+
+.container-3 a{
+    font-size: large;
+    text-decoration: none;
+   padding: 8px 15px;
+   background-color: black;
+   color: white;
+   margin-left: 20px;
+}
+.media-img{
+    width: 25%;
+    text-align: center;
+    padding: 0px 0px 50px 0px;
+}
+.media h1{
+    text-align: center;
+    padding: 30px 0px;
+}
+
