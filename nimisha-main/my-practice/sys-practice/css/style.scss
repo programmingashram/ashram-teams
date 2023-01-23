@@ -1,0 +1,73 @@
+
+// Red Violet 
+$red-violet-19:rgb(163, 0, 107, 19%);
+$red-violet-100: #a3006b;
+$disable-100:rgba(102, 102, 102, 0.86);
+
+.sys-btn-outline-red-violet{
+    color: $disable-100;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    max-width: 100%;
+    width: auto;
+    white-space: nowrap;
+    border: 1px solid $red-violet-100;
+}
+.sys-btn-outline-red-violet:hover{
+    background-color: $red-violet-19;
+    box-shadow: 0px 4px 10px -1px $red-violet-19;
+    transition: 0.2s;
+}
+.sys-btn-outline-red-violet:focus{
+    background-color: $red-violet-100;
+    border: 1px solid white;
+    box-shadow: 0px 4px 10px -1px $red-violet-19;
+    transition: 0.2s;
+    color: white;
+}
+
+
+[size="lg"]{
+    width: 130px !important;
+    padding: 12px 0px !important;
+}
+[size="sm"]{
+    width: auto !important;
+    font-size: x-small;
+    padding: 8px 10px !important;
+}
+
+
+.sys-btn-red-violet{
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    max-width: 100%;
+    width: auto;
+    white-space: nowrap;
+    background-color: $red-violet-100;
+}
+
+.sys-btn-red-violet:hover{
+    background-color: $red-violet-19;
+    box-shadow: 0px 4px 10px -1px $red-violet-19;
+    transition: 0.2s;
+    border: 1px solid $red-violet-100;
+}
+.sys-btn-red-violet:focus{
+    background-color: $red-violet-100;
+    border: 1px solid white;
+    box-shadow: 0px 4px 10px -1px $red-violet-19;
+    transition: 0.2s;
+    color: white;
+}
+

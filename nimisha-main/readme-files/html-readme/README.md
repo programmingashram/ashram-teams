@@ -208,3 +208,68 @@ The HTML <form> elements can contain one or more of the following form elements:
 * <option>
 * <optgroup>
     
+
+
+
+
+
+
+
+
+
+## HTML
+___________________________________
+
+### What is the html 5 ?
+
+#### Ans:- Fifth and current version of the hypertext markup language for structuring and presenting content for the World Wide Web.
+
+
+### what is doctype ?
+
+#### The declaration is not an HTML tag. It is an "information" to the browser about what document type to expect.
+
+
+### what is symnatic ?
+
+#### A semantic element clearly describes its meaning to both the browser and the developer. Examples of non-semantic elements: and - Tells nothing about its content. Examples of semantic elements: , , and - Clearly defines its content.
+
+
+### Why we called synatic elements ?
+
+####
+
+
+### What are meta tag requires in html 5 template ??**
+
+#### The <meta> tag defines metadata about an HTML document. Metadata is data (information) about data. Metadata will not be displayed on the page, but is machine parsable. Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services.
+
+
+### Whis is the reuired attributes in form ?
+
+#### 
+
+
+### What is Table ?
+
+####  A table is a representation of data arranged in rows and columns. 
+
+
+### What is the colspan, rowspan ?**
+
+#### The rowspan and colspan are the attributes of tag. These are used to specify the number of rows or columns a cell should merge. The rowspan attribute is for merging rows and the colspan attribute is for merging columns of the table in HTML.
+
+
+### What is iframe ?
+
+#### The <iframe> tag specifies an inline frame. An inline frame is used to embed another document within the current HTML document. 
+
+
+### What is Entities ?***
+
+#### entities are used to display reserved characters in HTML.
+
+
+### what is diffrent between href and src ?****
+
+####

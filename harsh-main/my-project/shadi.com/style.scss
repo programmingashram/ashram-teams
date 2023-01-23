@@ -1,65 +1,83 @@
 @import'./utilities/mixin.scss';
-
-
-
-
 $c-aqua: #76c7c0;
+$c-red:#a00;
+$c-gray:#f3f3f3;
 
+.aqua{
+    color:$c-aqua;
+}
+.red{
+    color:#a00;
+}
+.bg-gray{
+   background-color: #f3f3f3;
+}
+p{
+    font-size: 14px!important;
+}
 .hero{
     background-image: url(images/fr.jpg);
     @include bg-facility();
     .height{
         height:658px;
-        
     }
-    
+    .text-right{
+        text-align: end;
+    }
     .color{
         background-color: $c-aqua;
         padding: 20px;
-    }
-}
-.aqua{
-    color:$c-aqua;
-}
-.facility{
-    padding:30px 70px;
-    .data{
-        span{
-            font-size:13px;
-        }
     }
 }
 .bg-testomonial{
     background-image: url(images/prime-background-home.jpg);
     padding: 3rem;
     @include bg-facility();
-}
-.cover{
-    border:5px solid $c-aqua;
-    border-radius: 40px;
-}
-.card-heading{
-    position: relative;
-    bottom: 85px;
-}
-.rounde{
-    position: relative;
-    bottom: 46px;
-    border-radius: 40px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-}
-   
-
-.round{
-    border-radius: 40px;
-    border-bottom: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-}
-.blogs{
-    p{
-        font-size: 13px;
-        margin-top: 15px;
+    .cover{
+        border:5px solid $c-aqua;
+        border-radius: 40px; 
+    }   img{
+        border-radius: 36px 36px 0px 0px;
+    }   .round{
+        border-radius: 0px 0px 36px 36px;
+    }  .card-heading{
+        display:none;
+    }  
     }
+    .cover:hover.card-heading{
+        display: block;
+        animation: flip 2s;
+        transition: 0.2s;
+    }
+    @keyframes flip{
+        from{
+            transform: translateY(40px);
+            opacity: 0;
+        }
+        to{
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+// footer//
+footer{
+    .underline{
+        width:27%;
+        border-bottom: 3px solid $c-red;
+        padding: 5px 0px;
+        margin-bottom: 10px;
+    }
+    .nav-link{
+        font-size: 14px;
+    }
+   .l-size{
+    width:5%;
+   }
+   .bg-red{
+    background-color: red;
+        i{
+            color:white;
+            font-size:1.7rem;
+        }
+   } 
 }

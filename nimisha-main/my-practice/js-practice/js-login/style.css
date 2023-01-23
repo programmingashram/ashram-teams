@@ -1,0 +1,70 @@
+#body {
+  background-image: url(back.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#body .container {
+  box-shadow: 0px 0px 20px #e9e1e1;
+  background-color: transparent;
+  margin: 20px auto;
+  text-align: center;
+  width: 50%;
+}
+#body .container .row {
+  display: flex;
+  height: 330px;
+}
+#body .container .row .left {
+  background: rgba(9, 9, 6, 0.2);
+  padding: 15px 40px;
+}
+#body .container .row .left .log-head {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 35px;
+}
+#body .container .row .left .log-head a {
+  text-decoration: none;
+  color: white;
+}
+#body .container .row .left .log-heading {
+  line-height: 2px;
+  color: white;
+  padding-bottom: 15px;
+}
+#body .container .row .left .log-heading p {
+  font-size: 12px;
+}
+#body .container .row .left .input-section {
+  text-align: start;
+  padding-bottom: 20px;
+}
+#body .container .row .left .input-section .grid {
+  display: flex;
+}
+#body .container .row .left .input-section .grid .col-md-6 {
+  margin-right: 5px;
+}
+#body .container .row .left .input-section .grid .col-md-6 input {
+  border: none;
+  background: none;
+  color: white;
+}
+#body .container .row .left .input-section input {
+  border: none;
+  background: none;
+  color: white;
+}
+#body .container .row .left #btn {
+  text-decoration: none;
+  color: white;
+  background-color: #815112;
+  padding: 5px 30px;
+  border-radius: 5px;
+}
+#body .container .row .right {
+  padding: 0px 40px;
+  color: white;
+  background: rgba(9, 9, 6, 0.5);
+  font-size: xx-large;
+}/*# sourceMappingURL=style.css.map */
