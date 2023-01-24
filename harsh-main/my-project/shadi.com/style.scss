@@ -81,3 +81,30 @@ footer{
         }
    } 
 }
+.anim{
+    position: absolute;
+    left: 37px;
+    margin-top: 20px;
+    width:2%;
+    transform:rotate();
+    transition: 0.2s;
+    animation: round 2S;
+    animation-iteration-count: infinite;
+
+
+}
+@keyframes round{
+    0%{ 
+        transform: rotate(0deg);
+   
+    }
+    100%{
+        transform: rotate(360deg);
+        
+    };
+}
+@media(max-width: 767px){
+    .hero{height:180px;}
+    .color{display:none;}
+}
+   
