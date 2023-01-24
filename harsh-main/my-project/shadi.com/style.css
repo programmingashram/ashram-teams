@@ -98,4 +98,43 @@ footer .bg-red {
 footer .bg-red i {
   color: white;
   font-size: 1.7rem;
+}
+
+.anim {
+  position: absolute;
+  left: 37px;
+  margin-top: 20px;
+  width: 2%;
+  transform: rotate();
+  transition: 0.2s;
+  -webkit-animation: round 2S;
+          animation: round 2S;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes round {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes round {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 767px) {
+  .hero {
+    height: 180px;
+  }
+  .color {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
