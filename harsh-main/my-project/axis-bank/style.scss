@@ -1,0 +1,34 @@
+header{
+    background-color:#861f41 ;
+    img{
+        width:100%;
+    }
+}
+section{
+    margin-bottom: 50px;
+    
+    .bg-color{
+        background-color: #E31E2566;
+    }
+    .bg-green{
+        background-color: #3BB44A;
+        .btn-space{
+            margin-top: 1px;
+        }
+    }
+    .bg-yellow{
+        background-color: #F0DB4F;
+        .start{
+            margin-right: 80px;
+        }
+    }
+    ul{
+        list-style-type: none;
+        li{
+            margin-bottom: 23px;
+        }
+    }
+    .bg-pink{
+        background-color: #C95C95;
+    }
+}
