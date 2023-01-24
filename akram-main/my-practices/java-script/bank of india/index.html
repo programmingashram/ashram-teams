@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Of India</title>
+    <link rel="icon" href="./css/img/pngtree-india-flag-brush-png-image_6977647.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://programming-ashram.github.io/sys-design-system/css/style.css">
+</head>
+<body>
+    <header class="sys-header bg-light sys-elevation-v2 m-2">
+        <div class="sys-container">
+          <div class="sys-grid">
+            <div class="col-md-4">
+                <div class="header-wrapper">
+                        <img src="./css/img/indian-flag-india-day-background-png-image-download-5.png" class="width" alt="">
+               </div>
+            </div>
+            <div class="col-md-6">
+                <div class="header-wrapper">
+                        <ul class="sys-navbar mt-2">
+                            <li><a href="#" class="text-accent">Get Insurances</a></li>
+                        <li><a href="#" class="text-accent"> FD status</a></li>
+                        <li><a href="#" class="text-accent">Home Loan</a></li>
+                        <li><a href="#" class="text-accent">Personal Loan</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="header-wrapper">
+                    <ul class="sys-navbar mt-2">
+                        <li><a href="#" class="text-accent"><i class="fa-solid fa-user"></i></a></li> 
+                        <li><a href="#" class="text-accent">sign up</a></li>                 
+                </div>
+            </div>    
+          </div>
+        </div>
+     </header>
+     <section>
+        <div class="sys-sidebar">
+            <div class="sys-sidebar-menu sys-elevation-v2 sidebar-scroll">
+                <div class="sys-sidebar-head">
+                    <a href="#" id="collapseSidebar">
+                        <i class="fa fa-caret-down p-2 bg-secondary-60" aria-hidden="true"></i>
+                    </a>  
+                   <span>SYS SIDEBAR</span>
+                </div>
+                <hr>
+                <div class="sys-sidebar-body">
+                    <ul>
+                        <li title="Home"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> <span>Home</span></a></li>
+                        <li title="Dashboard"><a href="#"><i class="fa fa-dashboard" aria-hidden="true"></i> <span>Dashboard</span></a></li>
+                        <li title="Products"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Products</span></a></li>
+                        <li title="Analytic"><a href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i><span>Analytic</span></a></li>
+                        <li title="Schedule"><a href="#"><i class="fa fa-clock" aria-hidden="true"></i> <span>Schedule</span></a></li>
+                        <li title="History"><a href="#"><i class="fa fa-history" aria-hidden="true"></i> <span>History</span></a></li>
+                        <li title="Sales"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> <span>Sales</span></a></li>
+                        <li title="Message"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> <span>Message</span></a></li> 
+                        <li title="Notification"><a href="#"><i class="fa fa-bell" aria-hidden="true"></i> <span>Notification</span></a></li> 
+                        <li title="Settings"><a href="#"><i class="fa fa-cog" aria-hidden="true"></i> <span>Settings</span></a></li> 
+                        <li title="Logout"><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> <span>Logout</span></a></li> 
+                    </ul>
+                </div>
+                <hr>
+                <div class="sys-sidebar-footer">
+                    <div class="sys-grid">
+                        <div class="user-pro">
+                            <img src="./aUerE_Gq_400x400.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="sidebar-title">
+                                Michal Smith
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="sidebar-content">
+                <h4>Side Bar Content</h4>
+            </div>
+        </div>
+     </section>
+       <!-- article-1-->
+    <article id="at1">
+        <div class="sys-container">
+            <div class="sys-grid">
+               <div class="col-md-6" id="signup">
+                    <div class="signup-group" >
+                        <div class="sys-elevation-v3 ">
+                            <i class="sys-icon save-icon"></i>
+                                <div class="card p-4">
+                                        <h3 class="text-accent">
+                                            Sign Up
+                                        </h3>
+                                        <hr>                                   
+                                       <form action="" class="p-3">
+                                            <label for="email" class="text-secondary">E-mail</label><br>
+                                            <input type="text" id="email" onkeyup="loginfn();" />
+                                        </form orm>
+                                        <form action="" class="p-3">
+                                            <label for="" class="text-secondary">Password </label><br>
+                                            <input type="text" id="password" onkeyup="loginfn();" />
+                                        </form>
+                                        <button type="button" role="btn" class="sys-btn-error  pr-4 m disabled" onclick="data();"  />
+                                          Login In
+                                        </button>
+                                        <button type="button" class="sys-light "    role="btn"            onclick="create();" >Create an account</button>
+                                </div>
+                        </div>
+                    </div>
+               </div>  
+               <div class="col-md-6" id="login">
+                <div class="login-details">
+                    <div class="sys-elevation-v3 bg-error-70 ">
+                        <i class="sys-icon save-icon"></i>
+                            <div class="card p-4">
+                                    <h3>
+                                       Login 
+                                    </h3>
+                                    <hr>                                   
+                                    <form action="" class="p-3">
+                                        <label for="">Name</label><br>
+                                        <input type="text" id="loginName" placeholder="" onkeyup="loginfn();" />
+                                    </form>
+                                    <form action="" class="p-3">
+                                        <label for="">AdharCard No. </label><br>
+                                        <input type="text" id="loginAd" placeholder="" onkeyup="loginfn();" />
+                                    </form>
+                                    <button type="button" role="btn" class="sys-btn-accent mt-1 pr-4"  onclick="logindata();"  />
+                                     Submit
+                                    </button>
+                        
+                            </div>
+                    </div>
+                </div>
+                </div>   
+            </div>
+        </div>
+    </article>
+    <!-- article-2-->
+     <article id="at1">
+        <div class="sys-container">
+            <div class="sys-grid">
+               <div class="col-md-6" id="create01">
+                    <div class="section-deatils  ">
+                        <div class="sys-elevation-v3 lg bg-olive-90">
+                            <i class="sys-icon save-icon"></i>
+                                <div class="card p-4">
+                                        <h3>
+                                           Creating an Account
+                                        </h3>
+                                        <hr>                                   
+                                       <form action="" class="p-3">
+                                            <label for="">Full Name</label><br>
+                                            <input type="text" id="input" placeholder=""   />
+                                        </form orm>
+                                        <form action="" class="p-3">
+                                            <label for="">Phone No. </label><br>
+                                            <input type="number" id="input" placeholder=""   required />
+                                        </form>
+                                        <form action="" class="p-3">
+                                            <label for="">PAN Card No.</label><br>
+                                            <input type="text" id="input" placeholder=""   />
+                                        </form orm>
+                                        <form action="" class="p-3">
+                                            <label for="">AdharCard No. </label><br>
+                                            <input type="number" id="input" placeholder=""   />
+                                        </form>
+                                        <form action="" class="p-3">
+                                            <label for="">Address.</label><br>
+                                            <input type="text" id="input" placeholder=""   required />
+                                        </form orm>
+                                        <form action="" class="p-3">
+                                            <label for="">Deposit. </label><br>
+                                            <input type="text" id="input" placeholder="Minimum Deposit 500 rupees" />
+                                        </form>
+                                        <button type="button" role="btn" class="sys-btn-error mt-1 pr-4">
+                                            Create an Account
+                                        </button>
+                                </div>
+                        </div>
+                    </div>
+               </div>  
+               <div class="col-md-6" id="create02">
+                <div class="login">
+                    <div class="sys-elevation-v3 lg bg-alert-80">
+                        <i class="sys-icon save-icon"></i>
+                            <div class="card p-4">
+                                    <h3>
+                                        User Details
+                                    </h3>
+                                    <hr>                                   
+                                   <form action="" class="p-3">
+                                        <label for="">Full Name</label><br>
+                                        <input type="text" id="input" placeholder="" onkeyup=" logindata();"  />
+                                    </form orm>
+                                    <form action="" class="p-3">
+                                        <label for="">Phone No. </label><br>
+                                        <input type="number" id="input" placeholder=""  required />
+                                    </form>
+                                    <form action="" class="p-3">
+                                        <label for="">PAN Card No.</label><br>
+                                        <input type="text" id="input" placeholder=""  />
+                                    </form orm>
+                                    <form action="" class="p-3">
+                                        <label for="">AdharCard No. </label><br>
+                                        <input type="number" id="input" placeholder="" onkeyup=" logindata();"   />
+                                    </form>
+                                    <form action="" class="p-3">
+                                        <label for="">Address.</label><br>
+                                        <input type="text" id="input" placeholder=""  required />
+                                    </form orm>
+                                    <form action="" class="p-3">
+                                        <label for="">Deposit. </label><br>
+                                        <input type="text" id="input" placeholder="Minimum Deposit 500 rupees"  />
+                                    </form>
+                                    <button type="button" role="btn" class="sys-btn-accent mt-1 pr-4">
+                                       Submit Details
+                                    </button>
+                            </div>
+                    </div>
+                </div>
+                </div>   
+            </div>
+        </div>
+    </article>
+    <article class="bg-light" id="at3">
+        <div class="sys-sidebar">
+            <div class="sys-sidebar-menu sys-elevation-v2 sidebar-scroll">
+                <div class="sys-sidebar-head">
+                    <a href="#" id="collapseSidebar">
+                        <i class="fa fa-caret-down p-2 bg-secondary-60" aria-hidden="true"></i>
+                    </a>  
+                   <span>SYS SIDEBAR</span>
+                </div>
+                <hr>
+                <div class="sys-sidebar-body">
+                    <ul>
+                        <li title="Home"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> <span>Home</span></a></li>
+                        <li title="Dashboard"><a href="#"><i class="fa fa-dashboard" aria-hidden="true"></i> <span>Dashboard</span></a></li>
+                        <li title="Products"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Products</span></a></li>
+                        <li title="Analytic"><a href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i><span>Analytic</span></a></li>
+                        <li title="Schedule"><a href="#"><i class="fa fa-clock" aria-hidden="true"></i> <span>Schedule</span></a></li>
+                        <li title="History"><a href="#"><i class="fa fa-history" aria-hidden="true"></i> <span>History</span></a></li>
+                        <li title="Sales"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> <span>Sales</span></a></li>
+                        <li title="Message"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> <span>Message</span></a></li> 
+                        <li title="Notification"><a href="#"><i class="fa fa-bell" aria-hidden="true"></i> <span>Notification</span></a></li> 
+                        <li title="Settings"><a href="#"><i class="fa fa-cog" aria-hidden="true"></i> <span>Settings</span></a></li> 
+                        <li title="Logout"><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> <span>Logout</span></a></li> 
+                    </ul>
+                </div>
+                <hr>
+                <div class="sys-sidebar-footer">
+                    <div class="sys-grid">
+                        <div class="user-pro">
+                            <img src="./aUerE_Gq_400x400.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="sidebar-title">
+                             Bank Of India
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="sidebar-content">
+               <div class="table-details">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                Email
+                            </th>
+                            <th>
+                                Password
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableData">
+                        
+                    </tbody>
+                </table>
+               </div>
+            </div>
+        </div>
+    </article> -->
+    <script src="app.js"></script>
+</body>
+</html>
