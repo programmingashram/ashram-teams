@@ -27,6 +27,7 @@ nav{
 }
 .menu{
     margin-left: 70px;
+    border-right:1px solid white;
 }
 .logo{
     display:inline-block;
@@ -171,6 +172,8 @@ a:hover{
     width: 100%;
     backdrop-filter: blur(5px);
     display: none;
+
+}
 
 }
 .nm{
