@@ -1,0 +1,14 @@
+#btn {
+    padding: 3px;
+    background-color: green;
+    color: white;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-left: 40px;
+    margin-top: 10px;
+    border-color: white;
+}
+
+.none{
+    display: none;
+}

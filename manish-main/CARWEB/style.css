@@ -7,89 +7,177 @@
     display: table;
     content: "";
 }
+:root{
+    --color-red:red;
+    --color-blue:blue;
+    --color-white:white;
+    --color-black:black;
+    --background-black:black;
+}
+.color-red{
+    color: var(--color-red);}
+.color-white{
+    color: var(--color-white);
+}
+.color-black{
+    color: var(--color-black);
+}
+
+.background-black{
+    background-color: var(--background-black);
+
+}
+
 .col-md-2 {
     float: left;
     width: 16.66%;
 }
 .col-md-6{
     float:left;
-    width: 49.99%;
+    width: 50%;
 }
 
-.col-md-1{
+.col-md-4{
     float: left;
-    width: 8.33%;
-    margin-top: 30px;
-}
-.col-md-3{
-    float: left;
-    width: 24.99%;
-    margin-top: 2px;
-    
+    width: 33.33%;
 }
 
 .col-md-2 img {
-    padding-top: 15px;
-    padding-left: 20px;
+    width: 38px;
+    padding: 0 22px;
 }
 
 
 .col-md-6 ul li{
     display: inline;
-    padding-right: 18px;
+    padding: 0px 30px 8px 0px;
     
 }
 
 .col-md-6 ul{
-    margin-top: 30px;
+    margin-top: 19px;
 }
 
 .col-md-6 a {
     text-decoration: none;
 }
-.col-md-1 a {
-    text-decoration: none;
-    color: red;
+.lang a {
+    margin-bottom: 0;
 }
 
-.col-md-1 img{
-    Width:10px;
-    Height:10px;
-}
-.col-md-3-border {
-   
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 10px 3px 10px 3px;
-    margin: 18px 101px 0px 63px;
-}
-.col-md-3 ul li {
-    display: inline;
-}
-.col-md-3 a {
-   color: red;
+.col-md-4-border{
+    padding: 4px ;
+    border: 2px solid red;
+    border-radius: 10px;}
 
+
+.lang {
+    margin-top: 17px;
 }
-.section{
-    background-image: url(/manish-main/CARWEB/PHOTO/section1st-img.svg);
-    background-repeat: no-repeat;
+.serching-icon {
+    margin-top: 17px;
+} 
+.col-md-4-border{
+    margin-top: 17px;
 }
 
-.menu {
-    margin-top: 21px;
-    margin-left: 20px;
+
+
+.section-1 {
+    background-image: url(./PHOTO/section1st-img.svg);
+    background-repeat: no-repeat;  
+    background-size: cover;
 }
-.menu h1 {
-    display: contents;
+
+.menu-1 {
+    padding: 15px 106px;
+    width: 34%;
+}
+
+.menu-1 h1 {
+    
+    margin-top: 110px;
+    color:white;
+    font-size: 30px;
+  
 }
 .menu-h1 {
    color: red;
-   size: 30px ;
+   size: 50px;
+
    
 }
 
-/* 
-.menu p{
-    margin-top: 20px;
-    margin-bottom: 20px;
-} */
+.menu-1 p {
+    color: white;
+    padding: 8px 0px;
+    font-size: 10px;
+}
+
+.menu-1 p{
+    padding: 21px 0px;
+  
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 50px;
+
+}
+
+.button-1{
+    padding: 2px 0px 75px 96px;
+   
+}
+.button-a {
+    padding: 5px;
+   background:transparent;
+   background-color: red;
+   color: white;
+   border-radius: 5px;
+}
+
+.button-b{
+    padding: 5px;
+    background: transparent;
+    border: 2px solid red;
+    color: white;
+    border-radius: 5px;
+}
+
+.col-d-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.col-m-2{
+   padding: 6px 10px ;
+   border: 2px solid red;
+   border-radius: 10px;
+   margin:6px  6px 0px 6px;
+}
+.col-m-7{
+    float: left;
+    width: 58.34%;
+}
+.col-m-5{
+    float: left;
+    width: 41.66%;
+}
+.menu-3{
+    padding: 34px 0px 0px 38px;
+}
+
+.col-m-5 img {
+    width: 15rem;
+    
+}
+
+.menu-3{
+    width: 30%;
+
+}
+.menu-3-p{
+    width: 50%;
+    padding: 10px 0px 0px 38px;
+} 

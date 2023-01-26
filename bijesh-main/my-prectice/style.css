@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 section{
     background: pink;
@@ -59,4 +61,76 @@ input{
     padding: 10px;
     border-top-left-radius: 40px;
     border-bottom-right-radius: 40px;
+}
+
+
+/* navbar styling */
+
+/* .navbar{
+    width: 100%;
+    background: red;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 15px 80px;
+    margin: auto;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .max-width .logo a{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 800;
+}
+.menu{
+    display: flex;
+    gap: 0px 50px;
+}
+.menu li{
+    list-style: none;
+    display: inline-block;
+    font-size: 18px;
+}
+.menu li a{
+   padding: 20px 0px;
+   color: white; 
+}
+.menu */
+
+.navbar{
+    width: 100%;
+    background: red;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 15px 80px;
+    margin: auto;
+
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.max-width .logo a{
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+}
+.menu li{
+    list-style: none;
+    display: inline-block;
+}
+.menu{
+    display: flex;
+    gap: 0px 50px;
+
+}
+.menu li a{
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
 }
