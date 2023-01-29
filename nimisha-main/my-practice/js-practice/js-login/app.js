@@ -33,6 +33,10 @@ read.style.display = "none";
 accBlance.style.display = "none";
 addMoney.style.display = "none";
 
+
+
+
+
 let array = [];
 
 function signbtnvalid() {
@@ -61,8 +65,18 @@ function loginbtnvalid() {
 function moneyaddbtn(){
     addMoney.style.display = "none";
     accBlance.style.display = "block";
+
+    let value1 = document.getElementById('avaMoney');
+    let value2 = document.getElementById('valueMoney');
+
+    // convert string into number
+
+    let convertval1 = parseInt(value1.value);
+    let convertval2 = parseInt(value2.value);
+
+
     avaMoney.innerHTML += `
-    ${valueMoney.value + avaMoney.value}
+    ${convertval1 + convertval2}
     `
     
 
@@ -83,7 +97,7 @@ function logpage() {
 function loginpanvalid() {
     if (logDep.value < 499) {
         alert(min, 500);
-    } else (logDep.value > 500); {
+    } else (logDep.value > 500);{
         console.log('success');
     }
 }
