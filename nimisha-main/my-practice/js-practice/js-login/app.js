@@ -1,80 +1,188 @@
-var body = document.getElementById('body');
+let login = document.getElementById('row1');
+let singin = document.getElementById('row2');
+let read = document.getElementById('row3');
+let admin = document.getElementById('row4');
+let accBlance = document.getElementById('row5');
+let addMoney = document.getElementById('row6');
+let singbtn = document.getElementById('singbtn');
+let logbtn = document.getElementById('logbtn');
 
-function section() {
-    var container = document.createElement('div');
-    body.appendChild(container);
-    container.setAttribute('class', 'container');
 
-    function box() {
-        var row = document.createElement('div');
-        container.appendChild(row);
-        row.setAttribute('class', 'row');
 
-        function col1() {
-            var left = document.createElement('div');
-            row.appendChild(left);
-            left.setAttribute('class', 'left');
+let logFname = document.getElementById('fname');
+let logNum = document.getElementById('lognum');
+let logAdd = document.getElementById('logAdd');
+let logAdhar = document.getElementById('logAdhar');
+let logPan = document.getElementById('logPan');
+let logDep = document.getElementById('logDep');
 
-            left.innerHTML = `
-            <div class="log-head">
-                <div class="back">
-                    <a href="#">Back</a>
-                </div>
-                <div class="newt">
-                    <a href="#">New traveler</a>
-                </div>
-            </div>
-        <div class="log-page">
-            <div class="log-heading">
-                <h2>Explore trave destinations</h2>
-                <p>The best place for your wild adventures.</p>
-            </div>
-            <div class="input-section">
-                <div class="grid">
-                    <div class="col-md-6">
-                        <input type="text" name="name" id="name" placeholder="Name">
-                        <hr>
-                    </div>
-                    <div class="col-md-6">
-                        <input type="text" name="contry" id="contry" placeholder="Contry">
-                        <hr>
-                    </div>
-                </div>
-                <div class="e-section">
-                    <input type="email" name="email" id="email" placeholder="Email">
-                    <hr>
-                </div>
-                <div class="pass-section">
-                    <input type="password" name="password" id="password" placeholder="Create Password">
-                    <hr>
-                </div>
-            </div>
-            <div class="btn-section">
-                <a href="#" type="button" id="btn">Sign up</a>
-            </div>
-        </div>
-            `
+let rlogFname = document.getElementById('rfname');
+let rlogNum = document.getElementById('rlognum');
+let rlogAdd = document.getElementById('rlogAdd');
+let rlogAdhar = document.getElementById('rlogAdhar');
+let rlogPan = document.getElementById('rlogPan');
+let rlogDep = document.getElementById('rlogDep');
 
-        } col1()
 
-        function col2() {
-            var right = document.createElement('div');
-            row.appendChild(right);
-            right.setAttribute('class', 'right');
+let signName = document.getElementById('signName');
+let signAdhar = document.getElementById('signAdhar');
 
-            right.innerHTML = `
-            <div class="right-content">
-                <div class="queto">
-                    <p>
-                        Great things never came<br> from comfort zones.
-                    </p>
-                </div>
-            </div>
-            `
+admin.style.display = "none";
+singin.style.display = "none";
+read.style.display = "none";
+accBlance.style.display = "none";
+addMoney.style.display = "none";
 
-        } col2()
 
-    } box()
 
-} section()
 
+
+let array = [];
+
+function signbtnvalid() {
+    if (signName.value == '' && signAdhar.value == '') {
+        console.log('fill the detail')
+    } else {
+        console.log('Succes fill')
+    }
+}
+
+function loginbtnvalid() {
+    if (logFname.value == '' && logNum.value == '') {
+        console.log('fill the detail')
+    } else if (logAdd.value == '' && logAdhar.value == '') {
+        console.log('fill the detail')
+    } else if (logPan.value == '') {
+        console.log('fill the detail')
+    }
+    else {
+        console.log('Succes fill')
+    }
+}
+
+
+
+function moneyaddbtn(){
+    addMoney.style.display = "none";
+    accBlance.style.display = "block";
+
+    let value1 = document.getElementById('avaMoney');
+    let value2 = document.getElementById('valueMoney');
+
+    // convert string into number
+
+    let convertval1 = parseInt(value1.value);
+    let convertval2 = parseInt(value2.value);
+
+
+    avaMoney.innerHTML += `
+    ${convertval1 + convertval2}
+    `
+    
+
+}
+
+
+function singpage() {
+    login.style.display = "none";
+    singin.style.display = "block";
+
+}
+function logpage() {
+    singin.style.display = "none";
+    admin.style.display = "none";
+    login.style.display = "block";
+}
+
+function loginpanvalid() {
+    if (logDep.value < 499) {
+        alert(min, 500);
+    } else (logDep.value > 500);{
+        console.log('success');
+    }
+}
+
+function accData() {
+    for (let n in array) {
+        if (signName.value === array[n].Fname && signAdhar.value === array[n].Adhar) {
+            login.style.display = "none";
+            accBlance.style.display = "block";
+            avaMoney.innerHTML += `
+            <td>
+                ${array[n].Deposit}
+            </td>`
+        }else{
+            console.log('Please fill the Valid Data');
+        }
+    }
+
+}
+
+function matchUser() {
+    console.log('Succes fill');
+    singin.style.display = "none";
+    read.style.display = "block";
+    array.push(
+        {
+            Fname: logFname.value,
+            Number: logNum.value,
+            Address: logAdd.value,
+            Adhar: logAdhar.value,
+            Pan: logPan.value,
+            Deposit: logDep.value
+        }
+    );
+    console.log(array);
+    rlogFname.value = logFname.value;
+    rlogNum.value = logNum.value;
+    rlogAdd.value = logAdd.value;
+    rlogAdhar.value = logAdhar.value;
+    rlogPan.value = logPan.value;
+    rlogDep.value = logDep.value;
+}
+
+
+function addData() {
+    if (signName.value == '') {
+        console.log('fill the detail');
+    } else if (signAdhar.value == '') {
+        console.log('fill the detail');
+    } else {
+        adminData();
+    }
+}
+
+
+function adminData() {
+    for (let n in array) {
+        read.style.display = "none";
+        admin.style.display = "block";
+        tableData.innerHTML += `
+        <tr>
+            <td>
+                ${array[n].Fname}
+            </td>
+            <td>
+                ${array[n].Number}
+            </td>
+            <td>
+                ${array[n].Address}
+            </td>
+            <td>
+                ${array[n].Adhar}
+            </td>
+            <td>
+                ${array[n].Pan}
+            </td>
+            <td>
+                ${array[n].Deposit}
+            </td>
+        </tr>
+        `
+    }
+}
+
+function addmoney(){
+    accBlance.style.display ="none";
+    addMoney.style.display ="block";
+}

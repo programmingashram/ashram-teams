@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 #body {
     background-image: url(back.jpg);
     background-position: center;
@@ -5,81 +11,278 @@
 
 
     .container {
+        background-image: url(back.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
         box-shadow: 0px 0px 20px #e9e1e1;
-        background-color: transparent;
-        margin: 20px auto;
+        margin: 50px auto;
         text-align: center;
         width: 50%;
 
-        .row {
+        .grid {
             display: flex;
-            height: 330px;
 
-            .left {
-                background: rgba(9, 9, 6, 0.2);
+            .right {
+                background: rgba(63, 63, 46, 0.2);
                 padding: 15px 40px;
 
-                .log-head {
-                    display: flex;
-                    justify-content: space-between;
-                    padding-bottom: 35px;
-
-                    a{
-                        text-decoration: none;
-                        color: white;
-                    }
-                }
-                .log-heading{
+                .sigh-heading {
                     line-height: 2px;
                     color: white;
                     padding-bottom: 15px;
-                    
-                    p{
+
+                    p {
                         font-size: 12px;
                     }
                 }
-                .input-section{
+
+                .input-section {
                     text-align: start;
                     padding-bottom: 20px;
+                    color: white;
 
-                    .grid{
-                        display: flex;
-                        
-                        .col-md-6{
-                            margin-right: 5px;
+                    .col-md-6 {
+                        margin-right: 5px;
 
-                            input{
-                                border: none;
-                                background: none;
-                                color: white;
-                
-                            }
+                        input {
+                            border: none;
+                            background: none;
+                            color: white;
                         }
                     }
-                    input{
+
+                    input {
                         border: none;
-                        background: none;
+                        padding: 2px 5px;
+                        border-radius: 5px;
+                        background: rgb(0 0 0 / 10%);
                         color: white;
-                        
+                        margin-bottom: 15px;
+                    }
+
+                }
+
+                #logbtn {
+                    border: none;
+                    text-decoration: none;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    background-image: linear-gradient(to bottom right, #928dc2, #123640);
+                }
+
+                .social {
+                    padding-top: 15px;
+                    color: white;
+                }
+
+                .new {
+                    padding-top: 40px;
+
+                    #newUser {
+                        border: none;
+                        background: transparent;
+                        cursor: pointer;
+                        color: white;
+                    }
+                }
+            }
+
+            .left {
+                padding: 40px;
+                color: white;
+                background: rgba(9, 9, 6, 0.5);
+                text-align: left;
+
+                #line {
+                    background-color: white;
+                    height: 2px;
+                    width: 21px;
+                    display: inline-block;
+                    border-radius: 2px;
+                }
+
+                p {
+                    padding-top: 20px;
+                }
+
+                .readbtn {
+                    border: none;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    background-image: linear-gradient(to bottom right, #928dc2, #123640);
+                }
+
+            }
+
+            .creatLeft {
+                background: rgba(4, 5, 6, 0.1);
+                padding: 10px;
+                width: 50%;
+
+                .creatHeading {
+                    color: white;
+                    padding: 15px 0;
+                }
+
+                input {
+                    border: none;
+                    padding: 2px 5px;
+                    border-radius: 5px;
+                    background: rgb(0 0 0 / 10%);
+                    color: white;
+                    margin-bottom: 15px;
+                    margin-right: 10px;
+                }
+
+                .row {
+                    display: flex;
+                    justify-content: space-around;
+
+                    a {
+                        color: white;
+                    }
+
+                    #newUser {
+                        border: none;
+                        background: transparent;
+                        cursor: pointer;
+                        color: white;
+                    }
+
+                    #singbtn {
+                        border: none;
+                        text-decoration: none;
+                        color: white;
+                        padding: 5px 10px;
+                        border-radius: 5px;
+                        background-image: linear-gradient(to bottom right, #928dc2, #123640);
+
                     }
                 }
 
-                #btn{
+                #rsingbtn {
+                    border: none;
                     text-decoration: none;
                     color: white;
-                    background-color: #815112;
-                    padding: 5px 30px;
+                    padding: 5px 10px;
                     border-radius: 5px;
+                    background-image: linear-gradient(to bottom right, #928dc2, #123640);
+
+                }
+
+                .label {
+                    color: white;
+                    display: block;
+                }
+
+                .input {
+                    color: gray;
                 }
             }
 
-            .right{
-                padding: 0px 40px;
-                color: white;
+            .creatRight {
                 background: rgba(9, 9, 6, 0.5);
-                font-size: xx-large;
-                
+                width: 50%;
+
+                .rightimg {
+                    width: 100%;
+                }
             }
+        }
+
+        #row4 {
+            color: white;
+            height: 330px;
+
+            .w-100 {
+                width: 100%;
+                padding-top: 20px;
+            }
+
+            #newUser {
+                border: none;
+                text-decoration: none;
+                color: white;
+                padding: 5px 10px;
+                border-radius: 5px;
+                background-image: linear-gradient(to bottom right, #928dc2, #123640);
+            }
+        }
+
+        #row5 {
+            height: 330px;
+            color: white;
+
+            #accountBD {
+                text-align: -webkit-center;
+                padding-top: 35px;
+            }
+
+            table {
+                border: 1px solid white;
+                border-radius: 10px;
+                padding: 2px 5px;
+
+                th {
+                    border: 1px solid white;
+                    border-radius: 10px;
+                    padding: 2px 5px;
+                }
+            }
+
+            .grid {
+                display: flex;
+                justify-content: space-around;
+                padding-top: 100px;
+
+                #tablebtn {
+                    border: none;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    background-image: linear-gradient(to bottom right, #928dc2, #123640);
+                }
+
+                .logUser {
+                    border: none;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    background-image: linear-gradient(to bottom right, #928dc2, #123640);
+                }
+            }
+
+        }
+
+        #row6 {
+            height: 330px;
+            color: white;
+
+            #dipositeBox {
+                text-align: -webkit-center;
+                padding-top: 35px;
+            }
+
+            #valueMoney {
+                border: none;
+                padding: 2px 5px;
+                border-radius: 5px;
+                background: rgb(0 0 0 / 10%);
+                color: white;
+                margin-bottom: 15px;
+            }
+
+            #addMoney {
+                border: none;
+                text-decoration: none;
+                color: white;
+                padding: 5px 10px;
+                border-radius: 5px;
+                background-image: linear-gradient(to bottom right, #928dc2, #123640);
+            }
+
         }
     }
 }

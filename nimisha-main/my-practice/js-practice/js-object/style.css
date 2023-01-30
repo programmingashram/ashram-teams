@@ -1,0 +1,32 @@
+#row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#row .box {
+  width: 18%;
+  text-align: center;
+}
+#row .box .head {
+  height: 190px;
+}
+#row .box .head img {
+  width: 230px;
+}
+#row .box .review {
+  background-color: green;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+#row .box .reviewNumber {
+  color: gray;
+}
+#row .box .mPrice {
+  color: gray;
+}
+#row .box .discount {
+  color: green;
+}/*# sourceMappingURL=style.css.map */
