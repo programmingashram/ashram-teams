@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  width: 100%;
+  background-color: black;
+  padding: 1rem 0px;
+}
+.navbar .row {
+  display: flex;
+  align-items: center;
+}
+.navbar .col-md-12 {
+  width: 80%;
+}
+.navbar .menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.navbar .menu .menu li {
+  display: inline-block;
+}
+.navbar .menu li a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-grp {
+  background-color: rgb(8, 151, 8);
+  border-radius: 0.5rem;
+  color: white;
+  padding: 1rem 50px;
+}
+.btn-grp .btn {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}/*# sourceMappingURL=style.css.map */
