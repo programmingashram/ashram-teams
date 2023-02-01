@@ -1,0 +1,72 @@
+$colordark:#000000e6;
+$colorgrey:#808080f0;
+$colorblue:#87ceebcc;
+$colorlight:#4e3aa8e0;
+
+
+.container{
+    width: 90%;
+    .row{
+        display: flex;
+        align-items: center;
+    }
+}
+
+.icon i{
+    font-size: 50px;
+}
+.details a{
+    color: white;
+}
+.js{
+    background-color: $colordark;
+    color: white;
+}
+.fa-js{
+    color: yellow;
+}
+.angular{
+    background-color: gray;
+    
+}
+.fa-angular{
+    color: red !important;
+}
+.react{
+    background-color: whitesmoke;
+}
+.fa-react{
+    color: #311b92e0 !important;
+}
+.bootstrap{
+    background-color: #8feaf270;
+}
+.fa-bootstrap{
+    color: black !important;
+}
+.sass{
+    background-color:rgb(78 58 168 / 48%) ;
+}
+.fa-sass{
+    color: white !important;
+}
+@mixin tile {
+    border-radius: 11px;
+    margin-right: 20px;
+    padding: 24px;
+}
+
+ .main{
+    @include tile();
+
+}
+.main2{
+    @include tile();
+    background-color: $colorgrey;
+}
+.main3{
+    @include tile();
+    background-color: whitesmoke;
+    border: 1px solid black;
+}
+

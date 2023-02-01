@@ -379,3 +379,53 @@ function nisha(y1, y2){
     console.log(y1 * y2)
 }
 document.getElementById("line").innerHTML = nisha(89, 7);
+nisha(20, 15)
+
+
+
+// nesting in javascript
+
+let first = "javascript"
+let second = "practice"
+
+function task1(){
+    console.log("hii this is" + ' ' + first + ' ' + second + ' ' + "page" )
+
+    function firstchild(){
+        console.log("this is" + ' ' + second + ' ' + "page for"+ ' '+ first)
+    }
+    firstchild()
+}
+task1()
+
+
+let first1 = "Nisha"
+let second1 = "Devnath"
+
+function task2(){
+    console.log("Hii my name is"+' '+ first1+ ' ' + second1)
+
+    function secondchild(){
+        console.log("This is"+ ' '+second+ ' '+ "for Nesting in"+' '+first)
+    }
+    secondchild()
+}
+task2()
+
+
+
+// Arrow function
+
+task3 =(a, b)=> console.log(a + b);
+task3(20, 20);
+task3(30, 40);
+task3(40, 50);
+
+
+task4 =(a, b)=> console.log(a * b);
+task4(20, 5);
+task4(30, 4);
+task4(40, 2);
+
+
+
