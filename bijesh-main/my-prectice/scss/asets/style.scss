@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+$color-black: black;
+$color-white: white;
+$color-green: rgb(8, 151, 8);
+
+$size-sm : 1rem;
+
+
+
+@mixin btnGlobal(){
+    background-color: $color-green;
+    border-radius: $size-sm / 2;
+    color: $color-white;
+    padding: $size-sm 50px;
+}
+.navbar{
+    width: 100%;
+    background-color: $color-black;
+    padding: $size-sm 0px;
+    .row{
+        display: flex;
+        align-items: center;
+    }
+    .col-md-12{
+        width: 80%;
+    }
+    .menu{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .menu li{
+            display: inline-block;
+        }
+        li a{
+            text-decoration: none;
+            color: $color-white;
+        }
+    }
+}
+.btn-grp{
+    
+        @include btnGlobal();
+        
+        .btn{
+            text-decoration: none;
+            color: $color-white;
+            font-size: $size-sm ;
+        }
+
+}
+
