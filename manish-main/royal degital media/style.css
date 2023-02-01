@@ -288,16 +288,69 @@
 
 /* section-of-card */
 
+
 .col-md-12 {
     width: 100%;
+    display: inline-block;
 }
 
-.card-head {
-   
-}
-
-.card-head h2 {
-    content: "Our Solutions";
+.card-head h2 , h1{
     display: block;
     text-align: center;
 }
+
+.card-body{
+    display:flex;
+    justify-content: space-evenly;
+    /* border:2px solid #212529; */
+    width: 100%;
+    align-items: center;
+    margin: 20px 8px;
+}
+
+.col-md-3 {
+   width: 25%;
+   display: flex;
+   justify-content: space-around;
+   margin: auto 10px;
+}
+
+.card{
+    width: 70%;
+    /* border: 0.1px solid ; */
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 44px;
+    height: 200px;
+    
+
+}
+.card i,h3,p,a{
+    padding: 6px 0px;
+    
+    
+}
+
+.card-text i{
+    font-size: 30px;
+    color: red;
+}
+
+.card:hover{
+    width: 62%;
+    background-color: rgb(250, 245, 252);
+    /* border:1px solid red; */
+    animation: card 2s linear infinite;
+}
+
+
+
+@keyframes card {
+    from{
+        border: 0px solid red;
+    }
+    to{
+        border: 3px solid red;
+    }
+}
+
