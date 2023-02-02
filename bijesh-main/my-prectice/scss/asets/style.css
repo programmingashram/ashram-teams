@@ -3,40 +3,67 @@
   padding: 0;
 }
 
-.navbar {
+.navbar1, .navbar3, .navbar2 {
   width: 100%;
   background-color: black;
   padding: 1rem 0px;
 }
-.navbar .row {
+.navbar1 .row, .navbar3 .row, .navbar2 .row {
   display: flex;
   align-items: center;
 }
-.navbar .col-md-12 {
+.navbar1 .col-md-12, .navbar3 .col-md-12, .navbar2 .col-md-12 {
   width: 80%;
 }
-.navbar .menu {
+.navbar1 .menu, .navbar3 .menu, .navbar2 .menu {
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-.navbar .menu .menu li {
+.navbar1 .menu .menu li, .navbar3 .menu .menu li, .navbar2 .menu .menu li {
   display: inline-block;
 }
-.navbar .menu li a {
+.navbar1 .menu li a, .navbar3 .menu li a, .navbar2 .menu li a {
   text-decoration: none;
   color: white;
 }
 
 .btn-grp {
+  margin: 10px 0px;
+}
+.btn-grp .btn {
   background-color: rgb(8, 151, 8);
   border-radius: 0.5rem;
   color: white;
   padding: 1rem 50px;
-}
-.btn-grp .btn {
+  color: white;
   text-decoration: none;
   color: white;
   font-size: 1rem;
+}
+
+.navbar2 .btn {
+  background-color: red;
+}
+
+.navbar3 .btn {
+  background: blue;
+}
+
+.container {
+  width: auto;
+  padding: 1rem 1rem;
+}
+.container .home-text, .container .about-text {
+  width: 100%;
+  text-align: center;
+}
+
+.about-text {
+  border: 1px solid black;
+  border-radius: 4px;
+}
+.about-text h3 {
+  padding: 40px;
 }/*# sourceMappingURL=style.css.map */
