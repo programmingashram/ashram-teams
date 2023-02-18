@@ -94,7 +94,7 @@
 .nav-content {
     display: flex;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 0 40px;
     align-items: center;
 }
 
@@ -102,11 +102,14 @@
     width: 15%;
     padding: 10px;
 }
-
+.nav-menu ul {
+    display: flex;
+    gap: 0 10px;
+}
 
 .nav-menu li {
     display: inline-block;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .nav-menu a {
