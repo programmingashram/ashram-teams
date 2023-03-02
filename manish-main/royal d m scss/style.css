@@ -351,10 +351,73 @@ a {
   padding-right: 10px;
 }
 
+.g-d-btn-1 {
+  width: 60%;
+  margin: 30px 0px;
+  margin-left: 40px;
+}
+
+.g-d-btn-2 {
+  width: 70%;
+  margin: 30px 0px;
+  margin-left: 40px;
+}
+
+.g-d-btn-1 a,
+.g-d-btn-2 a {
+  width: 50px;
+  text-decoration: none;
+  padding: 8px;
+  background-color: rgba(0, 0, 255, 0.724);
+  color: white;
+  border-radius: 6px;
+}
+
 .g-d-img {
   width: 100%;
 }
 
 .g-d-img img {
   width: 100%;
+}
+
+.row-evn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.row-evn .pro-c-body {
+  padding-left: 50px;
+}
+.row-evn .pro-c-btn a {
+  padding: 10px;
+  background-color: rgba(0, 0, 255, 0.724);
+  text-decoration: none;
+  border-radius: 5px;
+  color: white;
+  margin-left: 100px;
+}
+.row-evn .pro-c-btn a:hover {
+  background-color: #1b68dc;
+}
+
+footer {
+  background-color: rgb(26, 25, 25);
+  color: aliceblue;
+}
+footer .c-logo {
+  width: 20%;
+}
+footer .c-logo img {
+  width: 100%;
+  background-color: white;
+  border-radius: 3px;
+}
+footer .f-address {
+  width: 70%;
+}
+footer .f-address a {
+  text-decoration: none;
+  color: white;
+  padding: 20px 0px;
 }/*# sourceMappingURL=style.css.map */
