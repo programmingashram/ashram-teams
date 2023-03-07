@@ -1,1 +1,31 @@
 HTML
+01 What is the html 5 ?
+ - html is hyper text markup language and in html 5 some tag remove and add 
+html 5 is new web browser supporetd .
+
+02 what is doctype ?
+- doctype is documents of html and its starting tag of html
+
+03 what is symnatic ?
+ - div and span is symnatic aliment
+
+04What are meta tag requires in html 5 template ??**
+- meta teg is used for responsev website . this tag is inner of head tag.
+
+05 Whis is the reuired attributes in form ?
+    - get and post 
+get for user data and post is save data in data base
+
+
+06What is Table ?
+- table is build by table tag and use in data show of user
+
+07 What is the colspan, rowspan ?**
+- col span and row span used for table colum collapse and row collapse
+
+08 What is iframe ?
+ - ifram is tag used for play audio and video in web page
+
+09 What is Entities ?***
+  - Entities is elements
+ like &nbsp
