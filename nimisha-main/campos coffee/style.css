@@ -293,10 +293,8 @@ header .row .head-menu .nav-link {
 }
 header .row .head-menu .drop-bar:hover .drop-menu {
   display: block;
-  -webkit-animation-name: slideUp;
-          animation-name: slideUp;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
+  animation-name: slideUp;
+  animation-duration: 0.3s;
 }
 header .row .head-menu .drop-menu {
   z-index: 20;
@@ -369,10 +367,8 @@ header .grid {
 .row .col-md-3 .box_hover-lg {
   height: 150px;
   border-radius: 10px 10px 50% 50%;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  animation-delay: 3s;
+  animation-duration: 4s;
 }
 .row .col-md-3 .box_hover-g:hover {
   background-color: #898f4b;
@@ -458,10 +454,8 @@ header .grid {
   line-height: 25px;
 }
 .order-card .row .col-md-4 .card-hover:hover {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  animation-delay: 3s;
+  animation-duration: 4s;
   transform: translateY(-15px);
   box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.12);
 }

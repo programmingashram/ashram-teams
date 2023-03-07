@@ -52,7 +52,6 @@ header {
   z-index: 99999;
   width: 100%;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.12);
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: white;

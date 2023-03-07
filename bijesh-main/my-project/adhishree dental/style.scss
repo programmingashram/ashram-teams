@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+$color-blue:#1A3871;
+$color-light:#EFF0F4;
+$coolor-red:#EB4343;
+$color-cta:#09A0BA;
+
+
+// Header Styling
+
+#header{
+    background-color: $color-light ;
+}
+.right-content{
+    display: flex;
+    .header-btn{
+        text-decoration: none;
+        margin-left: 5px;
+        background-color: $color-blue;
+        color: white;
+        padding: 13px 28px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 16px;
+    }
+}
+
+@media (max-width : 767px) {
+    .col-sm-12{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+    
+    
+
+
+// Navbar Styling
+
+
+.navbar-nav{
+    border-right: 1.5px solid rgba(0, 0, 0, 0.402);
+    .nav-item{
+        .nav-link{
+            color: black;
+            font-weight:600;
+            font-size: 18px;
+            margin-right: 18px;
+        }  
+    }
+}
+
+.contact-info{
+    line-height: 25px;
+    .fa-phone{
+        font-size: 25px;
+        margin: 19px;
+        color: $coolor-red;
+    }
+    span{
+        font-size: 15px;
+        
+    }
+    b{
+        font-size: 25px;
+        letter-spacing: 1px;
+        color: $color-blue;
+    }
+}
+
+.carousel-inner{
+    .carousel-item{
+        position: relative;
+        .carousel-caption{
+            width: 52%;
+            text-align: start;
+            position: absolute;
+            top: 25%;
+            left: 9%;
+            h4{
+                font-family: "Playfair Display", "sans-serif";
+                margin-bottom: 25px;
+            }
+            h1{
+                font-size: 45px;
+                margin-bottom: 25px;
+                span{
+                    font-size: 55px;
+                }
+            }
+            p{
+                font-size: 23px ;
+                margin-bottom: 20px;
+            }
+            .btn{
+                width: 40%;
+                padding: 13px 30px;
+                font-size: 19px;
+                font-weight: 600;
+                border-radius: 4px;
+
+            }
+        }
+    }
+
+}
+
+// cta styling
+
+.cta{
+    background-color: $color-cta;
+    font-size: 35px;
+    padding: 40px 0px;
+    color: white;
+    a{
+        color: white;
+        font-weight: 600;
+    }
+    .cont-num{
+        text-decoration: none;
+    }
+    a:hover{
+        color: $coolor-red;
+    }
+    
+}
+
+@media (max-width:767px){
+    .col-md-12 .col-sm-12{
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+.services{
+    margin-top: 70px;
+    .services-heading{
+        text-align: center;
+    }
+    .service-card{
+        margin-top: 40px;
+        display: flex;
+        .card{
+            display: flex;
+            align-items: center;
+            margin: 0px 10px;
+            padding: 10px 0px;
+            background-color: #e4edf4;
+            transition: all 0.4s ease;
+            border: none;
+            
+            a{
+                text-decoration: none;
+                color: black;
+                font-weight: 600;
+                width: 70%;
+                text-align: center;
+                font-size: 16px;
+            }
+        }
+    }
+    .card:hover{
+        background-color: white;
+        color: rgb(187, 168, 168);
+        box-shadow: 1px 1px 40px 0px gray;
+    }
+    .card a:hover{
+    color: $coolor-red;
+    }
+    .service-link{
+        text-align: center;
+        margin-top: 50px;
+        font-size: 20px;
+        
+        a{
+            color: black;
+            text-decoration: none;
+            border-bottom: 1px solid black;
+            transition: 0.4s;
+        }
+    }
+
+    .service-link a:hover{
+        color: $coolor-red;
+    }
+}
+
+.about-one{
+    background-color: $color-blue;
+    margin-top: 70px;
+    .about-text{
+        position: relative;
+        top: 20%;
+        color: white;
+        h5{
+            font-style: italic;
+        }
+        h1{
+            margin-bottom: 25px;
+        }
+        p{
+            margin-bottom: 20px;
+        }
+    }
+}
+.about-two{
+    background: #e3d3c3 url(./img/about2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 150px center;
+    position: relative;
+    padding: 150px 0;
+
+    .text{
+        color: white;
+        z-index: 999;
+
+        p{
+            font-style: italic;
+            font-size: 25px;
+            line-height: 1px;
+        }
+        h1{
+            font-weight: 700;
+            font-size: 50px;
+    
+
+        }
+    }
+}
+.about-two::before{
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .2;
+}
+
+.about-three{
+    margin-top: 80px;
+    position: relative;
+    
+    .img-1{
+        position: absolute;
+        left: 60%;
+        img{
+        border-radius: 50%;
+        width: 90%;
+    }
+    }
+    .img-2{
+        position: absolute;
+        top: 50%;
+        left: 73%;
+        img{
+            border-radius: 50%;
+            border: 8px solid white;
+            width: 90%;
+        }
+    }
+}
+
+

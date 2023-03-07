@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  background-color: #EFF0F4;
+}
+
+.right-content {
+  display: flex;
+}
+.right-content .header-btn {
+  text-decoration: none;
+  margin-left: 5px;
+  background-color: #1A3871;
+  color: white;
+  padding: 13px 28px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+@media (max-width: 767px) {
+  .col-sm-12 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+.navbar-nav {
+  border-right: 1.5px solid rgba(0, 0, 0, 0.402);
+}
+.navbar-nav .nav-item .nav-link {
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
+  margin-right: 18px;
+}
+
+.contact-info {
+  line-height: 25px;
+}
+.contact-info .fa-phone {
+  font-size: 25px;
+  margin: 19px;
+  color: #EB4343;
+}
+.contact-info span {
+  font-size: 15px;
+}
+.contact-info b {
+  font-size: 25px;
+  letter-spacing: 1px;
+  color: #1A3871;
+}
+
+.carousel-inner .carousel-item {
+  position: relative;
+}
+.carousel-inner .carousel-item .carousel-caption {
+  width: 52%;
+  text-align: start;
+  position: absolute;
+  top: 25%;
+  left: 9%;
+}
+.carousel-inner .carousel-item .carousel-caption h4 {
+  font-family: "Playfair Display", "sans-serif";
+  margin-bottom: 25px;
+}
+.carousel-inner .carousel-item .carousel-caption h1 {
+  font-size: 45px;
+  margin-bottom: 25px;
+}
+.carousel-inner .carousel-item .carousel-caption h1 span {
+  font-size: 55px;
+}
+.carousel-inner .carousel-item .carousel-caption p {
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+.carousel-inner .carousel-item .carousel-caption .btn {
+  width: 40%;
+  padding: 13px 30px;
+  font-size: 19px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.cta {
+  background-color: #09A0BA;
+  font-size: 35px;
+  padding: 40px 0px;
+  color: white;
+}
+.cta a {
+  color: white;
+  font-weight: 600;
+}
+.cta .cont-num {
+  text-decoration: none;
+}
+.cta a:hover {
+  color: #EB4343;
+}
+
+@media (max-width: 767px) {
+  .col-md-12 .col-sm-12 {
+    text-align: center;
+    font-size: 30px;
+  }
+}
+.services {
+  margin-top: 70px;
+}
+.services .services-heading {
+  text-align: center;
+}
+.services .service-card {
+  margin-top: 40px;
+  display: flex;
+}
+.services .service-card .card {
+  display: flex;
+  align-items: center;
+  margin: 0px 10px;
+  padding: 10px 0px;
+  background-color: #e4edf4;
+  transition: all 0.4s ease;
+  border: none;
+}
+.services .service-card .card a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  width: 70%;
+  text-align: center;
+  font-size: 16px;
+}
+.services .card:hover {
+  background-color: white;
+  color: rgb(187, 168, 168);
+  box-shadow: 1px 1px 40px 0px gray;
+}
+.services .card a:hover {
+  color: #EB4343;
+}
+.services .service-link {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 20px;
+}
+.services .service-link a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  transition: 0.4s;
+}
+.services .service-link a:hover {
+  color: #EB4343;
+}
+
+.about-one {
+  background-color: #1A3871;
+  margin-top: 70px;
+}
+.about-one .about-text {
+  position: relative;
+  top: 20%;
+  color: white;
+}
+.about-one .about-text h5 {
+  font-style: italic;
+}
+.about-one .about-text h1 {
+  margin-bottom: 25px;
+}
+.about-one .about-text p {
+  margin-bottom: 20px;
+}
+
+.about-two {
+  background: #e3d3c3 url(./img/about2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 150px center;
+  position: relative;
+  padding: 150px 0;
+}
+.about-two .text {
+  color: white;
+  z-index: 999;
+}
+.about-two .text p {
+  font-style: italic;
+  font-size: 25px;
+  line-height: 1px;
+}
+.about-two .text h1 {
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.about-two::before {
+  content: "";
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.2;
+}
+
+.about-three {
+  margin-top: 80px;
+  position: relative;
+}
+.about-three .img-1 {
+  position: absolute;
+  left: 60%;
+}
+.about-three .img-1 img {
+  border-radius: 50%;
+  width: 90%;
+}
+.about-three .img-2 {
+  position: absolute;
+  top: 50%;
+  left: 73%;
+}
+.about-three .img-2 img {
+  border-radius: 50%;
+  border: 8px solid white;
+  width: 90%;
+}/*# sourceMappingURL=style.css.map */

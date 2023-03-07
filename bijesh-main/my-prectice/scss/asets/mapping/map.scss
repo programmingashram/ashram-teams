@@ -1,0 +1,11 @@
+@use "../style.scss";
+@use "sass:map";
+
+$BorderColor :(
+    "border-white": color.$color-white,
+    "border-green" : color.$color-green
+);
+
+.border-white{
+    border-color: map.get($BorderColor, "border-white");
+}

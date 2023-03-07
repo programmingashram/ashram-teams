@@ -271,3 +271,31 @@ header{
     font-size: 20px;
     width: 20%;
 }
+.service{
+    width: 90%;
+    margin: auto;
+    
+
+}
+.service-heading{
+    text-align: center;
+    margin-top: 40px;
+}
+.service-heading h1{
+    font-size: 30px;
+}
+.service-card{
+    display: flex;
+}
+.card{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px 30px 10px 10px;
+}
+.fa-solid{
+    font-size: 30px;
+
+}
+.col1{
+    /* display: flex; */
+}
