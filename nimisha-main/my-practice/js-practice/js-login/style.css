@@ -1,70 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #body {
   background-image: url(back.jpg);
   background-position: center;
   background-repeat: no-repeat;
 }
 #body .container {
+  background-image: url(back.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
   box-shadow: 0px 0px 20px #e9e1e1;
-  background-color: transparent;
-  margin: 20px auto;
+  margin: 50px auto;
   text-align: center;
   width: 50%;
 }
-#body .container .row {
+#body .container .grid {
   display: flex;
-  height: 330px;
 }
-#body .container .row .left {
-  background: rgba(9, 9, 6, 0.2);
+#body .container .grid .right {
+  background: rgba(63, 63, 46, 0.2);
   padding: 15px 40px;
 }
-#body .container .row .left .log-head {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 35px;
-}
-#body .container .row .left .log-head a {
-  text-decoration: none;
-  color: white;
-}
-#body .container .row .left .log-heading {
+#body .container .grid .right .sigh-heading {
   line-height: 2px;
   color: white;
   padding-bottom: 15px;
 }
-#body .container .row .left .log-heading p {
+#body .container .grid .right .sigh-heading p {
   font-size: 12px;
 }
-#body .container .row .left .input-section {
+#body .container .grid .right .input-section {
   text-align: start;
   padding-bottom: 20px;
+  color: white;
 }
-#body .container .row .left .input-section .grid {
-  display: flex;
-}
-#body .container .row .left .input-section .grid .col-md-6 {
+#body .container .grid .right .input-section .col-md-6 {
   margin-right: 5px;
 }
-#body .container .row .left .input-section .grid .col-md-6 input {
+#body .container .grid .right .input-section .col-md-6 input {
   border: none;
   background: none;
   color: white;
 }
-#body .container .row .left .input-section input {
+#body .container .grid .right .input-section input {
   border: none;
-  background: none;
+  padding: 2px 5px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.1);
   color: white;
+  margin-bottom: 15px;
 }
-#body .container .row .left #btn {
+#body .container .grid .right #logbtn {
+  border: none;
   text-decoration: none;
   color: white;
-  background-color: #815112;
-  padding: 5px 30px;
+  padding: 5px 10px;
   border-radius: 5px;
+  background-image: linear-gradient(to bottom right, #928dc2, #123640);
 }
-#body .container .row .right {
-  padding: 0px 40px;
+#body .container .grid .right .social {
+  padding-top: 15px;
+  color: white;
+}
+#body .container .grid .right .new {
+  padding-top: 40px;
+}
+#body .container .grid .right .new #newUser {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: white;
+}
+#body .container .grid .left {
+  padding: 40px;
   color: white;
   background: rgba(9, 9, 6, 0.5);
-  font-size: xx-large;
+  text-align: left;
+}
+#body .container .grid .left #line {
+  background-color: white;
+  height: 2px;
+  width: 21px;
+  display: inline-block;
+  border-radius: 2px;
+}
+#body .container .grid .left p {
+  padding-top: 20px;
+}
+#body .container .grid .left .readbtn {
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom right, #928dc2, #123640);
+}
+#body .container .grid .creatLeft {
+  background: rgba(4, 5, 6, 0.1);
+  padding: 10px;
+  width: 50%;
+}
+#body .container .grid .creatLeft .creatHeading {
+  color: white;
+  padding: 15px 0;
+}
+#body .container .grid .creatLeft input {
+  border: none;
+  padding: 2px 5px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.1);
+  color: white;
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+#body .container .grid .creatLeft .row {
+  display: flex;
+  justify-content: space-around;
+}
+#body .container .grid .creatLeft .row a {
+  color: white;
+}
+#body .container .grid .creatLeft .row #newUser {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: white;
+}
+#body .container .grid .creatLeft .row #singbtn {
+  border: none;
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom right, #928dc2, #123640);
+}
+#body .container .grid .creatLeft #rsingbtn {
+  border: none;
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom right, #928dc2, #123640);
+}
+#body .container .grid .creatLeft .label {
+  color: white;
+  display: block;
+}
+#body .container .grid .creatLeft .input {
+  color: gray;
+}
+#body .container .grid .creatRight {
+  background: rgba(9, 9, 6, 0.5);
+  width: 50%;
+}
+#body .container .grid .creatRight .rightimg {
+  width: 100%;
+}
+#body .container #row4 {
+  color: white;
+  height: 330px;
+}
+#body .container #row4 .w-100 {
+  width: 100%;
+  padding-top: 20px;
+}
+#body .container #row4 #newUser {
+  border: none;
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom right, #928dc2, #123640);
+}
+#body .container #row5 {
+  height: 330px;
+  color: white;
+}
+#body .container #row5 #accountBD {
+  text-align: -webkit-center;
+  padding-top: 35px;
+}
+#body .container #row5 table {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 2px 5px;
+}
+#body .container #row5 table th {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 2px 5px;
+}
+#body .container #row5 .grid {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 100px;
+}
+#body .container #row5 .grid #tablebtn {
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom right, #928dc2, #123640);
+}
+#body .container #row5 .grid .logUser {
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom right, #928dc2, #123640);
+}
+#body .container #row6 {
+  height: 330px;
+  color: white;
+}
+#body .container #row6 #dipositeBox {
+  text-align: -webkit-center;
+  padding-top: 35px;
+}
+#body .container #row6 #valueMoney {
+  border: none;
+  padding: 2px 5px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.1);
+  color: white;
+  margin-bottom: 15px;
+}
+#body .container #row6 #addMoney {
+  border: none;
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom right, #928dc2, #123640);
 }/*# sourceMappingURL=style.css.map */

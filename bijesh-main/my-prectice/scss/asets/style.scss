@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+$color-black: black;
+$color-white: white;
+$color-green: rgb(8, 151, 8);
+
+$size-sm : 1rem;
+
+
+
+@mixin btnGlobal(){
+    background-color: $color-green;
+    border-radius: $size-sm / 2;
+    color: $color-white;
+    padding: $size-sm 50px;
+    color: $color-white;
+}
+
+@mixin content(){
+    width: auto;
+    padding: $size-sm $size-sm;
+
+}
+
+.navbar1{
+    width: 100%;
+    background-color: $color-black;
+    padding: $size-sm 0px;
+    .row{
+        display: flex;
+        align-items: center;
+    }
+    .col-md-12{
+        width: 80%;
+    }
+    .menu{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .menu li{
+            display: inline-block;
+        }
+        li a{
+            text-decoration: none;
+            color: $color-white;
+        }
+    }
+}
+.btn-grp{
+        margin: 10px 0px;
+        .btn{
+            @include btnGlobal();
+            text-decoration: none;
+            color: $color-white;
+            font-size: $size-sm ;
+        }
+
+}
+
+
+.navbar2{
+    @extend .navbar1;
+    .btn{
+        background-color: red;
+
+    }
+}
+.navbar3{
+    @extend .navbar1;
+    .btn{
+        background: blue;
+    }
+    
+}
+.container{
+    @include content();
+    .home-text{
+        width: 100%;
+        text-align: center;
+        
+    }
+}
+.about-text{
+    @extend .home-text;
+    border: 1px solid black;
+    border-radius: 4px;
+    // padding: 20px 30px;
+    h3{
+        padding:  40px;
+    }
+    
+}
+

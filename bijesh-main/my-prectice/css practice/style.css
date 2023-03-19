@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    /* font-family: var(--bs-font-sans-serif); */
+    /* font-family:  sans-serif; */
+    font-size: 1rem;
+    /* font-weight: 400; */
+    line-height: 1.5;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.col-md-6{
+    width: 50%;
+    float: left;
+}
+:root{
+    --color-white: white;
+    --color-blue:  rgb(71, 71, 244);
+    --color-red: #dc3545;
+    
+}
+header{
+    /* margin-top: 20px; */
+    font-size: 18px;
+    background: var(--color-blue)
+}
+.cont{
+    padding: 15px 80px ;
+}
+.add{
+    padding: 15px 100px;
+}
+.cont span a{
+    margin-left: 20px;
+    
+}
+.color-white{
+    color: var(--color-white);
+}
+.color-red{
+    color: var(--color-red);
+}
+.bg-red{
+    background-color: var(--color-red);
+}
+.bg-blue{
+    background-color: var(--color-blue);
+    padding: 15px 45px;
+    text-align: center;
+}
+.navbar{
+    width: 100%;
+    padding: 2px 0px;
+    position: sticky;
+    z-index: 999;
+    top: -2px;
+    background-color: white;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 10%;
+    padding-left: 100px;
+}
+.logo img{
+    width: 100%;
+    height: 16%;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    width: 45%;
+    gap: 0px 45px;
+}
+.menu li{
+    display: inline;
+}
+.dropdown-menu{
+    display: none;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+@media(max-width: 767px){
+    .navbar{
+        width: 100%;
+        padding: 2px 0px;
+        position: sticky;
+        z-index: 999;
+        top: -2px;
+        background-color: rgb(194, 13, 13);
+        
+    }
+    .menu {
+        display: block;
+        width: 20%;
+    }
+
+
+}
+
+/* home-styling */
+
+.container{
+    width: 100%;
+    /* max-width: 1400px; */
+    /* padding: 10px 20px; */
+}
+
+.home{
+    display: flex;
+    
+}
+.bg-img{
+    background-image: url(https://www.royaldigimedia.com//images/m.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.home .home-text{
+    width: 50%;
+    padding-left: 100px;
+    position: relative;
+    top: 8rem;
+    color: var(--color-white);
+}
+.home .home-text strong{
+    font-size: 45px;
+}
+.home .home-text p{
+    padding: 20px 50px 50px 0px ;
+    font-size: 18px;
+}
+.home .home-img{
+    width: 50%;
+}
+.home-img img{
+    width: 100%;
+}
+
+.btn{
+    width: 25%;
+    padding: 10px 7px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 0px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+}
+.row .col-md-12{
+    width: 100%;
+    /* text-align: center; */
+    /* padding: 15px 0px; */
+}
+.col-md-12 span{
+    font-size: 30px;
+}
+.col-md-12 .drk-btn{
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-left: 10px;
+    background: #000;
+    color: white;
+    border-radius: 5px;
+}
+.fa-solid{
+    margin-right: 5px;
+}
+@media(min-width:768px) and (max-width:940px){
+    .home{
+        display: block;
+    }
+
+    .home .home-text{
+        width: 100%;
+        padding-left: 0px;
+        text-align: center;
+        position: relative;
+        top: 2rem;
+        color: var(--color-white);
+    }
+    .home .home-img{
+        width: 100%;
+    }
+    .home-img img{
+        width: 100%;
+    }
+    
+
+}
+
+/* About styling */ 
+
+.about{
+    width: 100%;
+    font-size: 17px;
+}
+.about-text{
+    text-align: center;
+    margin-top: 40px;
+}
+.about-logo{
+    /* width: 20%; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    text-align: center;
+    padding: 25px 45px;
+}
+.about-logo .logo-1{
+    width: 20%;
+}
+.shapes-wrapper{
+    position: relative;
+}
+.shape1{
+    animation: shape 10s linear infinite;
+    position: absolute;
+    /* top: 70px; */
+    right: 80px;
+}
+@keyframes shape{
+    from{
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    to{
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+.bg-black{
+    background-color: #000;
+    color: white;
+}
+.experience{
+    display: flex;
+    justify-content: space-around;
+}
+.experience .exp-img{
+    width: 50%;
+    padding: 0px 20px;
+}
+.exp-img img{
+    width: 100%;
+}
+.experience .exp-text{
+    width: 50%;
+    padding: 45px 50px 0px 0px;
+}
+.countnumber{
+    display: flex;
+    width: 100%;
+    padding-top: 40px;
+}
+.countnumber .num{
+    font-size: 20px;
+    width: 20%;
+}

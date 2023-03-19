@@ -7,11 +7,275 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://programming-ashram.github.io/sys-design-system/css/style.css">
 </head>
 
 <body id="body">
-    
-    <script src="app.js"></script>
+    <header class="sys-header bg-light sys-elevation-v2 m-2">
+        <div class="sys-container">
+            <div class="sys-grid">
+                <div class="col-md-6">
+                    <div class="header-wrapper">
+                        <h3> <span class="text-accent-90">Bank Of</span> America</h3>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="header-wrapper">
+                        <ul class="sys-navbar mt-2">
+                            <li><a href="row1" class="text-accent">Creat Account</a></li>
+                            <li><a href="row2" class="text-dark">Log In</a></li>
+                            <li><a href="row4" class="text-dark">Our Service</a></li>
+                            <li><a href="row5" class="text-dark">Gallry</a></li>
+                            <li><a href="row5" class="text-dark">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="section">
+        <div class="container">
+            <div id="row1">
+                <div class="grid">
+                    <div class="left">
+                        <div class="left-content">
+                            <div class="queto">
+                                <h1>Welcome!</h1>
+                                <span id="line"></span>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae natus ut non
+                                    inventore,
+                                    nulla
+                                    ea ullam laboriosam. Praesentium, odio in perspiciatis.
+                                </p>
+                                <button class="readbtn">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="signin">
+                            <div class="sign-page">
+                                <div class="sigh-heading">
+                                    <h2>Sign <span class="uderline">in</span></h2>
+                                </div>
+                                <div class="input-section">
+                                    <div>
+                                        <div class="col-md-10">
+                                            <label for="userName">User Name</label>
+                                            <input type="text" name="name" id="signName" placeholder="Name"
+                                                onkeyup="signbtnvalid()">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <label for="useradhar">Adhar Number</label>
+                                            <input type="text" name="useradhar" id="signAdhar"
+                                                placeholder="Enter you's Adhar Number" onkeyup="signbtnvalid()">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-section">
+                                    <button type="submit" id="logbtn" onclick="accData()">Sign
+                                        up</button>
+                                </div>
+                                <div class="social">
+                                    <span><i class="fa-brands fa-facebook-f"></i></span>
+                                    <span> <i class="fa-brands fa-instagram"></i></span>
+                                    <span><i class="fa-brands fa-pinterest-p"></i></span>
+                                </div>
+                                <div class="new">
+                                    <button id="newUser" onclick="singpage()"><b>Creat Account</b></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="row2">
+                <div class="grid">
+                    <div class="creatLeft">
+                        <div class="creatHeading">
+                            <h3>Create Your Account</h3>
+                        </div>
+                        <div id="name">
+                            <input type="text" id="fname" name="fname" placeholder="Enter Your Full Name"
+                                onkeyup="loginbtnvalid()">
+                        </div>
+                        <div id="number">
+                            <input type="text" id="lognum" name="number" placeholder="Enter Your Phone Number"
+                                onkeyup="loginbtnvalid()">
+                        </div>
+                        <div id="address">
+                            <input type="text" id="logAdd" name="address" placeholder="Enter Your Address"
+                                onkeyup="loginbtnvalid()">
+                        </div>
+
+                        <div id="adhar">
+                            <input type="text" id="logAdhar" name="adhar" placeholder="Enter Your Adhar Number"
+                                onkeyup="loginbtnvalid()">
+                        </div>
+                        <div class="pan">
+                            <input type="text" id="logPan" name="pannumber" placeholder="Enter Your Pan Number"
+                                onkeyup="loginbtnvalid()">
+                        </div>
+                        <div class="depositAmount">
+                            <input type="text" id="logDep" name="depositAmount" placeholder="Deposit Money Min 500"
+                                onkeyup="loginpanvalid()">
+                        </div>
+                        <div class="row">
+                            <div class="signpage">
+                                <button id="newUser" onclick="logpage()">Sign in insted</button>
+                            </div>
+                            <div class="log-btn">
+                                <button type="submit" id="singbtn" onclick="matchUser()">Create Account</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="creatRight">
+                        <div>
+                            <img src="web001_2011102155.webp" alt="img" class="rightimg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="row3" class="grid">
+                <div class="creatLeft">
+                    <div class="creatHeading">
+                        <h3>Confirm Your Account Detail</h3>
+                    </div>
+                    <div class="box" style="text-align: start;">
+                        <div id="name">
+                            <label for="fname" class="label">Full Name</label>
+                            <input type="text" class="input" id="rfname" name="fname" placeholder="Enter Your Full Name"
+                                onkeyup="loginbtnvalid()" readonly>
+                        </div>
+                        <div id="number">
+                            <label for="number" class="label">Phone Number</label>
+                            <input type="text" class="input" id="rlognum" name="number"
+                                placeholder="Enter Your Phone Number" onkeyup="loginbtnvalid()" readonly>
+                        </div>
+                        <div id="address">
+                            <label for="address" class="label">Address</label>
+                            <input type="text" class="input" id="rlogAdd" name="address"
+                                placeholder="Enter Your Address" onkeyup="loginbtnvalid()" readonly>
+                        </div>
+
+                        <div id="adhar">
+                            <label for="adhar" class="label">Adhar Number</label>
+                            <input type="text" class="input" id="rlogAdhar" name="adhar"
+                                placeholder="Enter Your Adhar Number" onkeyup="loginbtnvalid()" readonly>
+                        </div>
+                        <div class="pan">
+                            <label for="pannumber" class="label">PAN Number</label>
+                            <input type="text" class="input" id="rlogPan" name="pannumber"
+                                placeholder="Enter Your Pan Number" onkeyup="loginbtnvalid()" readonly>
+                        </div>
+                        <div class="depositAmount">
+                            <label for="depositAmount" class="label"> Account Balance</label>
+                            <input type="text" class="input" id="rlogDep" name="depositAmount"
+                                placeholder="Deposit Money Min 500" onkeyup="loginpanvalid()" readonly>
+                        </div>
+                    </div>
+                    <div class="log-btn">
+                        <button type="submit" id="rsingbtn" onclick="adminData()">Confirm</button>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div id="row4">
+                <div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="table">
+                                <h1 class="h2">Welcome to Your Account Details</h1>
+                                <table class="w-100">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                Full Name
+                                            </th>
+                                            <th>
+                                                Phone Number
+                                            </th>
+                                            <th>
+                                                Address
+                                            </th>
+                                            <th>
+                                                Adhar Number
+                                            </th>
+                                            <th>
+                                                PAN Number
+                                            </th>
+                                            <th>
+                                                Account Balance
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tableData">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="signpage" style="padding-top: 126px;">
+                                <button id="newUser" onclick="logpage()">Sign in </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="row5">
+                <div id="accountBD">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">
+                                    Account Balance
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Available Balance
+                                </td>
+                                <td id="avaMoney">
+
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                    <div class="grid">
+                        <div class="tbtn">
+                            <button id="tablebtn" onclick="addmoney()"><b>Deposit Amount</b></button>
+                        </div>
+                        <div class="signpage" >
+                            <button class="logUser" onclick="logpage()">Sign in </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="row6">
+                <div id="dipositeBox">
+                    <h4>
+                        Deposit Amount 
+                    </h4>
+                    <label for="addMoney">
+                        Amount 
+                    </label>
+                    <input type="number" name="addMoney" id="valueMoney">
+                    <button type="submit" id="addMoney" onclick="moneyaddbtn()">Deposit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="app.js"></script>
 </body>
 
 </html>
