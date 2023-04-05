@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://programming-ashram.github.io/sys-design-system/css/style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- form validation -->
+    <div class="sys-container mt-3">
+      <div class="sys-grid">
+          <div class="col-md-6  bg-accent-70  sys-elevation-v3 p-5">
+            <div class="heading">
+              <h2>
+               Form Validation
+              </h2>
+           </div>
+           <div class="mt-4">
+               <form action="">
+                 <div class="mt-4">
+                   <label for="">PAN</label><br>
+                   <input type="text" id="pan" >
+                 </div>
+                 <!-- alert msg -->
+                 <div class="alert-msg">
+                     <span class="text-error">Error:this is mandortry fields</span>
+                 </div>
+                 <div class="mt-4">
+                   <label for="">Aadhar Number</label><br>
+                   <input type="number" id="adhar">
+                  <!-- alert msg -->
+                   <div  class="alert-msg">
+                     <span class="text-error">Error:this is mandortry fields</span>
+                   </div>
+                 </div>
+                 <!-- snakbar -->
+                 <div id="snakbar">
+                     <span>Successfully Submited</span>
+                 </div>
+               </form>
+               <!-- buttons -->
+               <div class="buttons">
+                 <button class="mt-3 status" id="link" disabled> View link adhar status</button><br>
+                 <button type="button" role="button"   class="sys-btn-outline-accent mt-3" id="cancel">
+                 Cancel
+               </button>
+               </div>
+           </div>
+          </div>
+      </div>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
