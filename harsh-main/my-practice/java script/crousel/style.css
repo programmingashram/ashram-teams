@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  display: flex;
+}
+
+.col {
+  width: 100%;
+}
+
+img {
+  width: 200px;
+}
+
+.cardd {
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.left-arrow {
+  position: fixed;
+  right: 0;
+  top: 200px;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.2);
+  width: 100px;
+  font-size: 34px;
+  text-align: center;
+}
+
+.righ-arrow {
+  position: fixed;
+  left: 0;
+  top: 200px;
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.2);
+  width: 100px;
+  font-size: 34px;
+  text-align: center;
+  padding: 10px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */

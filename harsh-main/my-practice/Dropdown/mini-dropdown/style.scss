@@ -1,0 +1,41 @@
+nav{position: sticky;
+    top:0;
+    padding: 11px 40px;
+    box-shadow: 1px 0px 20px 1px #eae5e5;
+    .dropdown{
+        ul{
+            list-style-type: none;
+            padding-left: 1px;
+            padding-right:3px ;
+            li{
+                margin-right: 2.3rem;
+                a{
+                    text-decoration: none;
+                    color: black !important;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+.border{
+    border:1px solid rgb(240, 228, 228)
+}
+.droplist{
+       display: none;
+       position: absolute;
+       left: 90px;
+       top: 64px;
+       width: 244px;
+       box-shadow: 1px 0px 20px 1px #eae5e5;
+   
+}
+.trigger:hover .droplist{
+    display: block;
+} 
+.droplist li{
+    margin-bottom: 10px;
+}
+.trigger a{
+    padding: 28px 10px;
+}

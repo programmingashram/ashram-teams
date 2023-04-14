@@ -1,0 +1,37 @@
+.cover{
+    width: 100px;
+    border-radius: 100%;
+}
+.style{
+    font-size: 19px;
+    margin-top: 9px;
+}
+h3{
+    color: grey;
+}
+.nav-link{
+    color:black;
+}
+strong:hover{
+    color:orange;
+}
+.nav-link p{
+    color:black;
+} 
+.fit{
+    width:18%;
+}
+.float-right{
+    float: right;
+}
+.anim:hover{
+    transform: scale(1);
+    transition: 4s;
+}
+.sample{
+    width:30%;
+    margin:0 auto;
+}
+label{
+    padding: 5px;
+}

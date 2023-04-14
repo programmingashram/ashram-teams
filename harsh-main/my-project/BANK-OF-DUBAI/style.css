@@ -1,0 +1,17 @@
+/* a{
+    color:white;
+}
+.container{
+    width: 90%;
+    margin:0 auto;
+} */
+#none{
+    display: none;
+}
+.bg-img{
+    background-image: url(asf.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:300px;
+}

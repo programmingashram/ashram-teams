@@ -19,7 +19,7 @@ adharr.addEventListener('keyup' , function(){
 
     }else{
         linkbtn.setAttribute('disabled', '');
-      
+        linkbtn.style.background = "gray";
     }   
 })
      
@@ -53,7 +53,7 @@ adharr.onblur = function(){
 linkbtn.addEventListener('click' , function(){
     snakbar.style.display = 'block';
     setTimeout(()=>{
-        snakbar.remove();
+        snakbar.remove(); 
     },5000);
 
     let array = [];
@@ -66,7 +66,6 @@ linkbtn.addEventListener('click' , function(){
   
       }else{
          console.log('failed');
-        
       } 
       linkbtn.setAttribute('disabled', true);
       linkbtn.style.background = "gray";
@@ -75,10 +74,10 @@ linkbtn.addEventListener('click' , function(){
 // cancel button //
 
 cancelBtn.addEventListener('click' , function(){
-    if(pann.value !== '' && adharr.value !== ''){
+    if(pann.value !== '' || adharr.value !== ''){
       pann.value = ''
       adharr.value = ''
-        this.setAttribute
+
     }else{
        console.log('failed');
       
