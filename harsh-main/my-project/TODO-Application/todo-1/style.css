@@ -1,0 +1,9 @@
+.snakbar {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  overflow: auto;
+}/*# sourceMappingURL=style.css.map */

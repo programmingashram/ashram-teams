@@ -28,6 +28,23 @@
     <section class="mt-3">
         <div class="container-fluid">
             <div class="row">
+                <div class="col-md-6" id="login" >
+                    <div class="loginpage p-3 bg-primary rounded shadow-lg text-light">
+                        <h1 class="h4">Login</h1>
+                        <hr>
+                        <form action="">
+                            <div class="form-group">
+                                <label for="" >Email</label>
+                                <input type="email" class="form-control" id="logEmail" onchange="btnValid()">
+                            </div>
+                            <div class="form-group">
+                                <label for="">password</label>
+                                <input type="password" class="form-control" id="logPass" onchange="btnValid()" >
+                            </div>
+                            <button type="button" role="button" class="btn btn-success mt-4 disabled" onclick="logUser()" id="loginbtn" >Login Now</button>
+                        </form> 
+                    </div>
+                </div>
                 <div class="col-md-6" id="singup">
                     <div class="loginpage p-3 bg-dark rounded shadow-lg text-light">
                         <h1 class="h4">SignUp</h1>
@@ -45,22 +62,30 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-md-6" id="login" >
-                    <div class="loginpage p-3 bg-primary rounded shadow-lg text-light">
-                        <h1 class="h4">Login</h1>
-                        <hr>
-                        <form action="">
-                            <div class="form-group">
-                                <label for="">Email</label>
-                                <input type="email" class="form-control" id="email">
-                            </div>
-                            <div class="form-group">
-                                <label for="">password</label>
-                                <input type="password" class="form-control" id="pass">
-                            </div>
-                            <button type="button"  class="btn btn-success mt-4 " id="loginbtn" onclick="logindata()">Login Now</button>
-                        </form>
-                    </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-4" id="admin">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="table shadow-lg p-3">
+                        <h1 class="h2">Welcome to Admin Panel</h1>
+                        <table class="w-100">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Email
+                                    </th>
+                                    <th>
+                                        Password
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableData">
+                            </tbody>
+                        </table>
+                   </div>  
                 </div>
             </div>
         </div>
@@ -75,45 +100,50 @@
                         </h4>
                         <form action="" >
                         <div class="form-group">
-                            <input type="type" id="name" class="form-control " placeholder="full name">
-                            <input type="email" class="form-control mt-2" id="email " placeholder=" email" name="email">
+                            <input type="text" name="" class="form-control" placeholder="please paste your profile image link" id="profile">
+                            <input type="type" id="name" class="form-control" placeholder="full name">
+                            <input type="email" class="form-control mt-2" id="em" placeholder=" email" >
                             <input type="number" id="number" class="form-control mt-2" placeholder="contact no">
-                            <input type="number" id="number" class="form-control mt-2" placeholder="aadhar">
-                            <input type="number" id="number" class="form-control mt-2" placeholder="pan">
-                            <input type="type" id="name" class="form-control mt-2" placeholder="nominee ">
-                            <input type="type" id="name" class="form-control mt-2" placeholder="address ">
-                            <input type="number" id="number" class="form-control mt-2" placeholder="Deposit money min 500">
+                            <input type="number" id="aadhar" class="form-control mt-2" placeholder="aadhar">
+                            <input type="type" id="pan" class="form-control mt-2" placeholder="pan">
+                            <input type="type" id="nominee" class="form-control mt-2" placeholder="nominee ">
+                            <input type="type" id="address" class="form-control mt-2" placeholder="address ">
+                            <input type="number" id="dmoney" class="form-control mt-2" placeholder="Deposit money min 500">
+                            <input type="color" id="color" class="form-control mt-2">
                        </div>
                     </form>
-                    <button class="btn btn-success mt-2 pb-2">Submit Your Details</button>
+                        <button class="btn btn-success mt-2 pb-2" onclick="createacount()">Submit Your Details</button>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6">
+                <div class="col-md-6">
                 <div class="bg-green text-white py-5">
                     <ul class="">
-                        <li >
+                        <li id="profileImg">
+                            
+                        </li>
+                        <li id="nameShow" >
                             Name -
                         </li>
-                        <li>
+                        <li id="emailShow">
                             Email - 
                         </li>
-                        <li>
+                        <li id="contactshow">
                             Contact - 
                         </li>
-                        <li>
+                        <li id="adharshow">
                             Aadhar -
                         </li>
-                        <li>
+                        <li id="panshow">
                             Pan -
                         </li>
-                        <li>
-                            nominee -
+                        <li id="nomineeshow">
+                            Nominee -
                         </li>
-                        <li>
-                            address -
+                        <li id="addressshow">
+                            Address -
                         </li>
-                        <li>
-                            Deposit Money -
+                        <li id="dmoney" >
+                             Current Balance -
                         </li>
                     </ul>
                 </div>
@@ -124,49 +154,53 @@
      <section>
        <div class="container-fluid">
            <div class="row">
-            <div class="col-md-6">
-                <div class="bg-pink">
-                    <div class="col-md-6">
-                        <div class="text-white py-5">
-                            <ul class="">
-                                <li >
-                                    Name -
-                                </li>
-                                <li>
-                                    Email - 
-                                </li>
-                                <li>
-                                    Contact - 
-                                </li>
-                                <li>
-                                    Aadhar -
-                                </li>
-                                <li>
-                                    Pan -
-                                </li>
-                                <li>
-                                    nominee -
-                                </li>
-                                <li>
-                                    address -
-                                </li>
-                                <li>
-                                    Current Balance -
-                                </li>
-                            </ul>
+                <div class="col-md-6">
+                    <div class="bg-pink">
+                        <div class="col-md-6">
+                            <div class="text-white py-5">
+                                <ul class="">
+                                    <li >
+                                        Name -
+                                    </li>
+                                    <li>
+                                        Email - 
+                                    </li>
+                                    <li>
+                                        Contact - 
+                                    </li>
+                                    <li>
+                                        Aadhar -
+                                    </li>
+                                    <li>
+                                        Pan -
+                                    </li>
+                                    <li>
+                                        nominee -
+                                    </li>
+                                    <li>
+                                        address -
+                                    </li>
+                                    <li>
+                                        Current Balance -
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-md-6">
+                    <div class="bg-secondary text-center py-5">
+                        <div>
+                            <div id="hide">
+                                <input type="number" name="" id="blank">
+                                <button class="btn btn-success" type="button" role="button" onclick="none()">Done</button>
+                            </div>
+                            <button class="btn btn-warning py-3" type="button" role="button" onclick="add()" >Deposit Money</button>
+                       </div>  
+                    </div>     
+                </div>
             </div>
-            <div class="col-md-6">
-            <div class="bg-secondary text-center py-5">
-                <button class="btn btn-warning py-3" type="button" role="button">Deposit Money</button>
-                
-                <button class="btn btn-success py-3" type="button" role="button">withdral Money</button>
-            </div>
-            </div>
-           </div>
-       </div>
+        </div>
      </section>
      <script src="app.js"></script>
 </body>

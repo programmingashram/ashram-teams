@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="buttons">
+        <button onclick="showtost(SuccessMsg)" type="button" role="button">Sucucess</button>
+        <button onclick="showtost(ErrorMSg)" type="button" role="button">Error</button>
+        <button onclick="showtost(InvalidMsg)" type="button" role="button">Invalid</button>
+    </div>
+
+    <div id="toastBox"></div>   
+    <script>
+        let toastBox = document.getElementById('toastBox');
+        let SuccessMsg = '<i class="fa-solid fa-circle-check"></i>Succesfully submited';
+        let ErrorMSg = '<i class="fa-solid fa-circle-xmark"></i>Plese fill orignal input';
+        let InvalidMsg = '<i class="fa-solid fa-circle-exclamation"></i>Plese fill valid inputs';
+
+
+        function showtost(msg){
+         let toast = document.createElement('div');
+         toast.classList.add('toast');
+         toast.innerHTML = msg;
+         toastBox.appendChild(toast);
+            
+        // if(msg.includes('Error')){
+        //     toast.classList.add('error');
+        //  }
+        // if(msg.includes('Invalid')){
+        //     toast.classList.add('invalid');
+        // }
+        }
+        setTimeout(()=>{
+            toast.remove();
+        },6000);
+    </script>
+</body>
+</html>

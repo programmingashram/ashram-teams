@@ -1,19 +1,4 @@
-# Heading 1
-## Heading 1
-### Heading 1
-#### Heading 1
-##### Heading 1
-###### Heading 1
-###### Heading 1
 
-1. List
-    1. sub list
-    2. sub llis
-2. List
-3. List
-4. List
-
-*Harsh* <br> **jain** 
 
 # what is HTML?
 HTML is hyper text markup language for a creting web page layout|.

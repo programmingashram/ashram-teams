@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: pink;
+}
+.buttons{
+    margin: 50px;
+}
+.buttons button{
+    background-color: gray;
+    padding:5px;
+    color:white;
+    border-radius: 4px;
+    border:0;
+    margin: 3px;
+    font-size: 18px;
+    width: 120px;
+    height: 35px;
+    cursor: pointer;
+}
+#toastBox{
+    position: absolute;
+    bottom: 30px;
+    right:30px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 20px;
+}
+.toast{
+    font-size: 19px;
+    align-items: center;
+    display: flex;
+    background: white;
+    width: 300px;
+    height: 62px;
+    margin: 10px 0;
+}
+.toast i{
+    margin: 0px 15px;
+    color: green;
+}
