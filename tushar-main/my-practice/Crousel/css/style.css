@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+.carousal-items{
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.item img{
+    width:1536px;
+    height: 500px;
+    object-fit: inherit;
+}
+.text-center{text-align: center;}
+.fs-40 {font-size: 40px;}
+.carousal-control{text-align: center;
+}
+a{margin: 10px;}
+.bs{box-shadow: 1px 1px 20px 2px chocolate;}

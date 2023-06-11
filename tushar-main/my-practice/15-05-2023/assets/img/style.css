@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+body{
+    background-image: url("./Desktop\ -\ 1\ \(1\).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{width: 80%;
+margin: auto;
+margin-top: 10px;}
+
+.row{display: flex;
+justify-content: space-between;
+align-items: center;}
+
+.d-flex{display: flex;
+justify-content: space-between;
+align-items: center;
+
+gap: 0px 30px;}
+.w-80{width: 80%;}
+.bg-white {background-color: white;}
+a {color: black;}
+.p-10 {padding: 10px;}
+.b-r-100{border-radius: 100px;}
+a:hover{color:orange; border-bottom: 1px solid orange;}
+.w-50{width: 50%;}
+i{padding: 15px;
+    background-color: white;
+border-radius: 100%;
+font-size: 20px;}
+.blue{color: blue;}
+.red{color: red;}
+.plr-30{padding:7.5px 30px;}
+.mr-25{margin-right: 25px;margin-right: 25px;}
+.icon-bubble{box-shadow: 0px 10px 18px rgba(114, 114, 132, 0.25); border-radius: 100px;}

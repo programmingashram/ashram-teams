@@ -1,0 +1,10 @@
+p:first-child{
+    color: blueviolet;
+}
+p:nth-child(odd){
+    color: blue;
+    background-color: aqua;
+}
+h1:after{
+    content: "hyy"
+}
