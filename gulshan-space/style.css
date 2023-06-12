@@ -1,0 +1,15 @@
+:root{
+                  --color-blue: blue;
+                  --color-white: white;
+                  --color-black: black;
+                  --size-10: 10px;
+
+}
+.parent{
+                  background-color: var(--color-black);
+                  color: var(--color-white);
+                  padding: var(--size-10);
+                  margin-right: var(--size-10);
+                  border-radius: var(--new-size)px;
+}
+
