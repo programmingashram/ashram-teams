@@ -1,50 +1,27 @@
-// let offer = {
-//     carcare:{
-//         Gas:"nitrogen",
-//         price:"400",
-//         yearly:"400"
-//     },
+function filterd(){
+   let filterSerch = document.getElementById("filterSerch");
+   let filValue = filterSerch.value.toUpperCase();
+   console.log(filValue);
+   
+   let brand = block.getElementsByClassName("col-md-3");
+   for(let i = 0; i < brand.length;i++){
+    console.log(brand[i]);
+    let para = brand[i].getElementsByClassName("card")[0];
+  
+    if(para){
+        let newValue = para.textContent || para.innerText;
+        if( newValue.toUpperCase().indexOf(filValue) > -1
+        ){
+            brand[i].style.display = "";
+        }
+    else{
+        brand[i].style.display = "none";
+    }
+   }
 
-//     carcare:{
-//         Gas:"nitrogen",
-//         price:"400",
-//         yearly:"400"
-//     },
+}
+}
 
-//     carcare:{
-//         Gas:"nitrogen",
-//         price:"400",
-//         yearly:"400"
-//     },
-
-//     carcare:{
-//         Gas:"nitrogen",
-//         price:"400",
-//         yearly:"400"
-//     },
-
-//     carcare:{
-//         Gas:"nitrogen",
-//         price:"400",
-//         yearly:"400"
-//     },
- 
-//    }
-//    let block = document.getElementById('tbody');
-//    for(let i in offer ){
-//     block.innerHTML +=`
-//     <tr>
-//         <td>${offer[i].gas}</td>
-//         <td>${offer[i].price}</td>
-//         <td>${offer[i].yearly}</td>
-      
-//     </tr>`;
-// }
-
-//    console.log("offer");
-
-//    let arry = ['1','1','1',5];
-//    console.log(arry);
 
 let tserts = {
     alanjonesred: {
@@ -113,7 +90,7 @@ let tserts = {
     pumagreen: {
         img : "./img/red-2.webp",
         brand:'mufti',
-        dicr: "n Graphic Print Round Neck White T-Shirt",
+        dicr: "Graphic Print Round Neck White T-Shirt",
         color:'pink',
         price:'899',
         del:'1899',
@@ -151,6 +128,9 @@ let tserts = {
     }  
 
 }
+
+
+
 let block = document.querySelector('#block .row');
 for(let a in tserts) {
     block.innerHTML +=`
@@ -160,7 +140,7 @@ for(let a in tserts) {
             <a href="" class="p-3 nav-link">
                 <h6>
                     ${tserts[a].brand}
-                </h6>
+                </h6> 
                 <div class="row">
                     <div class="col-md-6">
                         <span> ${tserts[a].dicr}</span>
@@ -177,35 +157,6 @@ for(let a in tserts) {
         </div>
     </div>`        
 }
-let x = 20;
-let y = 10;
-let z = x * y;
-   console.log(z);
-             
-let a = 10;
-let b = 20;
-if(a == b){
-    console.log('correct');
-}else{
-    console.log('wrong');
-}
-
-function test(){
-    let c = 10;
-    let d = 20;
-    let e = c + d
-    console.log(e);
-}
-test();
-
-function test1(arg1,arg2){
- console.log(arg1+arg2);
-
-}
-test1(10,33);
-
-
-let input = document.querySelectorAll("input");
 
 
 

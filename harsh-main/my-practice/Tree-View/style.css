@@ -1,0 +1,19 @@
+ul{
+    list-style-type: none;
+}
+.box::before {
+    content: "\2610";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+  }
+  .check-box::before {
+    content: "\2611"; 
+    color: dodgerblue;
+  }
+.nested{
+    display: none;
+}  
+.active{
+    display: block;
+}

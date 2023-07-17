@@ -11,10 +11,10 @@
 }
 .row{
     display:flex;
-    text-align: center;
+    align-items: center;
 }
-.col{
-    width:100%;
+.items{
+    min-width:300px;
 }
 .col-md-4{
     width:33.333%;
@@ -26,17 +26,19 @@
     border:1px solid gray;
 } */
 .bg-almond{
-    background-color:#f2eee2;
+
     padding-bottom: 80px;
 }
 .scroll-right{
-    position: relative;
+    position: absolute;
     top: 114px;
+    right: 0;
+  
 }
 .scroll-left{
-    position: relative;
+    position: absolute;
     top: 114px;
-    right: 25px;
+    left: 0;
 }
 a i{
     color:black;
@@ -44,12 +46,6 @@ a i{
 h4{
     line-height: 1.4;
 }
-img:hover{
-    transform: scaleX(1);
-}
-.width{
-    width: 333px;
-}
-::-webkit-scrollbar{
-    display: none;
+.relative{
+    position:relative;
 }

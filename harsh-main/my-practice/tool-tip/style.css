@@ -1,0 +1,45 @@
+body{
+    background-color: #615dff;
+}
+.icon{
+    content: "";
+    background-color: orange;
+    font-size: 30px;
+    border-radius: 70%;
+    width: 17px;
+}
+h2,h3{
+
+    color:white;
+  
+}
+.toolBoxContent{
+    display: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+    text-align: center;
+    width: 300px;
+
+   
+}
+.toltip{
+    width: 100px;
+    position: relative;
+    padding-bottom: 10px;
+}
+.toltip:hover .toolBoxContent
+{
+    display: block;
+}
+.toolBoxContent::before{
+    content: "";
+    background-color: white;
+    position: absolute;
+    width: 13%;
+    top: 0px;
+    height: 20px;
+    transform: rotate3d(1, 1, 1, 70deg);
+    left: 51px;
+}

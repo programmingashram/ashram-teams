@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body ondragover="allowDrop(event)" ondrop="drop(event)" id="drropoup">
+    <!--(1)ondrop
+        (2)dragable = "true"
+        (3)ondrag start
+        (4)ondragover
+
+     -->
+   <div class="d-flex">
+        <div class="box" ondragover="allowDrop(event)" ondrop="drop(event)" id="drropout"></div>
+        <div class="box" ondragover="allowDrop(event)" ondrop="drop(event)" id="drropout"></div>
+        <div class="box" ondragover="allowDrop(event)" ondrop="drop(event)" id="drropout"></div>
+        <div class="box" ondragover="allowDrop(event)" ondrop="drop(event)" id="drropout"></div>
+        <div class="box" ondragover="allowDrop(event)" ondrop="drop(event)" id="drropout"></div>
+        <div class="box" ondragover="allowDrop(event)" ondrop="drop(event)" id="drropout"></div>
+   </div>
+    <img src="https://www.kindpng.com/picc/m/252-2524695_dummy-profile-image-jpg-hd-png-download.png" alt="" draggable="true" ondragstart="allowDrag(event)" id="dropin">
+    <script src="app.js"></script>
+</body>
+</html>
