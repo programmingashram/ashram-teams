@@ -1,0 +1,10 @@
+.box{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    margin-right: 10px;
+}
+.d-flex{
+    display: flex;
+      gap: 0px 30px;
+}

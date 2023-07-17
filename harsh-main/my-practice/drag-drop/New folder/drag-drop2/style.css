@@ -1,0 +1,16 @@
+img{
+    width: 130px;
+    height: 130px;
+    margin-top: 11px;
+    margin-left: 10px;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    border: 1px solid gray;
+    cursor: grab;
+}
+.d-flex{
+    display: flex;
+    gap:20px;
+}

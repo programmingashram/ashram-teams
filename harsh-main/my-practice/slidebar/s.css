@@ -1,0 +1,33 @@
+.slider-container {
+    position: relative;
+  }
+  
+  .slider {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    overflow: hidden;
+   
+  }
+  img{
+    width: 300px;
+  }
+  .slider > div {
+    margin-right: 10px;
+  }
+  
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 40%;
+    padding: 10px;
+  }
+  
+  .prev-button {
+    left: 10px;
+  }
+  
+  .next-button {
+    right: 10px;
+  }
+  
