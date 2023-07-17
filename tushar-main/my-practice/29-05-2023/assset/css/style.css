@@ -1,0 +1,28 @@
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.content {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 30px;
+    font-size: 40px;
+}
+.icon{
+
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg); 
+    }
+
+}
