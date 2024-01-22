@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+}
+body {
+    background-color: yellow;
+}
+.sun img{
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    top: 0;
+    left: 600px;
+    animation-name :sunanim ;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+.road img{
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+.car img {
+    width: 130px;
+    height: 110px;
+    position: absolute;
+    top: 200px;
+    transition: 6s;
+    animation: mymove 6s infinite;
+    animation-timing-function: linear;
+}
+@keyframes mymove {
+    0% {
+        left: 0px;
+    }
+    20%{
+        left: 400px;
+    }
+    40%{
+        left: 1200px;
+    }
+    60% {
+        left: 1210px; 
+    }
+    100%{
+        left: 1230px;
+        transform: rotateY(180deg);
+    }
+}
+.car2 img {
+    width: 130px;
+    height: 110px;
+    position: absolute;
+    top: 230px;
+    right: 0px;
+    transition: 6s;
+    animation: mymove2 6s infinite;
+    animation-play-state: running;
+    animation-delay: 2s;
+}
+@keyframes mymove2 {
+    0% {
+        right: 0px;
+    }
+    40%{
+        right: 1200px;
+    }
+    60% {
+        right: 1210px; 
+    }
+    100%{
+        right: 1230px;
+        transform: rotateY(180deg);
+    }
+}
+@keyframes sunanim {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(380deg);
+    }
+}
+
