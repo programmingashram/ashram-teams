@@ -7,10 +7,13 @@ body {
 .sun img{
     position: absolute;
     width: 110px;
-    height: 80px;
+    height: 110px;
     top: 0;
     left: 600px;
-    animation: sun 2s linear;
+    animation-name :sunanim ;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 
 }
 .road img{
@@ -25,17 +28,25 @@ body {
     top: 200px;
     transition: 6s;
     animation: mymove 6s infinite;
-    animation-direction: alternate;
-    animation-delay: 1s;
+    animation-timing-function: linear;
 }
 @keyframes mymove {
-    from {
+    0% {
         left: 0px;
     }
-    to {
-        left: 1230px; 
+    20%{
+        left: 400px;
     }
-
+    40%{
+        left: 1200px;
+    }
+    60% {
+        left: 1210px; 
+    }
+    100%{
+        left: 1230px;
+        transform: rotateY(180deg);
+    }
 }
 .car2 img {
     width: 130px;
@@ -45,23 +56,30 @@ body {
     right: 0px;
     transition: 6s;
     animation: mymove2 6s infinite;
-    animation-direction: alternate;
+    animation-play-state: running;
     animation-delay: 2s;
 }
 @keyframes mymove2 {
-    from {
+    0% {
         right: 0px;
     }
-    to {
+    40%{
+        right: 1200px;
+    }
+    60% {
+        right: 1210px; 
+    }
+    100%{
         right: 1230px;
+        transform: rotateY(180deg);
     }
 }
-@keyframes sun {
+@keyframes sunanim {
     from {
-        transform: rotateY(0deg);
+        transform: rotate(0deg);
     }
     to {
-        transform: rotateY(360deg);
+        transform: rotate(380deg);
     }
 }
 
