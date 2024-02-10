@@ -1,0 +1,101 @@
+.aqua {
+  color: #76c7c0;
+}
+
+.red {
+  color: #a00;
+}
+
+.bg-gray {
+  background-color: #f3f3f3;
+}
+
+p {
+  font-size: 14px !important;
+}
+
+.hero {
+  background-image: url(images/fr.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero .height {
+  height: 658px;
+}
+.hero .text-right {
+  text-align: end;
+}
+.hero .color {
+  background-color: #76c7c0;
+  padding: 20px;
+}
+
+.bg-testomonial {
+  background-image: url(images/prime-background-home.jpg);
+  padding: 3rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg-testomonial .cover {
+  border: 5px solid #76c7c0;
+  border-radius: 40px;
+}
+.bg-testomonial img {
+  border-radius: 36px 36px 0px 0px;
+}
+.bg-testomonial .round {
+  border-radius: 0px 0px 36px 36px;
+}
+.bg-testomonial .card-heading {
+  display: none;
+}
+
+.cover:hover.card-heading {
+  display: block;
+  -webkit-animation: flip 2s;
+          animation: flip 2s;
+  transition: 0.2s;
+}
+
+@-webkit-keyframes flip {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes flip {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+footer .underline {
+  width: 27%;
+  border-bottom: 3px solid #a00;
+  padding: 5px 0px;
+  margin-bottom: 10px;
+}
+footer .nav-link {
+  font-size: 14px;
+}
+footer .l-size {
+  width: 5%;
+}
+footer .bg-red {
+  background-color: red;
+}
+footer .bg-red i {
+  color: white;
+  font-size: 1.7rem;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+}
+.img-s{
+    width:40px;
+    border-radius: 50px;
+    height: 38px;
+    margin-right: 11px;
+}
+.col{
+    width:auto ;
+}
+table{
+    width:100%;
+    text-align:left;
+}
+.badge-green{
+    background-color: green;
+    color: white;
+    padding: 5px 8px;
+}
+.grid{
+    display: flex;
+    align-items: center;
+}
+.detail{
+    line-height: 0%;
+}

@@ -1,0 +1,105 @@
+.navbar-nav{
+    display: -webkit-box;
+}
+
+.padding-bt-top{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.header-logo{
+    color: rgb(109, 188, 253);
+    font-size: 30px;
+}
+.back{
+	background-image: url(image/back.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	}
+.col-6-padding{
+	margin-top:150px;
+	}
+.pad-r{
+	padding-right:20px;
+	}
+.pad-t{
+	padding-top:100px;
+	}
+.col-box{
+	margin: 10px 0px;
+    color: black;
+    border-radius: 10px !important;
+	}
+hr{
+	height: 1px;
+	margin: 1rem 0;
+    color: inherit;
+    background-color: currentColor;
+    border: 0;
+    opacity: .25;
+	}
+.icon-size{
+    font-size: 50px;
+}
+
+.box-icon{
+    font-size: 30px;
+}
+
+.shodow-sm{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.box-shado{
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+	}
+.ls-none{
+	list-style:none;
+	}
+.col-box:hover{
+	border: 1px solid
+	}
+	
+.round {
+    width: 45px;
+    height: 55px;
+    left: 90px;
+    opacity: 0.5;
+    animation-name: round-x;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    background: linear-gradient(180deg, #bd7a23 0%, #e7ce43 100%);
+}
+@keyframes round-x {
+    0% {
+        transform: scaleX(0);
+    }
+
+    25% {
+        transform: scaleX(.5);
+    }
+
+    50% {
+        transform: scaleX(1);
+    }
+
+    75% {
+        transform: scaleX(.5);
+    }
+
+    100% {
+        transform: scaleX(0);
+    }
+}
+.circle {
+    animation-name: round-x;
+    left: 50px;
+	font-size: 30px;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.jumbotron{
+    background-color: #e9ecef;
+}

@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col-md-2 {
+  width: 16.33%;
+}
+
+.col-md-8 {
+  width: 66.66%;
+}
+
+.col-md-12 {
+  width: 100%;
+}
+
+.col-md-3 {
+  width: 25%;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  box-shadow: 0px 5px 6px 0px gray;
+}
+
+nav {
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+section {
+  background-image: url(../images/Homepage-banner_Day-made-1-2048x1148.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0px;
+}
+section .sec-content {
+  padding: 115px 0px;
+}
+section .sec-content .sec-btn .btn-green {
+  text-decoration: none;
+  background-color: #898f4b;
+  color: white;
+  padding: 10px 55px;
+  border-radius: 4px;
+  margin-top: 4px;
+  font-size: 1.3rem;
+}
+
+.sec-content h2 {
+  font-size: 50px;
+  color: white;
+}
+
+.wrapper h1 {
+  margin-top: 90px;
+  font-size: 35px;
+}
+
+.art a {
+  color: black;
+}
+
+.mt-105 {
+  margin-top: 105px;
+}
+.mt-105 .product-heading > h1 {
+  font-size: 40px;
+}
+.mt-105 .product-heading a {
+  color: black;
+}/*# sourceMappingURL=style.css.map */

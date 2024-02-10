@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+table{
+    width: 100%;
+    text-align: left;
+    border-spacing: 20px 17px;
+}
+tr{
+    margin-bottom: 10px;
+}
+tbody tr th{
+    width: 162px;
+}
+.row{
+    display: flex;
+    align-items: center;
+}
+.sys-col{
+    width: 100%;
+}
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+header{
+    padding: 15px;
+    background-color: blue;
+    color: white;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.d-flex h3:first-child {flex-grow: 3;}
+.elevations{
+    margin-top: 20px;
+}
+.elevations .d-flex{
+    justify-content: start;
+}
+.btn-group{
+    margin: 20px 0px;
+}
+.sys-navbar{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: flex-end;
+}
+.sys-navbar li{
+    margin-right: 10px;
+}
+.sys-navbar li a{
+    text-decoration: none;
+    color: white;
+}
+
+.theme-selection{
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+th{
+    font-size: 13px;
+}
+.sys-dark-theme{
+    background-color: black;
+    color: white;
+}
+.dark-theme .sidebar-navigation ul li a{
+    color: white !important;
+}
+.sidebar-container{
+    display: flex;
+    align-items: flex-start;
+}
+.sys-sidebar{
+    width: 12%;
+    box-shadow: 0px 4px 13px 0px #8080800f;
+    height: 460px;
+    overflow-y: scroll;
+    position: fixed;
+}
+.bg-olive{
+    background-color: greenyellow;
+}
+label{
+    font-size: 12px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.col{
+    width: 100%;
+}
+
+.sidebar-content{
+    width: 100%;
+    margin-left: 179px;
+}
+.sidebar-navigation {
+    padding: 10px;
+    border-radius: 4px;
+}
+.sidebar-navigation ul{
+    list-style-type: none;
+    margin-top: 10px;
+}
+.sidebar-navigation ul li{
+    display: block;
+    margin-bottom: 18px;
+    position: relative;
+}
+
+.active:before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 27px;
+    background: blue;
+    left: -10px;
+}
+
+.sidebar-navigation ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.sys-title{
+    padding-left: 20px;
+}
+.sys-component{
+    margin: 40px 0px;
+}
+.sys-sidebar::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 10px;
+}
+   
+.sys-sidebar::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.sys-sidebar::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid rgb(196, 201, 206);
+}
+.dark-theme{
+    animation-name: slide;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+.default-theme{
+    animation-name: slide1;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes slide{
+    from{
+        background-color: white;
+        transition: 0s;
+    }
+    to{
+        background-color: #303030;
+        transition: 0.6s;
+    }
+}
+.default-theme{
+    animation-name: slide1;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes slide1{
+    from{
+        background-color: #303030;
+        transition: 0s;
+    }
+    to{
+        background-color: white;
+        transition: 0.6s;
+    }
+}
